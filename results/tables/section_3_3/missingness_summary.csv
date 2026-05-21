@@ -1,0 +1,17 @@
+"variable","n_nonmissing","pct_nonmissing"
+"UA",305,100
+"Hyperuricemia",305,100
+"Enterotype",305,100
+"Gender",305,100
+"Age",305,100
+"BMI",225,73.8
+"Urea",305,100
+"Cr",305,100
+"eGFR",305,100
+"GLU",305,100
+"TG",305,100
+"HDLC",305,100
+"LDLC",305,100
+"CRP",302,99
+"SBP",174,57
+"DBP",175,57.4

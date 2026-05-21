@@ -1,0 +1,36 @@
+"from","to","rho","pval","padj"
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Blautia;s__Ruminococcus_gnavus","NEG0144_5-Methoxyindoleacetate",-0.573001968962772,0.000210083006431779,0.031407409461551
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Blautia;s__Ruminococcus_gnavus","NEG0147_Indole-3-propionic acid",-0.328232653086486,0.0473264044895728,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Blautia;s__Ruminococcus_gnavus","NEG0145_Phenylacetylglutamine",-0.331110015611817,0.0453061223691496,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella_parvula","NEG0144_5-Methoxyindoleacetate",-0.402274525373439,0.0135783239231617,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella_parvula","UA",0.359642845140295,0.0287955134458025,0.374341674795432
+"k__Bacteria;p__Firmicutes;c__Erysipelotrichia;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium_ramosum","POS0002_Adenosine",-0.327358136785806,0.0479545789749645,0.424496037174717
+"k__Bacteria;p__Fusobacteria;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium;s__Fusobacterium_varium","POS0002_Adenosine",-0.327358136785806,0.0479545789749645,0.424496037174717
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides_fragilis","NEG0144_5-Methoxyindoleacetate",-0.384845803487168,0.0186741357770572,0.307647808417194
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides_fragilis","NEG0147_Indole-3-propionic acid",-0.409245419141563,0.0118985761611164,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_bolteae","NEG0144_5-Methoxyindoleacetate",-0.455727672312461,0.00458899441711497,0.274421866143475
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_bolteae","NEG0145_Phenylacetylglutamine",-0.326680689968351,0.0484457868838916,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_bolteae","NEG0015_Deoxycholic acid",0.360997966285926,0.0281553125104723,0.374341674795432
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","NEG0144_5-Methoxyindoleacetate",-0.411038556761867,0.0114961663291008,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","NEG0015_Deoxycholic acid",0.331344443909358,0.0451446343462772,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","POS0156_Trimethylamine N-oxide",-0.343444496392365,0.0374188194313769,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","UA",0.408483095585255,0.0120732363943042,0.307647808417194
+"k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Pasteurellales;f__Pasteurellaceae;g__Haemophilus;s__Haemophilus_parainfluenzae","NEG0015_Deoxycholic acid",0.508334610039345,0.00131696031254134,0.131257044483287
+"k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Pasteurellales;f__Pasteurellaceae;g__Haemophilus;s__Haemophilus_parainfluenzae","POS0006_Betaine",0.338536247172724,0.0404116804023321,0.424496037174717
+"k__Bacteria;p__Fusobacteria;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium;s__Fusobacterium_mortiferum","NEG0144_5-Methoxyindoleacetate",-0.479892105469729,0.0026497971994995,0.198072340662588
+"k__Bacteria;p__Fusobacteria;c__Fusobacteriia;o__Fusobacteriales;f__Fusobacteriaceae;g__Fusobacterium;s__Fusobacterium_mortiferum","UA",0.329711959526072,0.0462788785480954,0.424496037174717
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Tyzzerella;s__Tyzzerella_nexilis","NEG0024_p-Cresol",-0.379353900322675,0.0205784487235581,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Tyzzerella;s__Tyzzerella_nexilis","NEG0216_p-Cresol sulfate",-0.353050489935923,0.0320832142661496,0.399703377732447
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Oscillospiraceae;g__Oscillibacter;s__Oscillibacter_sp_57_20","NEG0144_5-Methoxyindoleacetate",0.396014562694461,0.0152533346329527,0.307647808417194
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Odoribacter;s__Odoribacter_splanchnicus","NEG0144_5-Methoxyindoleacetate",0.418209627681941,0.0100002400010999,0.307647808417194
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Odoribacter;s__Odoribacter_splanchnicus","UA",-0.367505506333747,0.025242159050894,0.359400264581776
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides_plebeius","NEG0046_Indoxyl sulfate",-0.408822445057363,0.0119952196909235,0.307647808417194
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes_finegoldii","POS0002_Adenosine",0.324988858086934,0.0496901715756358,0.424496037174717
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Butyricimonas;s__Butyricimonas_virosa","NEG0015_Deoxycholic acid",0.396015594545889,0.0152530448272244,0.307647808417194
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Butyricimonas;s__Butyricimonas_virosa","POS0002_Adenosine",-0.388149996073863,0.0176011257837505,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Oscillospiraceae;g__Oscillibacter;s__Oscillibacter_sp_CAG_241","NEG0144_5-Methoxyindoleacetate",0.574065669595127,0.000203176517770965,0.031407409461551
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Oscillospiraceae;g__Oscillibacter;s__Oscillibacter_sp_CAG_241","NEG0145_Phenylacetylglutamine",0.443256871343845,0.00600225451132956,0.29911234981459
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae;g__Prevotella;s__Prevotella_copri","NEG0147_Indole-3-propionic acid",-0.394248254963479,0.0157562624967125,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Roseburia;s__Roseburia_sp_CAG_471","NEG0144_5-Methoxyindoleacetate",0.391264276713154,0.0166375690666727,0.307647808417194
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Roseburia;s__Roseburia_sp_CAG_471","POS0002_Adenosine",0.348422092073771,0.0345704383990569,0.41346244325272
+"k__Bacteria;p__Firmicutes;c__Negativicutes;o__Veillonellales;f__Veillonellaceae;g__Veillonella;s__Veillonella_dispar","POS0156_Trimethylamine N-oxide",-0.380475708345948,0.020176838587566,0.307647808417194

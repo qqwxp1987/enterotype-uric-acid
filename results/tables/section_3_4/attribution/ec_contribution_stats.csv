@@ -1,0 +1,940 @@
+"ec_id","species",".y.","n","statistic","df","p","method","p.adj","p.adj.signif","test_type","group1","group2","n1","n2"
+"1.4.7.1","Agathobaculum butyriciproducens","contribution_pct",103,34.2645764429745,3,1.74e-07,"Kruskal-Wallis",1.0458125e-06,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Anaerotruncus colihominis","contribution_pct",43,10.9371790999698,2,0.00422,"Kruskal-Wallis",0.0127483769633508,"*","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Catenibacterium mitsuokai","contribution_pct",8,2.52777777777778,2,0.283,"Kruskal-Wallis",0.401637254901961,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Clostridium bolteae","contribution_pct",49,7.56472303206996,2,0.0228,"Kruskal-Wallis",0.0592594594594595,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Clostridium clostridioforme","contribution_pct",6,0.771428571428572,1,0.38,"Kruskal-Wallis",0.466510638297872,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Clostridium disporicum","contribution_pct",4,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Coprococcus comes","contribution_pct",70,23.2301433848533,3,3.62e-05,"Kruskal-Wallis",0.000146065734265734,"***","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Coprococcus comes CAG 19","contribution_pct",67,28.9528689569232,3,2.29e-06,"Kruskal-Wallis",1.07425203252033e-05,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Dorea longicatena","contribution_pct",90,39.1030657627943,3,1.65e-08,"Kruskal-Wallis",1.17537037037037e-07,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Dorea longicatena CAG 42","contribution_pct",80,28.8276471464154,3,2.43e-06,"Kruskal-Wallis",1.13073387096774e-05,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Eisenbergiella tayi","contribution_pct",5,3,2,0.223,"Kruskal-Wallis",0.335080729166667,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Eubacterium hallii","contribution_pct",90,23.9563150520754,3,2.55e-05,"Kruskal-Wallis",0.000105096428571429,"***","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Eubacterium hallii CAG 12","contribution_pct",90,23.4153869786128,3,3.31e-05,"Kruskal-Wallis",0.000134497887323944,"***","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Eubacterium ramulus","contribution_pct",38,11.964680933102,3,0.00751,"Kruskal-Wallis",0.0211379024390244,"*","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Flavonifractor plautii","contribution_pct",142,44.8636782951695,3,9.89e-10,"Kruskal-Wallis",8.27033333333333e-09,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Hungatella hathewayi","contribution_pct",24,2.6379365079365,2,0.267,"Kruskal-Wallis",0.383231343283582,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Mitsuokella multacida","contribution_pct",9,7.13333333333333,3,0.0678,"Kruskal-Wallis",0.149315267175573,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Prevotella copri","contribution_pct",98,18.5885194170908,3,0.000333,"Kruskal-Wallis",0.00117159146341463,"**","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Prevotella copri CAG 164","contribution_pct",98,7.72928341499772,3,0.052,"Kruskal-Wallis",0.119537848605578,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Prevotella sp AM42 24","contribution_pct",11,5.14935064935064,2,0.0762,"Kruskal-Wallis",0.162241328413284,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Roseburia hominis","contribution_pct",145,57.3641567706967,3,2.15e-12,"Kruskal-Wallis",2.38567307692308e-11,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Roseburia intestinalis","contribution_pct",147,68.6305303232074,3,8.38e-15,"Kruskal-Wallis",1.23981025641026e-13,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Roseburia intestinalis CAG 13","contribution_pct",148,72.9611504704576,3,9.91e-16,"Kruskal-Wallis",1.63373428571429e-14,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Roseburia inulinivorans","contribution_pct",217,116.67296932761,3,4.02e-25,"Kruskal-Wallis",7.7318e-23,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Roseburia inulinivorans CAG 15","contribution_pct",219,115.827953857809,3,6.11e-25,"Kruskal-Wallis",8.813675e-23,"****","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Ruminococcus torques","contribution_pct",43,21.5221609785563,3,8.2e-05,"Kruskal-Wallis",0.000303294871794872,"***","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Turicibacter sanguinis","contribution_pct",8,5.125,2,0.0771,"Kruskal-Wallis",0.162360218978102,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Veillonella atypica","contribution_pct",9,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Acidaminococcus sp CAG 542","contribution_pct",4,1.8,2,0.407,"Kruskal-Wallis",0.491294979079498,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Butyrivibrio crossotus","contribution_pct",4,2.7,2,0.259,"Kruskal-Wallis",0.375484924623116,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Butyrivibrio crossotus CAG 259","contribution_pct",4,2.7,2,0.259,"Kruskal-Wallis",0.375484924623116,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Campylobacter concisus","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Clostridium sp CAG 58","contribution_pct",44,21.9466176470588,3,6.69e-05,"Kruskal-Wallis",0.000255637748344371,"***","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Coprococcus catus","contribution_pct",56,24.365003417635,3,2.1e-05,"Kruskal-Wallis",8.71726618705036e-05,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Desulfovibrio piger","contribution_pct",51,32.0855029014258,3,5.02e-07,"Kruskal-Wallis",2.78513461538462e-06,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Eubacterium siraeum","contribution_pct",47,11.2374205184642,3,0.0105,"Kruskal-Wallis",0.028443661971831,"*","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Faecalibacterium prausnitzii","contribution_pct",291,140.782220610996,3,2.56e-30,"Kruskal-Wallis",1.47712e-27,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Gemmiger formicilis","contribution_pct",152,88.0138795172425,3,5.85e-19,"Kruskal-Wallis",1.4064375e-17,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Megamonas funiformis","contribution_pct",72,27.9312943310412,3,3.75e-06,"Kruskal-Wallis",1.70374015748032e-05,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Megamonas funiformis CAG 377","contribution_pct",67,27.5965417374548,3,4.41e-06,"Kruskal-Wallis",1.95736153846154e-05,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Megamonas hypermegale","contribution_pct",68,38.5654850264824,3,2.15e-08,"Kruskal-Wallis",1.49463855421687e-07,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Megamonas rupellensis","contribution_pct",8,0.444444444444443,1,0.505,"Kruskal-Wallis",0.577,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Mitsuokella multacida","contribution_pct",5,3.8,3,0.284,"Kruskal-Wallis",0.401637254901961,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Phascolarctobacterium succinatutens","contribution_pct",28,7.07487684729064,3,0.0695,"Kruskal-Wallis",0.151899621212121,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Porphyromonas endodontalis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Porphyromonas uenonis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Prevotella copri","contribution_pct",95,0.437381916329286,3,0.932,"Kruskal-Wallis",0.958581105169341,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Prevotella copri CAG 164","contribution_pct",97,27.6865387505404,3,4.23e-06,"Kruskal-Wallis",1.89202325581395e-05,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Prevotella sp AM42 24","contribution_pct",11,6.6038961038961,2,0.0368,"Kruskal-Wallis",0.0892168067226891,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Prevotella timonensis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Roseburia hominis","contribution_pct",100,41.2684995802355,3,5.74e-09,"Kruskal-Wallis",4.35786842105263e-08,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Roseburia inulinivorans","contribution_pct",190,98.3766370399023,3,3.47e-21,"Kruskal-Wallis",1.33864e-19,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Roseburia inulinivorans CAG 15","contribution_pct",183,90.6000550597829,3,1.63e-19,"Kruskal-Wallis",4.08917391304348e-18,"****","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Roseburia sp CAG 182","contribution_pct",6,3.57142857142857,2,0.168,"Kruskal-Wallis",0.295536585365854,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Roseburia sp CAG 471","contribution_pct",15,8.12166666666667,3,0.0436,"Kruskal-Wallis",0.103527572016461,"ns","KW_4group",NA,NA,NA,NA
+"1.5.1.7","Ruminococcus gnavus","contribution_pct",123,45.163532005281,3,8.54e-10,"Kruskal-Wallis",7.35459701492537e-09,"****","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Alistipes finegoldii","contribution_pct",154,12.0293172483446,3,0.00728,"Kruskal-Wallis",0.0205909803921569,"*","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Alistipes onderdonkii","contribution_pct",28,2.24870449747296,3,0.522,"Kruskal-Wallis",0.59407100591716,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides cellulosilyticus","contribution_pct",76,3.97841092178498,3,0.264,"Kruskal-Wallis",0.38082,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides finegoldii","contribution_pct",113,12.94652274962,3,0.00475,"Kruskal-Wallis",0.0141275773195876,"*","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides fragilis","contribution_pct",137,0.373359427342336,3,0.946,"Kruskal-Wallis",0.971249110320285,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides fragilis CAG 47","contribution_pct",137,0.653737326496184,3,0.884,"Kruskal-Wallis",0.91246511627907,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides ovatus","contribution_pct",235,12.9043247744755,3,0.00485,"Kruskal-Wallis",0.0142053299492386,"*","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Bacteroides xylanisolvens","contribution_pct",240,6.07031429054995,3,0.108,"Kruskal-Wallis",0.21341095890411,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Citrobacter freundii","contribution_pct",16,8.04375,2,0.0179,"Kruskal-Wallis",0.0471611872146119,"*","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Citrobacter koseri","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Citrobacter portucalensis","contribution_pct",11,0.321428571428569,1,0.571,"Kruskal-Wallis",0.631162835249042,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Citrobacter youngae","contribution_pct",19,4.27894736842106,2,0.118,"Kruskal-Wallis",0.23002027027027,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Clostridium innocuum","contribution_pct",3,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Enterobacter cloacae complex","contribution_pct",22,5.37125917560701,3,0.147,"Kruskal-Wallis",0.269266666666667,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Escherichia coli","contribution_pct",179,15.7917627953155,3,0.00125,"Kruskal-Wallis",0.00391983695652174,"**","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Escherichia fergusonii","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Haemophilus parainfluenzae","contribution_pct",154,18.8240127038802,3,0.000297,"Kruskal-Wallis",0.00106440372670807,"**","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Haemophilus sputorum","contribution_pct",4,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Hungatella hathewayi","contribution_pct",5,0.800000000000001,2,0.67,"Kruskal-Wallis",0.72125,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella aerogenes","contribution_pct",5,3,2,0.223,"Kruskal-Wallis",0.335080729166667,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella michiganensis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella pneumoniae","contribution_pct",81,6.79134270544662,3,0.0789,"Kruskal-Wallis",0.164351263537906,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella quasipneumoniae","contribution_pct",29,4.05706558485463,3,0.255,"Kruskal-Wallis",0.372493670886076,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella variicola","contribution_pct",44,0.227695133149666,3,0.973,"Kruskal-Wallis",0.993665486725664,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Klebsiella variicola CAG 634","contribution_pct",14,5.57333333333333,3,0.134,"Kruskal-Wallis",0.256019867549669,"ns","KW_4group",NA,NA,NA,NA
+"1.8.1.8","Streptococcus mitis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Aggregatibacter segnis","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Akkermansia muciniphila","contribution_pct",53,7.45101327742836,3,0.0588,"Kruskal-Wallis",0.132014007782101,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Alistipes finegoldii","contribution_pct",155,35.1885293212771,3,1.11e-07,"Kruskal-Wallis",6.88677419354839e-07,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Alistipes indistinctus","contribution_pct",61,5.00918637153433,3,0.171,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Alistipes onderdonkii","contribution_pct",28,4.52322308233639,3,0.21,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Alistipes putredinis","contribution_pct",161,36.2911120970126,3,6.5e-08,"Kruskal-Wallis",4.31091954022988e-07,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Alistipes sp An31A","contribution_pct",3,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Anaerostipes hadrus","contribution_pct",142,2.35396313680945,3,0.502,"Kruskal-Wallis",0.574710317460317,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Anaerotruncus colihominis","contribution_pct",40,4.36222996515681,2,0.113,"Kruskal-Wallis",0.221772108843537,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides caccae","contribution_pct",205,28.6632715359794,3,2.64e-06,"Kruskal-Wallis",1.20895238095238e-05,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides cellulosilyticus","contribution_pct",141,17.6178782317383,3,0.000527,"Kruskal-Wallis",0.00180999404761905,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides clarus","contribution_pct",71,10.6935820986525,3,0.0135,"Kruskal-Wallis",0.0360625,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides coprocola","contribution_pct",71,23.4682543127844,3,3.23e-05,"Kruskal-Wallis",0.000132178014184397,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides coprocola CAG 162","contribution_pct",71,27.025890817541,3,5.81e-06,"Kruskal-Wallis",2.55906106870229e-05,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides coprophilus","contribution_pct",24,9.18793650793651,3,0.0269,"Kruskal-Wallis",0.0677347826086957,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides coprophilus CAG 333","contribution_pct",24,9.18031746031745,3,0.027,"Kruskal-Wallis",0.0677347826086957,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides dorei","contribution_pct",139,35.2070619974609,3,1.1e-07,"Kruskal-Wallis",6.88677419354839e-07,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides eggerthii","contribution_pct",86,30.8599037690457,3,9.1e-07,"Kruskal-Wallis",4.60587719298246e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides faecichinchillae","contribution_pct",5,0.333333333333332,1,0.564,"Kruskal-Wallis",0.625823076923077,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides faecis","contribution_pct",14,3.99047619047619,3,0.262,"Kruskal-Wallis",0.378882205513784,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides finegoldii","contribution_pct",126,21.85426807006,3,6.99e-05,"Kruskal-Wallis",0.000265344078947368,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides fluxus","contribution_pct",4,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides fragilis","contribution_pct",166,40.2336368706679,3,9.51e-09,"Kruskal-Wallis",6.94591139240506e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides fragilis CAG 47","contribution_pct",147,14.3213386631754,3,0.0025,"Kruskal-Wallis",0.00763227513227513,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides intestinalis","contribution_pct",171,4.36787215291315,3,0.224,"Kruskal-Wallis",0.335709090909091,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides massiliensis","contribution_pct",126,50.8614629524789,3,5.24e-11,"Kruskal-Wallis",5.21289655172414e-10,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides nordii","contribution_pct",62,4.92552455225265,3,0.177,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides ovatus","contribution_pct",275,58.2688125117944,3,1.38e-12,"Kruskal-Wallis",1.58392156862745e-11,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides plebeius","contribution_pct",115,32.1297794800079,3,4.91e-07,"Kruskal-Wallis",2.75055339805825e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides plebeius CAG 211","contribution_pct",115,30.2403064644149,3,1.23e-06,"Kruskal-Wallis",6.11818965517241e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides salyersiae","contribution_pct",117,21.6663256384692,3,7.65e-05,"Kruskal-Wallis",0.000285149677419355,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides sartorii","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides sp 43 108","contribution_pct",6,1.38095238095238,2,0.501,"Kruskal-Wallis",0.574705765407555,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides sp CAG 530","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides sp D2","contribution_pct",11,7.42424242424242,2,0.0244,"Kruskal-Wallis",0.0625724444444444,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides sp OM05 12","contribution_pct",35,2.8791713048856,3,0.411,"Kruskal-Wallis",0.495087682672234,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides stercorirosoris","contribution_pct",8,0.0222222222222221,1,0.881,"Kruskal-Wallis",0.910998207885305,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides stercoris","contribution_pct",192,75.3797732567197,3,3e-16,"Kruskal-Wallis",5.24545454545454e-15,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides thetaiotaomicron","contribution_pct",294,63.1427169203981,3,1.25e-13,"Kruskal-Wallis",1.67732558139535e-12,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides uniformis","contribution_pct",287,92.8820768339643,3,5.27e-20,"Kruskal-Wallis",1.537705e-18,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides uniformis CAG 3","contribution_pct",287,94.5698570368118,3,2.28e-20,"Kruskal-Wallis",7.30866666666667e-19,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides vulgatus","contribution_pct",272,113.650428041493,3,1.8e-24,"Kruskal-Wallis",2.0772e-22,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides vulgatus CAG 6","contribution_pct",272,109.791670234221,3,1.22e-23,"Kruskal-Wallis",8.79925e-22,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Bacteroides xylanisolvens","contribution_pct",259,48.0287406327182,3,2.1e-10,"Kruskal-Wallis",1.89328125e-09,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Barnesiella intestinihominis","contribution_pct",83,11.9384932862616,3,0.0076,"Kruskal-Wallis",0.0212873786407767,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Blautia obeum","contribution_pct",151,6.82809087388466,3,0.0776,"Kruskal-Wallis",0.162438043478261,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Blautia wexlerae","contribution_pct",225,7.36733533594577,3,0.0611,"Kruskal-Wallis",0.136646124031008,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Butyricimonas virosa","contribution_pct",197,11.6946559664971,3,0.00851,"Kruskal-Wallis",0.0237211111111111,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Catenibacterium mitsuokai","contribution_pct",10,1.38181818181818,2,0.501,"Kruskal-Wallis",0.574705765407555,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Citrobacter freundii","contribution_pct",16,5,2,0.0821,"Kruskal-Wallis",0.169184642857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Citrobacter koseri","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Citrobacter portucalensis","contribution_pct",11,0.892857142857146,1,0.345,"Kruskal-Wallis",0.437505494505494,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Citrobacter youngae","contribution_pct",18,4.8140350877193,3,0.186,"Kruskal-Wallis",0.305760683760684,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Clostridium citroniae","contribution_pct",7,2.28571428571428,2,0.319,"Kruskal-Wallis",0.40993986636971,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Clostridium disporicum","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Clostridium innocuum","contribution_pct",11,1.66233766233766,2,0.436,"Kruskal-Wallis",0.518705154639175,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Clostridium saccharolyticum","contribution_pct",8,0.449999999999999,2,0.799,"Kruskal-Wallis",0.841282846715328,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Clostridium symbiosum","contribution_pct",15,3.3,2,0.192,"Kruskal-Wallis",0.310319327731092,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Comamonas kerstersii","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprobacter fastidiosus","contribution_pct",50,3.29118864097364,3,0.349,"Kruskal-Wallis",0.441607456140351,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprobacter secundus","contribution_pct",20,10.8109523809524,3,0.0128,"Kruskal-Wallis",0.0343516279069767,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprococcus catus","contribution_pct",15,1.85625,3,0.603,"Kruskal-Wallis",0.661465779467681,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprococcus comes","contribution_pct",96,0.870285974015587,3,0.833,"Kruskal-Wallis",0.872306715063521,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprococcus comes CAG 19","contribution_pct",96,0.167269611033078,3,0.983,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprococcus eutactus","contribution_pct",57,7.04577346001923,3,0.0705,"Kruskal-Wallis",0.152926691729323,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Coprococcus eutactus CAG 665","contribution_pct",29,1.23390804597702,2,0.54,"Kruskal-Wallis",0.6085546875,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Desulfovibrio piger","contribution_pct",53,0.786594040131774,3,0.853,"Kruskal-Wallis",0.891632246376812,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Dorea longicatena","contribution_pct",96,3.57578560222828,3,0.311,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Dorea longicatena CAG 42","contribution_pct",92,4.76716534206014,3,0.19,"Kruskal-Wallis",0.309689265536723,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eisenbergiella tayi","contribution_pct",4,1.8,2,0.407,"Kruskal-Wallis",0.491294979079498,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Enterobacter bugandensis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Enterobacter cloacae complex","contribution_pct",23,12.9174430641822,3,0.00482,"Kruskal-Wallis",0.0141894897959184,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Escherichia coli","contribution_pct",140,2.29552109491317,3,0.513,"Kruskal-Wallis",0.584982213438735,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Escherichia fergusonii","contribution_pct",4,1.8,2,0.407,"Kruskal-Wallis",0.491294979079498,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium eligens","contribution_pct",171,4.66113691089504,3,0.198,"Kruskal-Wallis",0.319122905027933,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium eligens CAG 72","contribution_pct",171,2.62194922928336,3,0.454,"Kruskal-Wallis",0.533519348268839,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium hallii","contribution_pct",42,1.7584616933454,2,0.415,"Kruskal-Wallis",0.498864583333333,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium hallii CAG 12","contribution_pct",42,3.71364139736232,2,0.156,"Kruskal-Wallis",0.2812875,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium ramulus","contribution_pct",19,5.29473684210527,2,0.0708,"Kruskal-Wallis",0.153002247191011,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Eubacterium siraeum","contribution_pct",51,2.16843238774797,3,0.538,"Kruskal-Wallis",0.607487279843444,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Faecalibacterium prausnitzii","contribution_pct",268,18.1674666472353,3,0.000406,"Kruskal-Wallis",0.0014197696969697,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Flavonifractor plautii","contribution_pct",199,9.24600651701076,3,0.0262,"Kruskal-Wallis",0.0663043859649123,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Fusicatenibacter saccharivorans","contribution_pct",239,32.6138786259428,3,3.88e-07,"Kruskal-Wallis",2.21659405940594e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Fusobacterium mortiferum","contribution_pct",52,9.44730175484892,3,0.0239,"Kruskal-Wallis",0.0615638392857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Haemophilus parainfluenzae","contribution_pct",161,6.69058785985931,3,0.0824,"Kruskal-Wallis",0.169198576512456,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Haemophilus sp HMSC71H05","contribution_pct",23,2.40810276679841,3,0.492,"Kruskal-Wallis",0.570048192771084,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Haemophilus sputorum","contribution_pct",15,4.18380952380953,2,0.123,"Kruskal-Wallis",0.237361204013378,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Hungatella hathewayi","contribution_pct",14,1.99265306122449,3,0.574,"Kruskal-Wallis",0.633265774378585,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Intestinimonas butyriciproducens","contribution_pct",31,1.3739247311828,3,0.712,"Kruskal-Wallis",0.763613382899628,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella aerogenes","contribution_pct",7,0.178571428571427,2,0.915,"Kruskal-Wallis",0.942776785714286,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella michiganensis","contribution_pct",7,3.75,2,0.153,"Kruskal-Wallis",0.278488958990536,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella pneumoniae","contribution_pct",74,1.08964892164892,3,0.78,"Kruskal-Wallis",0.824285714285714,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella quasipneumoniae","contribution_pct",30,5.1613594470046,3,0.16,"Kruskal-Wallis",0.284938271604938,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella variicola","contribution_pct",29,6.58630268199234,3,0.0863,"Kruskal-Wallis",0.17533485915493,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Klebsiella variicola CAG 634","contribution_pct",36,6.00637479584847,3,0.111,"Kruskal-Wallis",0.218590443686007,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Lachnospira pectinoschiza","contribution_pct",94,8.32611187889449,3,0.0397,"Kruskal-Wallis",0.0954454166666667,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Mitsuokella multacida","contribution_pct",9,1.6,3,0.659,"Kruskal-Wallis",0.712065543071161,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Oxalobacter formigenes","contribution_pct",21,2.73396300669027,3,0.434,"Kruskal-Wallis",0.517392561983471,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides distasonis","contribution_pct",293,48.6511173700669,3,1.55e-10,"Kruskal-Wallis",1.4425e-09,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides goldsteinii","contribution_pct",91,16.4272134988681,3,0.000927,"Kruskal-Wallis",0.00303495480225989,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides gordonii","contribution_pct",36,5.20095095095097,3,0.158,"Kruskal-Wallis",0.282247678018576,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides johnsonii","contribution_pct",38,2.40698913275091,3,0.492,"Kruskal-Wallis",0.570048192771084,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides merdae","contribution_pct",197,26.1708138727452,3,8.78e-06,"Kruskal-Wallis",3.80906766917293e-05,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides sp 426 9","contribution_pct",4,0.199999999999999,1,0.655,"Kruskal-Wallis",0.7090712945591,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Parabacteroides sp CAG 409","contribution_pct",8,3.47222222222222,3,0.324,"Kruskal-Wallis",0.41544,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Paraprevotella clara","contribution_pct",54,6.93884880551548,3,0.0739,"Kruskal-Wallis",0.158354444444444,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Paraprevotella clara CAG 116","contribution_pct",54,10.4292448292448,3,0.0152,"Kruskal-Wallis",0.0402311926605505,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Paraprevotella xylaniphila","contribution_pct",69,1.62480209475095,3,0.654,"Kruskal-Wallis",0.7090712945591,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella copri","contribution_pct",63,0.967714148877945,3,0.809,"Kruskal-Wallis",0.848714545454545,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella copri CAG 164","contribution_pct",92,58.2363069314239,3,1.4e-12,"Kruskal-Wallis",1.58392156862745e-11,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp 885","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp AM42 24","contribution_pct",11,5.96103896103897,2,0.0508,"Kruskal-Wallis",0.1172464,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp CAG 1320","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp CAG 520","contribution_pct",6,2.14285714285714,1,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp CAG 5226","contribution_pct",8,3.20833333333333,2,0.201,"Kruskal-Wallis",0.323055710306407,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella sp CAG 617","contribution_pct",5,0.5,1,0.48,"Kruskal-Wallis",0.560647773279352,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella stercorea","contribution_pct",39,12.0295932138037,2,0.00244,"Kruskal-Wallis",0.00748872340425532,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Prevotella stercorea CAG 629","contribution_pct",39,6.60796221322536,2,0.0367,"Kruskal-Wallis",0.0892168067226891,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Raoultella ornithinolytica","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Roseburia faecis","contribution_pct",207,12.4224639942014,3,0.00607,"Kruskal-Wallis",0.0174248258706468,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Roseburia hominis","contribution_pct",7,0.150000000000002,1,0.699,"Kruskal-Wallis",0.751067039106145,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Roseburia intestinalis","contribution_pct",116,5.34672182616481,3,0.148,"Kruskal-Wallis",0.270240506329114,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Roseburia intestinalis CAG 13","contribution_pct",116,0.762683498591969,3,0.858,"Kruskal-Wallis",0.895236889692586,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Roseburia sp CAG 471","contribution_pct",14,4.19047619047619,3,0.242,"Kruskal-Wallis",0.358956298200514,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Ruminococcus bicirculans","contribution_pct",122,21.6654587789488,3,7.66e-05,"Kruskal-Wallis",0.000285149677419355,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Ruminococcus torques","contribution_pct",166,9.30262776041388,3,0.0255,"Kruskal-Wallis",0.0648171806167401,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.13","Veillonella dispar","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Acidaminococcus intestini","contribution_pct",14,4.74285714285714,3,0.192,"Kruskal-Wallis",0.310319327731092,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Acidaminococcus intestini CAG 325","contribution_pct",14,5.75,3,0.124,"Kruskal-Wallis",0.237700996677741,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Agathobaculum butyriciproducens","contribution_pct",86,29.4418800376629,3,1.81e-06,"Kruskal-Wallis",8.70308333333333e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Anaerostipes hadrus","contribution_pct",202,48.6945060846866,3,1.52e-10,"Kruskal-Wallis",1.43777049180328e-09,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Anaerotruncus colihominis","contribution_pct",29,5.56270114942529,2,0.062,"Kruskal-Wallis",0.138123552123552,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Bilophila wadsworthia","contribution_pct",205,83.426205690096,3,5.65e-18,"Kruskal-Wallis",1.16430357142857e-16,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Blautia obeum","contribution_pct",147,41.0680011166152,3,6.33e-09,"Kruskal-Wallis",4.74338961038961e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Cloacibacillus porcorum","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Clostridium leptum","contribution_pct",59,12.3027092963534,3,0.00641,"Kruskal-Wallis",0.0183097524752475,"*","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Clostridium sp CAG 242","contribution_pct",42,16.6860095976375,3,0.00082,"Kruskal-Wallis",0.00273491329479769,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Coprococcus comes","contribution_pct",150,53.9314488690118,3,1.16e-11,"Kruskal-Wallis",1.21694545454545e-10,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Desulfovibrionaceae bacterium","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Dorea formicigenerans","contribution_pct",143,44.1977163647335,3,1.37e-09,"Kruskal-Wallis",1.12927142857143e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Dorea longicatena","contribution_pct",208,63.0532304921396,3,1.31e-13,"Kruskal-Wallis",1.71788636363636e-12,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Eggerthella lenta","contribution_pct",8,1.19047619047619,1,0.275,"Kruskal-Wallis",0.392759900990099,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Eubacterium eligens","contribution_pct",39,16.536858974359,3,0.00088,"Kruskal-Wallis",0.00290148571428571,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Eubacterium hallii","contribution_pct",145,35.5310019583767,3,9.41e-08,"Kruskal-Wallis",5.96656043956044e-07,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Eubacterium rectale","contribution_pct",37,16.2495427758585,3,0.00101,"Kruskal-Wallis",0.00325569832402235,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Eubacterium sp OM08 24","contribution_pct",8,1.20833333333333,2,0.547,"Kruskal-Wallis",0.614044747081712,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Faecalibacterium prausnitzii","contribution_pct",277,109.925110999749,3,1.14e-23,"Kruskal-Wallis",8.79925e-22,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Fusicatenibacter saccharivorans","contribution_pct",233,99.3742235421466,3,2.12e-21,"Kruskal-Wallis",9.40953846153846e-20,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Gemmiger formicilis","contribution_pct",132,71.1822697978713,3,2.38e-15,"Kruskal-Wallis",3.81461111111111e-14,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Holdemanella biformis","contribution_pct",33,7.96055281616779,3,0.0468,"Kruskal-Wallis",0.109770731707317,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Megamonas funiformis","contribution_pct",58,16.2617217313577,3,0.001,"Kruskal-Wallis",0.00324157303370787,"**","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Megamonas funiformis CAG 377","contribution_pct",70,29.5769777104184,3,1.69e-06,"Kruskal-Wallis",8.19436974789916e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Megamonas hypermegale","contribution_pct",66,32.7180637544274,3,3.69e-07,"Kruskal-Wallis",2.12913e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Megamonas rupellensis","contribution_pct",8,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Mitsuokella multacida","contribution_pct",6,4.28571428571428,3,0.232,"Kruskal-Wallis",0.34590180878553,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Phascolarctobacterium faecium","contribution_pct",193,81.1504645964187,3,1.74e-17,"Kruskal-Wallis",3.3466e-16,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Phascolarctobacterium sp CAG 266","contribution_pct",13,2.59615384615385,2,0.273,"Kruskal-Wallis",0.390870967741936,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Phascolarctobacterium succinatutens","contribution_pct",28,4.13448275862069,3,0.247,"Kruskal-Wallis",0.364498721227621,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Prevotella copri","contribution_pct",84,21.094522019334,3,0.000101,"Kruskal-Wallis",0.000368841772151899,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Prevotella copri CAG 164","contribution_pct",86,32.1537030225926,3,4.86e-07,"Kruskal-Wallis",2.74923529411765e-06,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Roseburia intestinalis","contribution_pct",106,43.4527823980613,3,1.97e-09,"Kruskal-Wallis",1.53606756756757e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Roseburia intestinalis CAG 13","contribution_pct",106,42.8248449244274,3,2.68e-09,"Kruskal-Wallis",2.06181333333333e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus bicirculans","contribution_pct",126,21.9872674645828,3,6.56e-05,"Kruskal-Wallis",0.000252341333333333,"***","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus bromii","contribution_pct",119,35.7268054001262,3,8.55e-08,"Kruskal-Wallis",5.60607954545455e-07,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus callidus","contribution_pct",21,6.74211502782931,3,0.0806,"Kruskal-Wallis",0.167288489208633,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus gnavus","contribution_pct",112,40.5056298381422,3,8.32e-09,"Kruskal-Wallis",6.15466666666667e-08,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus sp CAG 330","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus sp CAG 403","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus sp CAG 579","contribution_pct",6,0.0857142857142819,1,0.77,"Kruskal-Wallis",0.816709558823529,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruminococcus torques","contribution_pct",139,61.1513117676936,3,3.34e-13,"Kruskal-Wallis",4.18952173913043e-12,"****","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Ruthenibacterium lactatiformans","contribution_pct",75,7.51771428571431,3,0.0571,"Kruskal-Wallis",0.128698046875,"ns","KW_4group",NA,NA,NA,NA
+"2.1.1.148","Victivallis vadensis","contribution_pct",7,3.85714285714286,2,0.145,"Kruskal-Wallis",0.266449044585987,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Anaerostipes hadrus","contribution_pct",80,6.19111164881494,3,0.103,"Kruskal-Wallis",0.204230240549828,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides caccae","contribution_pct",207,30.0214209933716,3,1.37e-06,"Kruskal-Wallis",6.75632478632479e-06,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides cellulosilyticus","contribution_pct",146,16.0140827487803,3,0.00113,"Kruskal-Wallis",0.00358247252747253,"**","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides clarus","contribution_pct",71,9.0831144442412,3,0.0282,"Kruskal-Wallis",0.0697824786324786,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides coprocola","contribution_pct",72,26.2448884325089,3,8.48e-06,"Kruskal-Wallis",3.70678787878788e-05,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides coprocola CAG 162","contribution_pct",72,26.0089568287112,3,9.5e-06,"Kruskal-Wallis",4.09067164179105e-05,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides coprophilus","contribution_pct",25,9.46721611721611,3,0.0237,"Kruskal-Wallis",0.0613224215246637,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides coprophilus CAG 333","contribution_pct",25,7.63747252747253,3,0.0541,"Kruskal-Wallis",0.122896456692913,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides dorei","contribution_pct",139,38.2364750317394,3,2.52e-08,"Kruskal-Wallis",1.731e-07,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides eggerthii","contribution_pct",84,27.913954248366,3,3.79e-06,"Kruskal-Wallis",1.7084609375e-05,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides faecichinchillae","contribution_pct",5,0.333333333333332,1,0.564,"Kruskal-Wallis",0.625823076923077,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides faecis","contribution_pct",14,2.81904761904762,3,0.42,"Kruskal-Wallis",0.503825363825364,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides finegoldii","contribution_pct",127,24.3905940645431,3,2.07e-05,"Kruskal-Wallis",8.655e-05,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides fluxus","contribution_pct",4,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides fragilis","contribution_pct",166,33.2583250377971,3,2.84e-07,"Kruskal-Wallis",1.67212244897959e-06,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides fragilis CAG 47","contribution_pct",151,12.7662611123811,3,0.00517,"Kruskal-Wallis",0.0150661111111111,"*","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides intestinalis","contribution_pct",177,16.5942803709904,3,0.000856,"Kruskal-Wallis",0.00283857471264368,"**","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides massiliensis","contribution_pct",125,44.0116940479541,3,1.5e-09,"Kruskal-Wallis",1.21901408450704e-08,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides ovatus","contribution_pct",276,59.6976079754564,3,6.82e-13,"Kruskal-Wallis",8.37263829787234e-12,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides plebeius","contribution_pct",119,34.875572453862,3,1.29e-07,"Kruskal-Wallis",7.91840425531915e-07,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides plebeius CAG 211","contribution_pct",118,22.8685661998965,3,4.3e-05,"Kruskal-Wallis",0.000171110344827586,"***","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides salyersiae","contribution_pct",115,11.545875981577,3,0.00911,"Kruskal-Wallis",0.0250308095238095,"*","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sartorii","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sp 43 108","contribution_pct",6,1.38095238095238,2,0.501,"Kruskal-Wallis",0.574705765407555,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sp CAG 462","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sp CAG 530","contribution_pct",5,3.2,2,0.202,"Kruskal-Wallis",0.323761111111111,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sp D2","contribution_pct",11,7.61363636363637,2,0.0222,"Kruskal-Wallis",0.0579610859728507,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides sp OM05 12","contribution_pct",48,7.27494897959184,3,0.0636,"Kruskal-Wallis",0.140602298850575,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides stercorirosoris","contribution_pct",8,0.0222222222222221,1,0.881,"Kruskal-Wallis",0.910998207885305,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides stercoris","contribution_pct",200,66.8224920949698,3,2.04e-14,"Kruskal-Wallis",2.9427e-13,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides thetaiotaomicron","contribution_pct",295,52.8123151522769,3,2.01e-11,"Kruskal-Wallis",2.07101785714286e-10,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides uniformis","contribution_pct",290,97.4441076179746,3,5.51e-21,"Kruskal-Wallis",1.87015882352941e-19,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides uniformis CAG 3","contribution_pct",289,92.1112425161747,3,7.71e-20,"Kruskal-Wallis",2.02212272727273e-18,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides vulgatus","contribution_pct",274,117.247968294294,3,3.02e-25,"Kruskal-Wallis",7.7318e-23,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides vulgatus CAG 6","contribution_pct",274,101.14742467965,3,8.81e-22,"Kruskal-Wallis",5.64818888888889e-20,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bacteroides xylanisolvens","contribution_pct",262,64.5587675571231,3,6.23e-14,"Kruskal-Wallis",8.55883333333333e-13,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Barnesiella intestinihominis","contribution_pct",82,18.9923919877119,3,0.000274,"Kruskal-Wallis",0.0009881125,"***","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bifidobacterium bifidum","contribution_pct",10,0.954545454545453,2,0.62,"Kruskal-Wallis",0.678823529411765,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bifidobacterium bifidum CAG 234","contribution_pct",9,4,2,0.135,"Kruskal-Wallis",0.256233552631579,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bifidobacterium longum","contribution_pct",77,4.1123088381153,3,0.25,"Kruskal-Wallis",0.36704834605598,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Bifidobacterium longum CAG 69","contribution_pct",76,6.48775835693129,3,0.0901,"Kruskal-Wallis",0.18114181184669,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Blautia obeum","contribution_pct",127,3.5480640722692,3,0.315,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Blautia wexlerae","contribution_pct",188,1.03060240801415,3,0.794,"Kruskal-Wallis",0.837546617915905,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Butyricimonas virosa","contribution_pct",200,11.4458475264306,3,0.00954,"Kruskal-Wallis",0.0260880568720379,"*","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Catenibacterium mitsuokai","contribution_pct",9,0.573333333333338,2,0.751,"Kruskal-Wallis",0.800974121996303,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Citrobacter freundii","contribution_pct",16,1.60257352941177,2,0.449,"Kruskal-Wallis",0.52980163599182,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Citrobacter koseri","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Citrobacter portucalensis","contribution_pct",11,0.571428571428569,1,0.45,"Kruskal-Wallis",0.529897959183673,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Citrobacter youngae","contribution_pct",21,3.69775678866587,3,0.296,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Coprobacter fastidiosus","contribution_pct",41,3.86817653890824,3,0.276,"Kruskal-Wallis",0.393214814814815,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Coprobacter secundus","contribution_pct",17,2.21350762527233,3,0.529,"Kruskal-Wallis",0.600852362204724,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Desulfovibrionaceae bacterium","contribution_pct",7,2.78571428571428,3,0.426,"Kruskal-Wallis",0.508906832298137,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Dielma fastidiosa","contribution_pct",13,5.56263736263736,3,0.135,"Kruskal-Wallis",0.256233552631579,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Enterobacter bugandensis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Enterobacter cloacae complex","contribution_pct",22,12.9237718802936,3,0.0048,"Kruskal-Wallis",0.0141894897959184,"*","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Escherichia coli","contribution_pct",167,0.248945421077394,3,0.969,"Kruskal-Wallis",0.991335106382979,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Escherichia fergusonii","contribution_pct",4,0.199999999999999,1,0.655,"Kruskal-Wallis",0.7090712945591,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Eubacterium hallii","contribution_pct",58,2.09677951115708,3,0.553,"Kruskal-Wallis",0.618374031007752,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Eubacterium hallii CAG 12","contribution_pct",58,3.12539204415302,3,0.373,"Kruskal-Wallis",0.461847639484979,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Eubacterium rectale","contribution_pct",161,16.0705153421519,3,0.0011,"Kruskal-Wallis",0.00350662983425414,"**","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Faecalibacterium prausnitzii","contribution_pct",21,2.02142857142857,3,0.568,"Kruskal-Wallis",0.629051823416507,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Haemophilus parainfluenzae","contribution_pct",146,2.18807039975144,3,0.534,"Kruskal-Wallis",0.605339882121807,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Haemophilus sp HMSC71H05","contribution_pct",23,5.80335968379447,3,0.122,"Kruskal-Wallis",0.236221476510067,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Intestinimonas butyriciproducens","contribution_pct",29,2.9527750410509,3,0.399,"Kruskal-Wallis",0.486729386892178,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella aerogenes","contribution_pct",7,0,2,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella michiganensis","contribution_pct",7,1.44642857142857,2,0.485,"Kruskal-Wallis",0.565343434343434,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella pneumoniae","contribution_pct",82,3.03078699523843,3,0.387,"Kruskal-Wallis",0.474095541401274,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella quasipneumoniae","contribution_pct",26,3.61439842209073,3,0.306,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella variicola","contribution_pct",43,5.76059690837701,3,0.124,"Kruskal-Wallis",0.237700996677741,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Klebsiella variicola CAG 634","contribution_pct",47,3.11490725586469,3,0.374,"Kruskal-Wallis",0.462094218415418,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Parabacteroides distasonis","contribution_pct",300,46.9205613818187,3,3.61e-10,"Kruskal-Wallis",3.20456923076923e-09,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Parabacteroides johnsonii","contribution_pct",38,6.34530151289154,3,0.096,"Kruskal-Wallis",0.192333333333333,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Parabacteroides merdae","contribution_pct",201,38.8917246876811,3,1.83e-08,"Kruskal-Wallis",1.28769512195122e-07,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Paraprevotella clara","contribution_pct",53,7.82056092877403,3,0.0499,"Kruskal-Wallis",0.116097983870968,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Paraprevotella clara CAG 116","contribution_pct",54,11.5480519480519,3,0.0091,"Kruskal-Wallis",0.0250308095238095,"*","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Paraprevotella xylaniphila","contribution_pct",52,9.1100256782405,3,0.0279,"Kruskal-Wallis",0.0696896103896104,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Prevotella bivia","contribution_pct",4,1.8,2,0.407,"Kruskal-Wallis",0.491294979079498,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Prevotella copri","contribution_pct",96,61.6603000736377,3,2.6e-13,"Kruskal-Wallis",3.33377777777778e-12,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Prevotella copri CAG 164","contribution_pct",94,24.8841688163902,3,1.63e-05,"Kruskal-Wallis",6.86503649635036e-05,"****","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Prevotella sp AM42 24","contribution_pct",11,5.96103896103897,2,0.0508,"Kruskal-Wallis",0.1172464,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Prevotella sp CAG 1320","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Raoultella ornithinolytica","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Ruminococcus torques","contribution_pct",162,17.8709762932667,3,0.000468,"Kruskal-Wallis",0.00161698203592814,"**","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Sanguibacteroides justesenii","contribution_pct",6,2.42857142857143,3,0.488,"Kruskal-Wallis",0.567693548387097,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus australis","contribution_pct",4,1.8,2,0.407,"Kruskal-Wallis",0.491294979079498,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus infantis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus mitis","contribution_pct",11,1.61363636363637,2,0.446,"Kruskal-Wallis",0.527340163934426,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus oralis","contribution_pct",4,0.6,1,0.439,"Kruskal-Wallis",0.520129363449692,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus parasanguinis","contribution_pct",30,2.09566583953681,3,0.553,"Kruskal-Wallis",0.618374031007752,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus salivarius","contribution_pct",89,3.69778537217519,3,0.296,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus salivarius CAG 79","contribution_pct",87,4.75779110351044,3,0.19,"Kruskal-Wallis",0.309689265536723,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus thermophilus","contribution_pct",20,3.26870748299321,3,0.352,"Kruskal-Wallis",0.444428884026258,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus thermophilus CAG 236","contribution_pct",21,4.90909090909091,3,0.179,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.6.1.1","Streptococcus vestibularis","contribution_pct",3,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Alistipes putredinis","contribution_pct",167,29.6487428702,3,1.64e-06,"Kruskal-Wallis",8.0193220338983e-06,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Alistipes putredinis CAG 67","contribution_pct",168,30.9853633869482,3,8.56e-07,"Kruskal-Wallis",4.37090265486726e-06,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides cellulosilyticus","contribution_pct",137,8.99087077346121,3,0.0294,"Kruskal-Wallis",0.0718805084745763,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides coprocola","contribution_pct",69,29.4211565653929,3,1.83e-06,"Kruskal-Wallis",8.72652892561983e-06,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides coprocola CAG 162","contribution_pct",63,8.39802087501667,3,0.0385,"Kruskal-Wallis",0.0929476987447699,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides coprophilus","contribution_pct",24,5.21841269841269,3,0.156,"Kruskal-Wallis",0.2812875,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides coprophilus CAG 333","contribution_pct",24,7.69714285714286,3,0.0527,"Kruskal-Wallis",0.120417391304348,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides dorei","contribution_pct",139,57.1367419442597,3,2.4e-12,"Kruskal-Wallis",2.61283018867925e-11,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides faecis","contribution_pct",12,3.94871794871794,3,0.267,"Kruskal-Wallis",0.383231343283582,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides fragilis","contribution_pct",160,45.030015430102,3,9.12e-10,"Kruskal-Wallis",7.73858823529412e-09,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides fragilis CAG 47","contribution_pct",117,16.8088327579673,3,0.000774,"Kruskal-Wallis",0.0025965,"**","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides intestinalis","contribution_pct",165,15.9461956483945,3,0.00116,"Kruskal-Wallis",0.00365748633879781,"**","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides ovatus","contribution_pct",189,32.8293975648617,3,3.5e-07,"Kruskal-Wallis",2.03989898989899e-06,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides sartorii","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides sp D2","contribution_pct",10,2.94545454545455,2,0.229,"Kruskal-Wallis",0.342313471502591,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides sp OM05 12","contribution_pct",40,13.0824390243903,3,0.00446,"Kruskal-Wallis",0.0134032291666667,"*","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides stercoris","contribution_pct",84,21.8378925414978,3,7.05e-05,"Kruskal-Wallis",0.000265872549019608,"***","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides thetaiotaomicron","contribution_pct",280,69.9375666589397,3,4.4e-15,"Kruskal-Wallis",6.86162162162162e-14,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides uniformis","contribution_pct",287,99.5116462236681,3,1.98e-21,"Kruskal-Wallis",9.40953846153846e-20,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides uniformis CAG 3","contribution_pct",287,100.816233065033,3,1.04e-21,"Kruskal-Wallis",6.0008e-20,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides vulgatus","contribution_pct",270,110.207958493044,3,9.9e-24,"Kruskal-Wallis",8.79925e-22,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides vulgatus CAG 6","contribution_pct",270,92.8584461408769,3,5.33e-20,"Kruskal-Wallis",1.537705e-18,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Bacteroides xylanisolvens","contribution_pct",238,49.8476348692209,3,8.61e-11,"Kruskal-Wallis",8.27995e-10,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Catenibacterium mitsuokai","contribution_pct",9,0.0933333333333302,2,0.954,"Kruskal-Wallis",0.977722912966252,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Citrobacter freundii","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Citrobacter koseri","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Coprococcus catus","contribution_pct",9,2.04444444444444,2,0.36,"Kruskal-Wallis",0.452549019607843,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Desulfovibrio piger","contribution_pct",54,5.24634032634032,3,0.155,"Kruskal-Wallis",0.28124213836478,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Dialister invisus CAG 218","contribution_pct",7,1.125,1,0.289,"Kruskal-Wallis",0.406714634146341,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Enterobacter cloacae complex","contribution_pct",13,2.37362637362637,3,0.499,"Kruskal-Wallis",0.574705765407555,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Escherichia coli","contribution_pct",134,2.54527714960557,3,0.467,"Kruskal-Wallis",0.546569979716024,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Haemophilus parainfluenzae","contribution_pct",150,6.93145411799253,3,0.0741,"Kruskal-Wallis",0.158354444444444,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Haemophilus sp HMSC71H05","contribution_pct",22,3.80291052820698,3,0.284,"Kruskal-Wallis",0.401637254901961,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Hungatella hathewayi","contribution_pct",5,1.33333333333333,1,0.248,"Kruskal-Wallis",0.365040816326531,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Klebsiella aerogenes","contribution_pct",6,0.285714285714285,2,0.867,"Kruskal-Wallis",0.902994584837545,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Klebsiella pneumoniae","contribution_pct",60,1.97144494099894,3,0.578,"Kruskal-Wallis",0.636461832061069,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Klebsiella quasipneumoniae","contribution_pct",7,2.57142857142857,3,0.463,"Kruskal-Wallis",0.542989837398374,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Klebsiella variicola","contribution_pct",5,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Klebsiella variicola CAG 634","contribution_pct",3,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Methanobrevibacter smithii","contribution_pct",7,0.25714285714286,2,0.879,"Kruskal-Wallis",0.910998207885305,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Methanobrevibacter smithii CAG 186","contribution_pct",7,0.428571428571427,2,0.807,"Kruskal-Wallis",0.848158469945355,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Mitsuokella multacida","contribution_pct",8,1.16666666666667,3,0.761,"Kruskal-Wallis",0.810142066420664,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Oxalobacter formigenes","contribution_pct",27,1.89838157485217,3,0.594,"Kruskal-Wallis",0.652834285714286,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Parabacteroides distasonis","contribution_pct",294,66.6846601799048,3,2.19e-14,"Kruskal-Wallis",3.0820243902439e-13,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Parabacteroides sp 426 9","contribution_pct",5,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Phascolarctobacterium succinatutens","contribution_pct",28,8.31625615763546,3,0.0399,"Kruskal-Wallis",0.0955282157676348,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Porphyromonas asaccharolytica","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Porphyromonas endodontalis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Porphyromonas uenonis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Prevotella copri","contribution_pct",85,6.97507950747206,3,0.0727,"Kruskal-Wallis",0.156522014925373,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Prevotella copri CAG 164","contribution_pct",89,48.3913271229652,3,1.76e-10,"Kruskal-Wallis",1.61193650793651e-09,"****","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Prevotella disiens","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Prevotella timonensis","contribution_pct",3,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Streptococcus mitis","contribution_pct",3,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Streptococcus pasteurianus","contribution_pct",5,2,1,0.157,"Kruskal-Wallis",0.281332298136646,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Streptococcus thermophilus","contribution_pct",14,1.73142857142857,3,0.63,"Kruskal-Wallis",0.688465909090909,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Streptococcus thermophilus CAG 236","contribution_pct",12,0.502564102564101,2,0.778,"Kruskal-Wallis",0.823680733944954,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Turicibacter sanguinis","contribution_pct",7,0.267857142857142,2,0.875,"Kruskal-Wallis",0.909684684684685,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Veillonella dispar","contribution_pct",5,1.4,2,0.497,"Kruskal-Wallis",0.574687374749499,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Veillonella infantium","contribution_pct",5,2.13333333333333,2,0.344,"Kruskal-Wallis",0.437198237885463,"ns","KW_4group",NA,NA,NA,NA
+"2.7.6.3","Veillonella parvula","contribution_pct",35,9.27639455782311,2,0.00968,"Kruskal-Wallis",0.0263460377358491,"*","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Bifidobacterium adolescentis","contribution_pct",6,2.14285714285714,1,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Bifidobacterium longum","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Clostridium innocuum","contribution_pct",7,2.31428571428571,2,0.314,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Coprococcus comes","contribution_pct",155,43.8697352421103,3,1.61e-09,"Kruskal-Wallis",1.27256164383562e-08,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Coprococcus comes CAG 19","contribution_pct",92,37.443568148916,3,3.71e-08,"Kruskal-Wallis",2.51843529411765e-07,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Coprococcus eutactus","contribution_pct",53,31.7496505939902,3,5.91e-07,"Kruskal-Wallis",3.21704716981132e-06,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Dorea formicigenerans","contribution_pct",113,43.947683482432,3,1.55e-09,"Kruskal-Wallis",1.24215277777778e-08,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Dorea sp CAG 317","contribution_pct",5,3,1,0.0833,"Kruskal-Wallis",0.169837809187279,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Eisenbergiella tayi","contribution_pct",6,3.52380952380953,2,0.172,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Escherichia coli","contribution_pct",9,2.75555555555555,2,0.252,"Kruskal-Wallis",0.369045685279188,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Flavonifractor plautii","contribution_pct",104,31.8318679394947,3,5.68e-07,"Kruskal-Wallis",3.12129523809524e-06,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Fusicatenibacter saccharivorans","contribution_pct",204,79.1319617594802,3,4.71e-17,"Kruskal-Wallis",8.49271875e-16,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Holdemanella biformis","contribution_pct",34,25.8245771035687,3,1.04e-05,"Kruskal-Wallis",4.41235294117647e-05,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Hungatella hathewayi","contribution_pct",6,2.38095238095238,2,0.304,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Klebsiella pneumoniae","contribution_pct",6,0.771428571428572,1,0.38,"Kruskal-Wallis",0.466510638297872,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Lachnospira pectinoschiza","contribution_pct",66,31.6619149168335,3,6.17e-07,"Kruskal-Wallis",3.32718691588785e-06,"****","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Lactobacillus fermentum","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Prevotella copri","contribution_pct",82,8.04021538089228,3,0.0452,"Kruskal-Wallis",0.106886885245902,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Prevotella copri CAG 164","contribution_pct",82,18.7716021252088,3,0.000305,"Kruskal-Wallis",0.00108632716049383,"**","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Sellimonas intestinalis","contribution_pct",6,3.85714285714286,2,0.145,"Kruskal-Wallis",0.266449044585987,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Streptococcus australis","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Turicibacter sanguinis","contribution_pct",8,5.125,2,0.0771,"Kruskal-Wallis",0.162360218978102,"ns","KW_4group",NA,NA,NA,NA
+"3.4.11.5","Tyzzerella nexilis","contribution_pct",20,10.4257142857143,2,0.00545,"Kruskal-Wallis",0.0158022613065327,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Anaerostipes hadrus","contribution_pct",170,58.4826984058253,3,1.24e-12,"Kruskal-Wallis",1.46016326530612e-11,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bacteroides cellulosilyticus","contribution_pct",65,23.0579667823815,3,3.93e-05,"Kruskal-Wallis",0.000157472916666667,"***","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bacteroides fragilis","contribution_pct",119,54.860532916901,3,7.35e-12,"Kruskal-Wallis",7.85361111111111e-11,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bacteroides fragilis CAG 47","contribution_pct",124,50.5241885681947,3,6.18e-11,"Kruskal-Wallis",6.04383050847458e-10,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bacteroides uniformis","contribution_pct",40,17.3517715019256,3,0.000598,"Kruskal-Wallis",0.00204169230769231,"**","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bifidobacterium bifidum","contribution_pct",14,5.1257142857143,2,0.0771,"Kruskal-Wallis",0.162360218978102,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bifidobacterium bifidum CAG 234","contribution_pct",14,3.89333333333334,2,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bifidobacterium longum","contribution_pct",70,22.5274996633146,3,5.07e-05,"Kruskal-Wallis",0.00019900612244898,"***","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Bifidobacterium longum CAG 69","contribution_pct",71,22.2710857907627,3,5.73e-05,"Kruskal-Wallis",0.000221893288590604,"***","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Catenibacterium mitsuokai","contribution_pct",7,1.71428571428572,2,0.424,"Kruskal-Wallis",0.50756846473029,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridiales bacterium 1 7 47FAA","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridium aldenense","contribution_pct",11,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridium bolteae","contribution_pct",51,6.37392500859991,2,0.0413,"Kruskal-Wallis",0.0984714876033058,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridium citroniae","contribution_pct",24,10.8110476190476,3,0.0128,"Kruskal-Wallis",0.0343516279069767,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridium clostridioforme","contribution_pct",7,3.75,1,0.0528,"Kruskal-Wallis",0.120417391304348,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Clostridium disporicum","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Coprococcus comes","contribution_pct",62,12.5624194545853,3,0.00569,"Kruskal-Wallis",0.01641565,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Coprococcus comes CAG 19","contribution_pct",84,31.5762782191984,3,6.43e-07,"Kruskal-Wallis",3.40377064220184e-06,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Coprococcus eutactus","contribution_pct",53,29.0029062633657,3,2.24e-06,"Kruskal-Wallis",1.05940983606557e-05,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Dorea longicatena","contribution_pct",18,9.07192982456139,3,0.0283,"Kruskal-Wallis",0.0697824786324786,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eisenbergiella massiliensis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eisenbergiella tayi","contribution_pct",6,1.23809523809524,2,0.538,"Kruskal-Wallis",0.607487279843444,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Enterobacter cloacae complex","contribution_pct",14,6.51619047619047,3,0.089,"Kruskal-Wallis",0.180185964912281,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Escherichia coli","contribution_pct",164,45.7291805037661,3,6.48e-10,"Kruskal-Wallis",5.66509090909091e-09,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Escherichia fergusonii","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eubacterium hallii","contribution_pct",56,17.2219611528822,3,0.000636,"Kruskal-Wallis",0.00215865882352941,"**","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eubacterium hallii CAG 12","contribution_pct",58,16.4171328379394,3,0.000931,"Kruskal-Wallis",0.00303495480225989,"**","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eubacterium rectale","contribution_pct",149,59.1235702654039,3,9.05e-13,"Kruskal-Wallis",1.08788541666667e-11,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Eubacterium siraeum","contribution_pct",53,15.5601078167116,3,0.0014,"Kruskal-Wallis",0.00434301075268817,"**","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Faecalibacterium prausnitzii","contribution_pct",216,99.6610548943296,3,1.84e-21,"Kruskal-Wallis",9.40953846153846e-20,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Flavonifractor plautii","contribution_pct",22,3.29841897233202,2,0.192,"Kruskal-Wallis",0.310319327731092,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Fusicatenibacter saccharivorans","contribution_pct",186,69.7249780289018,3,4.89e-15,"Kruskal-Wallis",7.42507894736842e-14,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Haemophilus parainfluenzae","contribution_pct",147,73.0913096195824,3,9.29e-16,"Kruskal-Wallis",1.57656764705882e-14,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Haemophilus sp HMSC71H05","contribution_pct",21,12.2815820543093,3,0.00648,"Kruskal-Wallis",0.0184185221674877,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Holdemanella biformis","contribution_pct",29,18.5947454844007,3,0.000332,"Kruskal-Wallis",0.00117159146341463,"**","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Hungatella hathewayi","contribution_pct",27,2.14858906525573,3,0.542,"Kruskal-Wallis",0.609617933723197,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Intestinimonas butyriciproducens","contribution_pct",21,11.5948051948052,3,0.00891,"Kruskal-Wallis",0.0247166826923077,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella aerogenes","contribution_pct",7,0.607142857142858,2,0.738,"Kruskal-Wallis",0.790029684601113,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella michiganensis","contribution_pct",5,0.800000000000001,2,0.67,"Kruskal-Wallis",0.72125,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella pneumoniae","contribution_pct",63,25.9675571617536,3,9.69e-06,"Kruskal-Wallis",4.14157777777778e-05,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella quasipneumoniae","contribution_pct",8,0.583333333333332,2,0.747,"Kruskal-Wallis",0.798183333333333,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella variicola","contribution_pct",20,9.07365079365078,3,0.0283,"Kruskal-Wallis",0.0697824786324786,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Klebsiella variicola CAG 634","contribution_pct",18,6.82456140350877,3,0.0777,"Kruskal-Wallis",0.162438043478261,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Lachnospira pectinoschiza","contribution_pct",99,51.4124044054784,3,4e-11,"Kruskal-Wallis",4.04912280701754e-10,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Prevotella buccalis","contribution_pct",3,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Prevotella copri","contribution_pct",90,34.2128459215099,3,1.79e-07,"Kruskal-Wallis",1.06477319587629e-06,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Prevotella timonensis","contribution_pct",8,5,2,0.0821,"Kruskal-Wallis",0.169184642857143,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia faecis","contribution_pct",202,92.2113593115197,3,7.34e-20,"Kruskal-Wallis",2.01675238095238e-18,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia hominis","contribution_pct",6,2.14285714285714,2,0.343,"Kruskal-Wallis",0.436889624724062,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia intestinalis","contribution_pct",85,34.4629836603535,3,1.58e-07,"Kruskal-Wallis",9.59642105263158e-07,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia intestinalis CAG 13","contribution_pct",85,35.6551543925616,3,8.86e-08,"Kruskal-Wallis",5.74406741573034e-07,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia inulinivorans","contribution_pct",202,86.676322746189,3,1.13e-18,"Kruskal-Wallis",2.50773076923077e-17,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Roseburia inulinivorans CAG 15","contribution_pct",199,81.9312634158707,3,1.18e-17,"Kruskal-Wallis",2.34779310344828e-16,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Ruminococcus torques","contribution_pct",162,87.5408462549002,3,7.39e-19,"Kruskal-Wallis",1.705612e-17,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus mitis","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus oralis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus pasteurianus","contribution_pct",5,2,1,0.157,"Kruskal-Wallis",0.281332298136646,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus salivarius","contribution_pct",53,21.1127386075251,3,9.98e-05,"Kruskal-Wallis",0.000366780891719745,"***","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus salivarius CAG 79","contribution_pct",78,28.8150624643704,3,2.45e-06,"Kruskal-Wallis",1.13092e-05,"****","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus thermophilus","contribution_pct",20,9.38095238095238,3,0.0246,"Kruskal-Wallis",0.0628061946902655,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Streptococcus thermophilus CAG 236","contribution_pct",23,10.469384057971,3,0.015,"Kruskal-Wallis",0.0398847926267281,"*","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Turicibacter sanguinis","contribution_pct",8,3.22222222222222,3,0.359,"Kruskal-Wallis",0.452277292576419,"ns","KW_4group",NA,NA,NA,NA
+"3.6.1.13","Weissella confusa","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Alistipes finegoldii","contribution_pct",162,97.7415547488331,3,4.75e-21,"Kruskal-Wallis",1.71296875e-19,"****","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Alistipes onderdonkii","contribution_pct",29,22.5997611583819,3,4.89e-05,"Kruskal-Wallis",0.000193255479452055,"***","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Alistipes putredinis","contribution_pct",173,79.3460892154858,3,4.24e-17,"Kruskal-Wallis",7.89187096774194e-16,"****","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Alistipes putredinis CAG 67","contribution_pct",173,98.3710543378685,3,3.48e-21,"Kruskal-Wallis",1.33864e-19,"****","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Alistipes sp An31A","contribution_pct",3,2,2,0.368,"Kruskal-Wallis",0.456636559139785,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Citrobacter freundii","contribution_pct",13,3.46153846153846,2,0.177,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Citrobacter portucalensis","contribution_pct",9,2.4,1,0.121,"Kruskal-Wallis",0.235074074074074,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Citrobacter youngae","contribution_pct",16,7.08823529411764,2,0.0289,"Kruskal-Wallis",0.0709587234042553,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Clostridium saccharolyticum","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Clostridium sp CAG 299","contribution_pct",9,2.1781512605042,1,0.14,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Clostridium symbiosum","contribution_pct",15,3.06126008284282,2,0.216,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Coprococcus eutactus","contribution_pct",31,14.422611662531,2,0.000738,"Kruskal-Wallis",0.00249021052631579,"**","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Coprococcus eutactus CAG 665","contribution_pct",30,15.3773366418528,2,0.000458,"Kruskal-Wallis",0.00159196385542169,"**","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Enterobacter cloacae complex","contribution_pct",5,3,1,0.0833,"Kruskal-Wallis",0.169837809187279,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Escherichia coli","contribution_pct",98,36.9484978272062,3,4.72e-08,"Kruskal-Wallis",3.16679069767442e-07,"****","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Eubacterium siraeum","contribution_pct",48,15.5672069971928,3,0.00139,"Kruskal-Wallis",0.0043352972972973,"**","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Klebsiella michiganensis","contribution_pct",5,3.6,2,0.165,"Kruskal-Wallis",0.292938461538462,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Klebsiella pneumoniae","contribution_pct",14,7.04405286343613,3,0.0705,"Kruskal-Wallis",0.152926691729323,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Mitsuokella multacida","contribution_pct",8,6.5,3,0.0897,"Kruskal-Wallis",0.180968181818182,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Porphyromonas uenonis","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella bivia","contribution_pct",11,2.18181818181818,2,0.336,"Kruskal-Wallis",0.429871396895787,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella copri","contribution_pct",97,12.9835515562118,3,0.00467,"Kruskal-Wallis",0.0139616062176166,"*","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella copri CAG 164","contribution_pct",90,19.6708093525908,3,0.000199,"Kruskal-Wallis",0.000722157232704403,"***","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella disiens","contribution_pct",13,6.13657770800628,2,0.0465,"Kruskal-Wallis",0.109512244897959,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella sp AM42 24","contribution_pct",11,5.81818181818182,2,0.0545,"Kruskal-Wallis",0.123319607843137,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella sp CAG 1320","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"4.1.1.41","Prevotella sp CAG 520","contribution_pct",6,2.14285714285714,1,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Bacteroides xylanisolvens","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Bilophila wadsworthia","contribution_pct",221,83.4772564734225,3,5.51e-18,"Kruskal-Wallis",1.16430357142857e-16,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Blautia obeum","contribution_pct",8,3.88888888888889,2,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Citrobacter freundii","contribution_pct",12,3.32967032967032,2,0.189,"Kruskal-Wallis",0.309689265536723,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Citrobacter koseri","contribution_pct",4,0.6,1,0.439,"Kruskal-Wallis",0.520129363449692,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Citrobacter portucalensis","contribution_pct",6,0.0857142857142819,1,0.77,"Kruskal-Wallis",0.816709558823529,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Citrobacter youngae","contribution_pct",10,4.65454545454546,2,0.0976,"Kruskal-Wallis",0.194862283737024,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Cloacibacillus porcorum","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Dorea formicigenerans","contribution_pct",9,4.29333333333333,2,0.117,"Kruskal-Wallis",0.22884406779661,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Eggerthella lenta","contribution_pct",9,1.37142857142857,1,0.242,"Kruskal-Wallis",0.358956298200514,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Enterobacter bugandensis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Enterobacter cloacae complex","contribution_pct",14,7.32190476190476,3,0.0623,"Kruskal-Wallis",0.138258076923077,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Escherichia coli","contribution_pct",132,39.3584335240014,3,1.46e-08,"Kruskal-Wallis",1.053025e-07,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Escherichia fergusonii","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Eubacterium rectale","contribution_pct",4,0.199999999999999,1,0.655,"Kruskal-Wallis",0.7090712945591,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Eubacterium sulci","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Faecalibacterium prausnitzii","contribution_pct",4,3,3,0.392,"Kruskal-Wallis",0.479203389830508,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Firmicutes bacterium CAG 145","contribution_pct",7,2.82857142857143,2,0.243,"Kruskal-Wallis",0.359515384615385,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Firmicutes bacterium CAG 238","contribution_pct",6,3.57142857142857,2,0.168,"Kruskal-Wallis",0.295536585365854,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Firmicutes bacterium CAG 83","contribution_pct",79,30.4228101265822,3,1.12e-06,"Kruskal-Wallis",5.61947826086957e-06,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Firmicutes bacterium CAG 95","contribution_pct",61,31.0666229988943,3,8.23e-07,"Kruskal-Wallis",4.27811711711712e-06,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Fusobacterium mortiferum","contribution_pct",64,31.0058879093199,3,8.48e-07,"Kruskal-Wallis",4.36871428571429e-06,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Fusobacterium varium","contribution_pct",21,2.72727272727273,1,0.0986,"Kruskal-Wallis",0.19618,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella aerogenes","contribution_pct",6,3.52380952380953,2,0.172,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella michiganensis","contribution_pct",6,2.14285714285714,2,0.343,"Kruskal-Wallis",0.436889624724062,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella pneumoniae","contribution_pct",44,16.1851208440682,3,0.00104,"Kruskal-Wallis",0.00333377777777778,"**","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella quasipneumoniae","contribution_pct",5,0.333333333333332,1,0.564,"Kruskal-Wallis",0.625823076923077,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella variicola","contribution_pct",8,3.88888888888889,2,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Klebsiella variicola CAG 634","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Lactobacillus ruminis","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Lactobacillus ruminis CAG 367","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Lactobacillus salivarius","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Methanobrevibacter smithii","contribution_pct",6,3.57142857142857,2,0.168,"Kruskal-Wallis",0.295536585365854,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Methanobrevibacter smithii CAG 186","contribution_pct",6,2.5,2,0.287,"Kruskal-Wallis",0.404887530562347,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Oscillibacter sp CAG 241","contribution_pct",54,32.4114627010749,2,9.16e-08,"Kruskal-Wallis",5.87257777777778e-07,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Parabacteroides sp 426 9","contribution_pct",5,0,1,1,"Kruskal-Wallis",1,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Prevotella copri","contribution_pct",46,7.10803877517705,3,0.0685,"Kruskal-Wallis",0.150283269961977,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Prevotella copri CAG 164","contribution_pct",95,22.397465278173,3,5.39e-05,"Kruskal-Wallis",0.000210137162162162,"***","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Pyramidobacter piscolens","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Rothia mucilaginosa","contribution_pct",4,1.8,1,0.18,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus australis","contribution_pct",4,2.7,2,0.259,"Kruskal-Wallis",0.375484924623116,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus mitis","contribution_pct",5,0.333333333333332,1,0.564,"Kruskal-Wallis",0.625823076923077,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus parasanguinis","contribution_pct",26,13.6982905982906,3,0.00335,"Kruskal-Wallis",0.0101734210526316,"*","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus pasteurianus","contribution_pct",6,0.771428571428572,1,0.38,"Kruskal-Wallis",0.466510638297872,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus salivarius","contribution_pct",73,31.220876951014,3,7.64e-07,"Kruskal-Wallis",4.00752727272727e-06,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus salivarius CAG 79","contribution_pct",71,31.6030186054599,3,6.35e-07,"Kruskal-Wallis",3.3925462962963e-06,"****","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus sp A12","contribution_pct",2,1,1,0.317,"Kruskal-Wallis",0.408279017857143,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus thermophilus","contribution_pct",19,7.8860902255639,3,0.0484,"Kruskal-Wallis",0.113063967611336,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus thermophilus CAG 236","contribution_pct",19,9.64481203007519,3,0.0218,"Kruskal-Wallis",0.0571754545454545,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Streptococcus vestibularis","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Veillonella atypica","contribution_pct",9,2.14285714285715,1,0.143,"Kruskal-Wallis",0.264458333333333,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Veillonella dispar","contribution_pct",15,5.01818181818182,3,0.17,"Kruskal-Wallis",0.296742857142857,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Veillonella infantium","contribution_pct",4,0.199999999999999,1,0.655,"Kruskal-Wallis",0.7090712945591,"ns","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Veillonella parvula","contribution_pct",46,14.4042493122049,3,0.0024,"Kruskal-Wallis",0.00740534759358289,"**","KW_4group",NA,NA,NA,NA
+"6.3.1.5","Veillonella tobetsuensis","contribution_pct",3,1.5,1,0.221,"Kruskal-Wallis",0.333814136125654,"ns","KW_4group",NA,NA,NA,NA
+"1.4.7.1","Agathobaculum butyriciproducens","contribution_pct",NA,-4.2,NA,2.66914980318127e-05,NA,2.66914980318127e-05,"****","Dunn_E1vsE4","1","4",42,7
+"1.4.7.1","Coprococcus comes","contribution_pct",NA,-1.66132477258361,NA,0.0966482373122283,NA,0.0966482373122283,"ns","Dunn_E1vsE4","1","4",23,1
+"1.4.7.1","Coprococcus comes CAG 19","contribution_pct",NA,-1.65144564768954,NA,0.0986476104292992,NA,0.0986476104292992,"ns","Dunn_E1vsE4","1","4",20,1
+"1.4.7.1","Dorea longicatena","contribution_pct",NA,-4.10058961185281,NA,4.12098814941413e-05,NA,4.12098814941413e-05,"****","Dunn_E1vsE4","1","4",26,8
+"1.4.7.1","Dorea longicatena CAG 42","contribution_pct",NA,-3.17287734323417,NA,0.00150936276346071,NA,0.00150936276346071,"**","Dunn_E1vsE4","1","4",19,9
+"1.4.7.1","Eubacterium hallii","contribution_pct",NA,-3.54507652492405,NA,0.00039249911647614,NA,0.00039249911647614,"***","Dunn_E1vsE4","1","4",31,5
+"1.4.7.1","Eubacterium hallii CAG 12","contribution_pct",NA,-3.54507652492405,NA,0.00039249911647614,NA,0.00039249911647614,"***","Dunn_E1vsE4","1","4",31,5
+"1.4.7.1","Eubacterium ramulus","contribution_pct",NA,-1.62018517460196,NA,0.105192505120042,NA,0.105192505120042,"ns","Dunn_E1vsE4","1","4",14,1
+"1.4.7.1","Flavonifractor plautii","contribution_pct",NA,-3.6388305612373,NA,0.000273878915890988,NA,0.000273878915890988,"***","Dunn_E1vsE4","1","4",72,5
+"1.4.7.1","Mitsuokella multacida","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",2,2
+"1.4.7.1","Prevotella copri","contribution_pct",NA,0.75809026817448,NA,0.448396945279463,NA,0.448396945279463,"ns","Dunn_E1vsE4","1","4",5,39
+"1.4.7.1","Prevotella copri CAG 164","contribution_pct",NA,-0.0924500327042051,NA,0.926340489251152,NA,0.926340489251152,"ns","Dunn_E1vsE4","1","4",5,39
+"1.4.7.1","Roseburia hominis","contribution_pct",NA,-5.75675914574068,NA,8.57441115855157e-09,NA,8.57441115855157e-09,"****","Dunn_E1vsE4","1","4",29,20
+"1.4.7.1","Roseburia intestinalis","contribution_pct",NA,-5.55327005021122,NA,2.80374416681726e-08,NA,2.80374416681726e-08,"****","Dunn_E1vsE4","1","4",51,14
+"1.4.7.1","Roseburia intestinalis CAG 13","contribution_pct",NA,-5.83736764211162,NA,5.30319925588495e-09,NA,5.30319925588495e-09,"****","Dunn_E1vsE4","1","4",51,15
+"1.4.7.1","Roseburia inulinivorans","contribution_pct",NA,-7.35371751081479,NA,1.92768911038784e-13,NA,1.92768911038784e-13,"****","Dunn_E1vsE4","1","4",68,26
+"1.4.7.1","Roseburia inulinivorans CAG 15","contribution_pct",NA,-7.41236425256537,NA,1.24067425812526e-13,NA,1.24067425812526e-13,"****","Dunn_E1vsE4","1","4",69,26
+"1.4.7.1","Ruminococcus torques","contribution_pct",NA,-2.3931721056524,NA,0.0167034038471615,NA,0.0167034038471615,"*","Dunn_E1vsE4","1","4",7,3
+"1.5.1.7","Clostridium sp CAG 58","contribution_pct",NA,-1.63835604381825,NA,0.101347442960612,NA,0.101347442960612,"ns","Dunn_E1vsE4","1","4",17,1
+"1.5.1.7","Coprococcus catus","contribution_pct",NA,-2.88230676849157,NA,0.00394775185690346,NA,0.00394775185690346,"**","Dunn_E1vsE4","1","4",6,6
+"1.5.1.7","Desulfovibrio piger","contribution_pct",NA,-2.3931721056524,NA,0.0167034038471615,NA,0.0167034038471615,"*","Dunn_E1vsE4","1","4",7,3
+"1.5.1.7","Eubacterium siraeum","contribution_pct",NA,-0.925820099772551,NA,0.354539479773501,NA,0.354539479773501,"ns","Dunn_E1vsE4","1","4",2,4
+"1.5.1.7","Faecalibacterium prausnitzii","contribution_pct",NA,-8.91786028866747,NA,4.75383610661837e-19,NA,4.75383610661837e-19,"****","Dunn_E1vsE4","1","4",106,39
+"1.5.1.7","Gemmiger formicilis","contribution_pct",NA,-5.98527605142526,NA,2.16023163693792e-09,NA,2.16023163693792e-09,"****","Dunn_E1vsE4","1","4",29,21
+"1.5.1.7","Megamonas funiformis","contribution_pct",NA,-4.17028828114149,NA,3.04214565473389e-05,NA,3.04214565473389e-05,"****","Dunn_E1vsE4","1","4",23,12
+"1.5.1.7","Megamonas funiformis CAG 377","contribution_pct",NA,-4.14613991448386,NA,3.38127256330157e-05,NA,3.38127256330157e-05,"****","Dunn_E1vsE4","1","4",21,11
+"1.5.1.7","Megamonas hypermegale","contribution_pct",NA,-4.80624593627917,NA,1.53790699544214e-06,NA,1.53790699544214e-06,"****","Dunn_E1vsE4","1","4",28,11
+"1.5.1.7","Mitsuokella multacida","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"1.5.1.7","Phascolarctobacterium succinatutens","contribution_pct",NA,-2,NA,0.0455002638963584,NA,0.0455002638963584,"*","Dunn_E1vsE4","1","4",2,6
+"1.5.1.7","Prevotella copri","contribution_pct",NA,-0.292684703502482,NA,0.769763162982527,NA,0.769763162982527,"ns","Dunn_E1vsE4","1","4",4,39
+"1.5.1.7","Prevotella copri CAG 164","contribution_pct",NA,2.20031077836008,NA,0.0277848530918047,NA,0.0277848530918047,"*","Dunn_E1vsE4","1","4",5,39
+"1.5.1.7","Roseburia hominis","contribution_pct",NA,-4.28980454146119,NA,1.78830435838945e-05,NA,1.78830435838945e-05,"****","Dunn_E1vsE4","1","4",17,13
+"1.5.1.7","Roseburia inulinivorans","contribution_pct",NA,-6.85398473041433,NA,7.18207513621934e-12,NA,7.18207513621934e-12,"****","Dunn_E1vsE4","1","4",63,23
+"1.5.1.7","Roseburia inulinivorans CAG 15","contribution_pct",NA,-6.64041221717541,NA,3.12807086350546e-11,NA,3.12807086350546e-11,"****","Dunn_E1vsE4","1","4",58,23
+"1.5.1.7","Roseburia sp CAG 471","contribution_pct",NA,-2.23606797749979,NA,0.0253473186774683,NA,0.0253473186774683,"*","Dunn_E1vsE4","1","4",5,3
+"1.5.1.7","Ruminococcus gnavus","contribution_pct",NA,-3.73561935287509,NA,0.000187253738865676,NA,0.000187253738865676,"***","Dunn_E1vsE4","1","4",80,5
+"1.8.1.8","Alistipes finegoldii","contribution_pct",NA,2.27425802075738,NA,0.0229504775731405,NA,0.0229504775731405,"*","Dunn_E1vsE4","1","4",31,17
+"1.8.1.8","Alistipes onderdonkii","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"1.8.1.8","Bacteroides cellulosilyticus","contribution_pct",NA,1.31746509848052,NA,0.187682772533396,NA,0.187682772533396,"ns","Dunn_E1vsE4","1","4",32,2
+"1.8.1.8","Bacteroides finegoldii","contribution_pct",NA,1.63744829586956,NA,0.101536833967337,NA,0.101536833967337,"ns","Dunn_E1vsE4","1","4",34,11
+"1.8.1.8","Bacteroides fragilis","contribution_pct",NA,0.235490365942773,NA,0.813828155496855,NA,0.813828155496855,"ns","Dunn_E1vsE4","1","4",76,5
+"1.8.1.8","Bacteroides fragilis CAG 47","contribution_pct",NA,0.726095294990218,NA,0.467780353181901,NA,0.467780353181901,"ns","Dunn_E1vsE4","1","4",76,5
+"1.8.1.8","Bacteroides ovatus","contribution_pct",NA,0.343171565080523,NA,0.731469394995383,NA,0.731469394995383,"ns","Dunn_E1vsE4","1","4",93,17
+"1.8.1.8","Bacteroides xylanisolvens","contribution_pct",NA,-0.0469744980301521,NA,0.962533552708798,NA,0.962533552708798,"ns","Dunn_E1vsE4","1","4",92,19
+"1.8.1.8","Enterobacter cloacae complex","contribution_pct",NA,1.51185789203691,NA,0.130570018115736,NA,0.130570018115736,"ns","Dunn_E1vsE4","1","4",7,4
+"1.8.1.8","Escherichia coli","contribution_pct",NA,3.34479520530305,NA,0.000823433477209159,NA,0.000823433477209159,"***","Dunn_E1vsE4","1","4",79,17
+"1.8.1.8","Haemophilus parainfluenzae","contribution_pct",NA,3.99599322553453,NA,6.44235760934443e-05,NA,6.44235760934443e-05,"****","Dunn_E1vsE4","1","4",74,18
+"1.8.1.8","Klebsiella pneumoniae","contribution_pct",NA,1.88371787195437,NA,0.0596031476668627,NA,0.0596031476668627,"ns","Dunn_E1vsE4","1","4",33,11
+"1.8.1.8","Klebsiella quasipneumoniae","contribution_pct",NA,1.70168208697562,NA,0.0888149801556655,NA,0.0888149801556655,"ns","Dunn_E1vsE4","1","4",17,4
+"1.8.1.8","Klebsiella variicola","contribution_pct",NA,0.561769005539123,NA,0.574273412018006,NA,0.574273412018006,"ns","Dunn_E1vsE4","1","4",22,5
+"1.8.1.8","Klebsiella variicola CAG 634","contribution_pct",NA,1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",5,3
+"2.1.1.13","Akkermansia muciniphila","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",6,5
+"2.1.1.13","Alistipes finegoldii","contribution_pct",NA,-3.17964983944752,NA,0.00147453113524868,NA,0.00147453113524868,"**","Dunn_E1vsE4","1","4",31,17
+"2.1.1.13","Alistipes indistinctus","contribution_pct",NA,1.95180014589707,NA,0.0509619369677633,NA,0.0509619369677633,"ns","Dunn_E1vsE4","1","4",10,7
+"2.1.1.13","Alistipes onderdonkii","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"2.1.1.13","Alistipes putredinis","contribution_pct",NA,-0.756378769888086,NA,0.449422132976247,NA,0.449422132976247,"ns","Dunn_E1vsE4","1","4",21,20
+"2.1.1.13","Anaerostipes hadrus","contribution_pct",NA,0.863634916068895,NA,0.387788477062339,NA,0.387788477062339,"ns","Dunn_E1vsE4","1","4",67,6
+"2.1.1.13","Bacteroides caccae","contribution_pct",NA,-5.0573458857231,NA,4.25131744678205e-07,NA,4.25131744678205e-07,"****","Dunn_E1vsE4","1","4",59,27
+"2.1.1.13","Bacteroides cellulosilyticus","contribution_pct",NA,-3.67413699253106,NA,0.000238654671139756,NA,0.000238654671139756,"***","Dunn_E1vsE4","1","4",41,9
+"2.1.1.13","Bacteroides clarus","contribution_pct",NA,-2.62775472696652,NA,0.00859504637602394,NA,0.00859504637602394,"**","Dunn_E1vsE4","1","4",14,11
+"2.1.1.13","Bacteroides coprocola","contribution_pct",NA,-3.74573177034904,NA,0.000179868697048383,NA,0.000179868697048383,"***","Dunn_E1vsE4","1","4",17,13
+"2.1.1.13","Bacteroides coprocola CAG 162","contribution_pct",NA,-3.95499052846909,NA,7.65376838848849e-05,NA,7.65376838848849e-05,"****","Dunn_E1vsE4","1","4",17,13
+"2.1.1.13","Bacteroides coprophilus","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.1.1.13","Bacteroides coprophilus CAG 333","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.1.1.13","Bacteroides dorei","contribution_pct",NA,-4.77665147221226,NA,1.78238304084333e-06,NA,1.78238304084333e-06,"****","Dunn_E1vsE4","1","4",48,17
+"2.1.1.13","Bacteroides eggerthii","contribution_pct",NA,-3.00416377715996,NA,0.00266311925913856,NA,0.00266311925913856,"**","Dunn_E1vsE4","1","4",16,10
+"2.1.1.13","Bacteroides faecis","contribution_pct",NA,-0.654653670707977,NA,0.512690760261923,NA,0.512690760261923,"ns","Dunn_E1vsE4","1","4",3,3
+"2.1.1.13","Bacteroides finegoldii","contribution_pct",NA,-4.13614140119879,NA,3.53194599867415e-05,NA,3.53194599867415e-05,"****","Dunn_E1vsE4","1","4",34,17
+"2.1.1.13","Bacteroides fragilis","contribution_pct",NA,-4.69395973908261,NA,2.67966793917935e-06,NA,2.67966793917935e-06,"****","Dunn_E1vsE4","1","4",83,12
+"2.1.1.13","Bacteroides fragilis CAG 47","contribution_pct",NA,-2.98941825745694,NA,0.00279509225355326,NA,0.00279509225355326,"**","Dunn_E1vsE4","1","4",78,7
+"2.1.1.13","Bacteroides intestinalis","contribution_pct",NA,-1.41089510595225,NA,0.158275545453455,NA,0.158275545453455,"ns","Dunn_E1vsE4","1","4",48,16
+"2.1.1.13","Bacteroides massiliensis","contribution_pct",NA,-5.2089043620332,NA,1.89958989195105e-07,NA,1.89958989195105e-07,"****","Dunn_E1vsE4","1","4",38,17
+"2.1.1.13","Bacteroides nordii","contribution_pct",NA,-1.55379719213471,NA,0.120232800536812,NA,0.120232800536812,"ns","Dunn_E1vsE4","1","4",28,1
+"2.1.1.13","Bacteroides ovatus","contribution_pct",NA,-5.65891545147269,NA,1.52332573438576e-08,NA,1.52332573438576e-08,"****","Dunn_E1vsE4","1","4",103,36
+"2.1.1.13","Bacteroides plebeius","contribution_pct",NA,-4.53578745188329,NA,5.73889545497489e-06,NA,5.73889545497489e-06,"****","Dunn_E1vsE4","1","4",17,21
+"2.1.1.13","Bacteroides plebeius CAG 211","contribution_pct",NA,-4.30092467120325,NA,1.70086876684836e-05,NA,1.70086876684836e-05,"****","Dunn_E1vsE4","1","4",17,21
+"2.1.1.13","Bacteroides salyersiae","contribution_pct",NA,-4.36887386216739,NA,1.24888871322076e-05,NA,1.24888871322076e-05,"****","Dunn_E1vsE4","1","4",34,10
+"2.1.1.13","Bacteroides sp CAG 530","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",1,3
+"2.1.1.13","Bacteroides sp OM05 12","contribution_pct",NA,-1.4638501094228,NA,0.14323490752467,NA,0.14323490752467,"ns","Dunn_E1vsE4","1","4",5,1
+"2.1.1.13","Bacteroides stercoris","contribution_pct",NA,-6.08071626489163,NA,1.19646853840171e-09,NA,1.19646853840171e-09,"****","Dunn_E1vsE4","1","4",64,20
+"2.1.1.13","Bacteroides thetaiotaomicron","contribution_pct",NA,-6.60312044465996,NA,4.025921861855e-11,NA,4.025921861855e-11,"****","Dunn_E1vsE4","1","4",113,36
+"2.1.1.13","Bacteroides uniformis","contribution_pct",NA,-7.09811715880272,NA,1.26467956897169e-12,NA,1.26467956897169e-12,"****","Dunn_E1vsE4","1","4",107,35
+"2.1.1.13","Bacteroides uniformis CAG 3","contribution_pct",NA,-7.08391619082912,NA,1.4013667855168e-12,NA,1.4013667855168e-12,"****","Dunn_E1vsE4","1","4",107,35
+"2.1.1.13","Bacteroides vulgatus","contribution_pct",NA,-7.68467972154491,NA,1.53380219325487e-14,NA,1.53380219325487e-14,"****","Dunn_E1vsE4","1","4",96,36
+"2.1.1.13","Bacteroides vulgatus CAG 6","contribution_pct",NA,-7.51606640318654,NA,5.64488904964475e-14,NA,5.64488904964475e-14,"****","Dunn_E1vsE4","1","4",96,36
+"2.1.1.13","Bacteroides xylanisolvens","contribution_pct",NA,-5.87148172156396,NA,4.31917222998660e-09,NA,4.31917222998660e-09,"****","Dunn_E1vsE4","1","4",93,31
+"2.1.1.13","Barnesiella intestinihominis","contribution_pct",NA,1.08012344973464,NA,0.280087210811498,NA,0.280087210811498,"ns","Dunn_E1vsE4","1","4",8,12
+"2.1.1.13","Blautia obeum","contribution_pct",NA,-0.676533430232236,NA,0.498702028423028,NA,0.498702028423028,"ns","Dunn_E1vsE4","1","4",43,11
+"2.1.1.13","Blautia wexlerae","contribution_pct",NA,-2.32958305788126,NA,0.0198281984548838,NA,0.0198281984548838,"*","Dunn_E1vsE4","1","4",96,21
+"2.1.1.13","Butyricimonas virosa","contribution_pct",NA,-0.982680677273854,NA,0.325764623640304,NA,0.325764623640304,"ns","Dunn_E1vsE4","1","4",46,27
+"2.1.1.13","Citrobacter youngae","contribution_pct",NA,1.26491106406735,NA,0.205903210732068,NA,0.205903210732068,"ns","Dunn_E1vsE4","1","4",10,1
+"2.1.1.13","Coprobacter fastidiosus","contribution_pct",NA,-1.4638501094228,NA,0.14323490752467,NA,0.14323490752467,"ns","Dunn_E1vsE4","1","4",8,5
+"2.1.1.13","Coprobacter secundus","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"2.1.1.13","Coprococcus catus","contribution_pct",NA,0.462910049886276,NA,0.643428843563621,NA,0.643428843563621,"ns","Dunn_E1vsE4","1","4",4,2
+"2.1.1.13","Coprococcus comes","contribution_pct",NA,-0.239045721866879,NA,0.811070129333908,NA,0.811070129333908,"ns","Dunn_E1vsE4","1","4",28,1
+"2.1.1.13","Coprococcus comes CAG 19","contribution_pct",NA,0.239045721866879,NA,0.811070129333908,NA,0.811070129333908,"ns","Dunn_E1vsE4","1","4",28,1
+"2.1.1.13","Coprococcus eutactus","contribution_pct",NA,-0.231455024943138,NA,0.816961321715391,NA,0.816961321715391,"ns","Dunn_E1vsE4","1","4",1,14
+"2.1.1.13","Desulfovibrio piger","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",5,2
+"2.1.1.13","Dorea longicatena","contribution_pct",NA,-2.02072594216369,NA,0.043308142810792,NA,0.043308142810792,"*","Dunn_E1vsE4","1","4",28,7
+"2.1.1.13","Dorea longicatena CAG 42","contribution_pct",NA,1.08798534972311,NA,0.276601575125996,NA,0.276601575125996,"ns","Dunn_E1vsE4","1","4",24,8
+"2.1.1.13","Enterobacter cloacae complex","contribution_pct",NA,1.70084012854152,NA,0.0889730117018133,NA,0.0889730117018133,"ns","Dunn_E1vsE4","1","4",7,4
+"2.1.1.13","Escherichia coli","contribution_pct",NA,0.612689356946505,NA,0.540081761199851,NA,0.540081761199851,"ns","Dunn_E1vsE4","1","4",65,11
+"2.1.1.13","Eubacterium eligens","contribution_pct",NA,-0.196502114915521,NA,0.844217177473951,NA,0.844217177473951,"ns","Dunn_E1vsE4","1","4",47,27
+"2.1.1.13","Eubacterium eligens CAG 72","contribution_pct",NA,-0.780394113521641,NA,0.435158931646555,NA,0.435158931646555,"ns","Dunn_E1vsE4","1","4",47,27
+"2.1.1.13","Eubacterium siraeum","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",2,4
+"2.1.1.13","Faecalibacterium prausnitzii","contribution_pct",NA,-3.50136252631814,NA,0.000462885713929135,NA,0.000462885713929135,"***","Dunn_E1vsE4","1","4",94,34
+"2.1.1.13","Flavonifractor plautii","contribution_pct",NA,-2.80200224724001,NA,0.00507865198635777,NA,0.00507865198635777,"**","Dunn_E1vsE4","1","4",92,16
+"2.1.1.13","Fusicatenibacter saccharivorans","contribution_pct",NA,-4.66064249367975,NA,3.15223839189395e-06,NA,3.15223839189395e-06,"****","Dunn_E1vsE4","1","4",84,29
+"2.1.1.13","Fusobacterium mortiferum","contribution_pct",NA,-2.05428714978698,NA,0.0399479077263291,NA,0.0399479077263291,"*","Dunn_E1vsE4","1","4",33,4
+"2.1.1.13","Haemophilus parainfluenzae","contribution_pct",NA,-1.90704032750119,NA,0.0565153654983043,NA,0.0565153654983043,"ns","Dunn_E1vsE4","1","4",75,23
+"2.1.1.13","Haemophilus sp HMSC71H05","contribution_pct",NA,-1.56669890360128,NA,0.117185087198138,NA,0.117185087198138,"ns","Dunn_E1vsE4","1","4",11,4
+"2.1.1.13","Haemophilus sputorum","contribution_pct",NA,0.797724035217466,NA,0.425030652784928,NA,0.425030652784928,"ns","Dunn_E1vsE4","1","4",7,3
+"2.1.1.13","Hungatella hathewayi","contribution_pct",NA,-1.4638501094228,NA,0.14323490752467,NA,0.14323490752467,"ns","Dunn_E1vsE4","1","4",5,1
+"2.1.1.13","Intestinimonas butyriciproducens","contribution_pct",NA,0.870388279778489,NA,0.384088249473852,NA,0.384088249473852,"ns","Dunn_E1vsE4","1","4",9,1
+"2.1.1.13","Klebsiella pneumoniae","contribution_pct",NA,0.659047368816108,NA,0.50986535120364,NA,0.50986535120364,"ns","Dunn_E1vsE4","1","4",33,9
+"2.1.1.13","Klebsiella quasipneumoniae","contribution_pct",NA,0.82572282384477,NA,0.408961342036875,NA,0.408961342036875,"ns","Dunn_E1vsE4","1","4",16,5
+"2.1.1.13","Klebsiella variicola","contribution_pct",NA,1.26439084563529,NA,0.206089776985139,NA,0.206089776985139,"ns","Dunn_E1vsE4","1","4",16,2
+"2.1.1.13","Klebsiella variicola CAG 634","contribution_pct",NA,0.64888568452305,NA,0.516412268396038,NA,0.516412268396038,"ns","Dunn_E1vsE4","1","4",19,4
+"2.1.1.13","Lachnospira pectinoschiza","contribution_pct",NA,-0.785122330000536,NA,0.43238184853796,NA,0.43238184853796,"ns","Dunn_E1vsE4","1","4",29,17
+"2.1.1.13","Mitsuokella multacida","contribution_pct",NA,-0.774596669241483,NA,0.438578026081,NA,0.438578026081,"ns","Dunn_E1vsE4","1","4",2,2
+"2.1.1.13","Oxalobacter formigenes","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",2,2
+"2.1.1.13","Parabacteroides distasonis","contribution_pct",NA,-6.26478813149182,NA,3.73332651499202e-10,NA,3.73332651499202e-10,"****","Dunn_E1vsE4","1","4",115,34
+"2.1.1.13","Parabacteroides goldsteinii","contribution_pct",NA,1.64958765462307,NA,0.0990273016992997,NA,0.0990273016992997,"ns","Dunn_E1vsE4","1","4",23,5
+"2.1.1.13","Parabacteroides gordonii","contribution_pct",NA,-1.09544511501033,NA,0.273321678292298,NA,0.273321678292298,"ns","Dunn_E1vsE4","1","4",12,2
+"2.1.1.13","Parabacteroides johnsonii","contribution_pct",NA,0.801783725737273,NA,0.422678074170635,NA,0.422678074170635,"ns","Dunn_E1vsE4","1","4",12,1
+"2.1.1.13","Parabacteroides merdae","contribution_pct",NA,-0.703020119296449,NA,0.482043211319552,NA,0.482043211319552,"ns","Dunn_E1vsE4","1","4",59,30
+"2.1.1.13","Parabacteroides sp CAG 409","contribution_pct",NA,0.577350269189626,NA,0.563702861650773,NA,0.563702861650773,"ns","Dunn_E1vsE4","1","4",2,3
+"2.1.1.13","Paraprevotella clara","contribution_pct",NA,-2.5568369064112,NA,0.0105628728873886,NA,0.0105628728873886,"*","Dunn_E1vsE4","1","4",6,14
+"2.1.1.13","Paraprevotella clara CAG 116","contribution_pct",NA,-2.8042727360639,NA,0.00504302260380679,NA,0.00504302260380679,"**","Dunn_E1vsE4","1","4",6,14
+"2.1.1.13","Paraprevotella xylaniphila","contribution_pct",NA,-0.344862770900239,NA,0.730197540060319,NA,0.730197540060319,"ns","Dunn_E1vsE4","1","4",7,21
+"2.1.1.13","Prevotella copri","contribution_pct",NA,-0.226277864342333,NA,0.820985313630958,NA,0.820985313630958,"ns","Dunn_E1vsE4","1","4",3,29
+"2.1.1.13","Prevotella copri CAG 164","contribution_pct",NA,3.21362993835024,NA,0.00131068478461177,NA,0.00131068478461177,"**","Dunn_E1vsE4","1","4",4,38
+"2.1.1.13","Roseburia faecis","contribution_pct",NA,-1.32970216509468,NA,0.18361642121248,NA,0.18361642121248,"ns","Dunn_E1vsE4","1","4",67,25
+"2.1.1.13","Roseburia intestinalis","contribution_pct",NA,0.0117097303204054,NA,0.990657200477333,NA,0.990657200477333,"ns","Dunn_E1vsE4","1","4",39,11
+"2.1.1.13","Roseburia intestinalis CAG 13","contribution_pct",NA,0.31616271865093,NA,0.75187900363559,NA,0.75187900363559,"ns","Dunn_E1vsE4","1","4",39,11
+"2.1.1.13","Roseburia sp CAG 471","contribution_pct",NA,1.06066017177982,NA,0.288844366346485,NA,0.288844366346485,"ns","Dunn_E1vsE4","1","4",4,3
+"2.1.1.13","Ruminococcus bicirculans","contribution_pct",NA,-0.0482804549585274,NA,0.961492731069838,NA,0.961492731069838,"ns","Dunn_E1vsE4","1","4",26,6
+"2.1.1.13","Ruminococcus torques","contribution_pct",NA,-1.5635174749861,NA,0.117930928661136,NA,0.117930928661136,"ns","Dunn_E1vsE4","1","4",45,26
+"2.1.1.148","Acidaminococcus intestini","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",8,1
+"2.1.1.148","Acidaminococcus intestini CAG 325","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",8,1
+"2.1.1.148","Agathobaculum butyriciproducens","contribution_pct",NA,-3.86352549730071,NA,0.000111762221588975,NA,0.000111762221588975,"***","Dunn_E1vsE4","1","4",34,6
+"2.1.1.148","Anaerostipes hadrus","contribution_pct",NA,-5.58279392399901,NA,2.36685134758448e-08,NA,2.36685134758448e-08,"****","Dunn_E1vsE4","1","4",69,19
+"2.1.1.148","Bilophila wadsworthia","contribution_pct",NA,-6.0553278471477,NA,1.40131967545878e-09,NA,1.40131967545878e-09,"****","Dunn_E1vsE4","1","4",79,15
+"2.1.1.148","Blautia obeum","contribution_pct",NA,-4.7043579054332,NA,2.54666159346579e-06,NA,2.54666159346579e-06,"****","Dunn_E1vsE4","1","4",33,15
+"2.1.1.148","Clostridium leptum","contribution_pct",NA,-2.32379000772445,NA,0.0201367515503463,NA,0.0201367515503463,"*","Dunn_E1vsE4","1","4",8,6
+"2.1.1.148","Clostridium sp CAG 242","contribution_pct",NA,-2.86666666666667,NA,0.00414819672718818,NA,0.00414819672718818,"**","Dunn_E1vsE4","1","4",9,5
+"2.1.1.148","Coprococcus comes","contribution_pct",NA,-5.52158601199982,NA,3.35953287698823e-08,NA,3.35953287698823e-08,"****","Dunn_E1vsE4","1","4",35,16
+"2.1.1.148","Dorea formicigenerans","contribution_pct",NA,-5.47949486949883,NA,4.26541815754441e-08,NA,4.26541815754441e-08,"****","Dunn_E1vsE4","1","4",33,18
+"2.1.1.148","Dorea longicatena","contribution_pct",NA,-6.35294831105047,NA,2.11226709449338e-10,NA,2.11226709449338e-10,"****","Dunn_E1vsE4","1","4",55,26
+"2.1.1.148","Eubacterium eligens","contribution_pct",NA,-3.08606699924184,NA,0.00202823114845208,NA,0.00202823114845208,"**","Dunn_E1vsE4","1","4",8,12
+"2.1.1.148","Eubacterium hallii","contribution_pct",NA,-4.27639769121773,NA,1.89941785954035e-05,NA,1.89941785954035e-05,"****","Dunn_E1vsE4","1","4",31,15
+"2.1.1.148","Eubacterium rectale","contribution_pct",NA,-3.48681727895829,NA,0.000488805196379814,NA,0.000488805196379814,"***","Dunn_E1vsE4","1","4",7,11
+"2.1.1.148","Faecalibacterium prausnitzii","contribution_pct",NA,-8.50875532765371,NA,1.75810388688276e-17,NA,1.75810388688276e-17,"****","Dunn_E1vsE4","1","4",94,38
+"2.1.1.148","Fusicatenibacter saccharivorans","contribution_pct",NA,-7.3429827881056,NA,2.08885399195467e-13,NA,2.08885399195467e-13,"****","Dunn_E1vsE4","1","4",80,25
+"2.1.1.148","Gemmiger formicilis","contribution_pct",NA,-5.30071325159263,NA,1.15351140862588e-07,NA,1.15351140862588e-07,"****","Dunn_E1vsE4","1","4",24,16
+"2.1.1.148","Holdemanella biformis","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.1.1.148","Megamonas funiformis","contribution_pct",NA,-3.66530405035007,NA,0.000247044903903982,NA,0.000247044903903982,"***","Dunn_E1vsE4","1","4",17,10
+"2.1.1.148","Megamonas funiformis CAG 377","contribution_pct",NA,-4.46864981496997,NA,7.87148730246791e-06,NA,7.87148730246791e-06,"****","Dunn_E1vsE4","1","4",22,12
+"2.1.1.148","Megamonas hypermegale","contribution_pct",NA,-4.58778021190284,NA,4.4798390852533e-06,NA,4.4798390852533e-06,"****","Dunn_E1vsE4","1","4",28,11
+"2.1.1.148","Mitsuokella multacida","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",2,2
+"2.1.1.148","Phascolarctobacterium faecium","contribution_pct",NA,-6.45298818640075,NA,1.09665910892273e-10,NA,1.09665910892273e-10,"****","Dunn_E1vsE4","1","4",83,20
+"2.1.1.148","Phascolarctobacterium sp CAG 266","contribution_pct",NA,-1.41421356237309,NA,0.157299207050285,NA,0.157299207050285,"ns","Dunn_E1vsE4","1","4",4,1
+"2.1.1.148","Phascolarctobacterium succinatutens","contribution_pct",NA,-1.66666666666667,NA,0.0955807045456294,NA,0.0955807045456294,"ns","Dunn_E1vsE4","1","4",2,6
+"2.1.1.148","Prevotella copri","contribution_pct",NA,1.06622797996637,NA,0.286320596793059,NA,0.286320596793059,"ns","Dunn_E1vsE4","1","4",1,38
+"2.1.1.148","Prevotella copri CAG 164","contribution_pct",NA,1.90237946242268,NA,0.0571215639940019,NA,0.0571215639940019,"ns","Dunn_E1vsE4","1","4",3,38
+"2.1.1.148","Roseburia intestinalis","contribution_pct",NA,-4.49071811774696,NA,7.09834418057572e-06,NA,7.09834418057572e-06,"****","Dunn_E1vsE4","1","4",33,9
+"2.1.1.148","Roseburia intestinalis CAG 13","contribution_pct",NA,-4.49071811774696,NA,7.09834418057572e-06,NA,7.09834418057572e-06,"****","Dunn_E1vsE4","1","4",33,9
+"2.1.1.148","Ruminococcus bicirculans","contribution_pct",NA,-3.22064419326442,NA,0.00127902832768357,NA,0.00127902832768357,"**","Dunn_E1vsE4","1","4",27,6
+"2.1.1.148","Ruminococcus bromii","contribution_pct",NA,-2.73116929432903,NA,0.00631100436884342,NA,0.00631100436884342,"**","Dunn_E1vsE4","1","4",35,4
+"2.1.1.148","Ruminococcus callidus","contribution_pct",NA,-1,NA,0.317310507862914,NA,0.317310507862914,"ns","Dunn_E1vsE4","1","4",1,1
+"2.1.1.148","Ruminococcus gnavus","contribution_pct",NA,-3.32379587935527,NA,0.00088801166932387,NA,0.00088801166932387,"***","Dunn_E1vsE4","1","4",58,4
+"2.1.1.148","Ruminococcus torques","contribution_pct",NA,-5.82878498115624,NA,5.58323862987391e-09,NA,5.58323862987391e-09,"****","Dunn_E1vsE4","1","4",33,21
+"2.1.1.148","Ruthenibacterium lactatiformans","contribution_pct",NA,-1.49206394844686,NA,0.135682381799657,NA,0.135682381799657,"ns","Dunn_E1vsE4","1","4",35,1
+"2.6.1.1","Anaerostipes hadrus","contribution_pct",NA,0.723466830835491,NA,0.46939312515371,NA,0.46939312515371,"ns","Dunn_E1vsE4","1","4",41,5
+"2.6.1.1","Bacteroides caccae","contribution_pct",NA,-5.00786700524436,NA,5.50365407903967e-07,NA,5.50365407903967e-07,"****","Dunn_E1vsE4","1","4",60,28
+"2.6.1.1","Bacteroides cellulosilyticus","contribution_pct",NA,-3.5090757064521,NA,0.000449666888949191,NA,0.000449666888949191,"***","Dunn_E1vsE4","1","4",42,11
+"2.6.1.1","Bacteroides clarus","contribution_pct",NA,-2.18979560580544,NA,0.0285390635703624,NA,0.0285390635703624,"*","Dunn_E1vsE4","1","4",14,11
+"2.6.1.1","Bacteroides coprocola","contribution_pct",NA,-3.89003251158348,NA,0.000100230792581647,NA,0.000100230792581647,"***","Dunn_E1vsE4","1","4",17,14
+"2.6.1.1","Bacteroides coprocola CAG 162","contribution_pct",NA,-4.08850355809284,NA,4.34164888765997e-05,NA,4.34164888765997e-05,"****","Dunn_E1vsE4","1","4",17,14
+"2.6.1.1","Bacteroides coprophilus","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.6.1.1","Bacteroides coprophilus CAG 333","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.6.1.1","Bacteroides dorei","contribution_pct",NA,-4.91099479486823,NA,9.06154938098163e-07,NA,9.06154938098163e-07,"****","Dunn_E1vsE4","1","4",48,17
+"2.6.1.1","Bacteroides eggerthii","contribution_pct",NA,-2.83069258536149,NA,0.00464473394229251,NA,0.00464473394229251,"**","Dunn_E1vsE4","1","4",16,9
+"2.6.1.1","Bacteroides faecis","contribution_pct",NA,-0.654653670707977,NA,0.512690760261923,NA,0.512690760261923,"ns","Dunn_E1vsE4","1","4",3,3
+"2.6.1.1","Bacteroides finegoldii","contribution_pct",NA,-4.30848906943179,NA,1.64373598383833e-05,NA,1.64373598383833e-05,"****","Dunn_E1vsE4","1","4",34,18
+"2.6.1.1","Bacteroides fragilis","contribution_pct",NA,-4.15622688114475,NA,3.23546535077636e-05,NA,3.23546535077636e-05,"****","Dunn_E1vsE4","1","4",83,12
+"2.6.1.1","Bacteroides fragilis CAG 47","contribution_pct",NA,-3.20394882725419,NA,0.00135556568195687,NA,0.00135556568195687,"**","Dunn_E1vsE4","1","4",82,9
+"2.6.1.1","Bacteroides intestinalis","contribution_pct",NA,-1.3394067405634,NA,0.180438296243413,NA,0.180438296243413,"ns","Dunn_E1vsE4","1","4",48,15
+"2.6.1.1","Bacteroides massiliensis","contribution_pct",NA,-5.08141369582959,NA,3.74636216896608e-07,NA,3.74636216896608e-07,"****","Dunn_E1vsE4","1","4",38,17
+"2.6.1.1","Bacteroides ovatus","contribution_pct",NA,-5.94537975758506,NA,2.75816655355412e-09,NA,2.75816655355412e-09,"****","Dunn_E1vsE4","1","4",104,36
+"2.6.1.1","Bacteroides plebeius","contribution_pct",NA,-4.18309588492802,NA,2.87566032975522e-05,NA,2.87566032975522e-05,"****","Dunn_E1vsE4","1","4",19,22
+"2.6.1.1","Bacteroides plebeius CAG 211","contribution_pct",NA,-3.63406455003121,NA,0.00027899101351023,NA,0.00027899101351023,"***","Dunn_E1vsE4","1","4",19,22
+"2.6.1.1","Bacteroides salyersiae","contribution_pct",NA,-3.17107955656044,NA,0.00151873543138251,NA,0.00151873543138251,"**","Dunn_E1vsE4","1","4",34,8
+"2.6.1.1","Bacteroides sp CAG 530","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",1,3
+"2.6.1.1","Bacteroides sp OM05 12","contribution_pct",NA,-0.848528137423857,NA,0.396143909152074,NA,0.396143909152074,"ns","Dunn_E1vsE4","1","4",10,4
+"2.6.1.1","Bacteroides stercoris","contribution_pct",NA,-6.08150179080962,NA,1.19062036087537e-09,NA,1.19062036087537e-09,"****","Dunn_E1vsE4","1","4",66,25
+"2.6.1.1","Bacteroides thetaiotaomicron","contribution_pct",NA,-6.08584172498501,NA,1.15880876423743e-09,NA,1.15880876423743e-09,"****","Dunn_E1vsE4","1","4",114,36
+"2.6.1.1","Bacteroides uniformis","contribution_pct",NA,-7.18467757131324,NA,6.73659752334254e-13,NA,6.73659752334254e-13,"****","Dunn_E1vsE4","1","4",107,38
+"2.6.1.1","Bacteroides uniformis CAG 3","contribution_pct",NA,-6.919843879384,NA,4.5214165230656e-12,NA,4.5214165230656e-12,"****","Dunn_E1vsE4","1","4",107,37
+"2.6.1.1","Bacteroides vulgatus","contribution_pct",NA,-8.39311850581687,NA,4.73413986216104e-17,NA,4.73413986216104e-17,"****","Dunn_E1vsE4","1","4",97,37
+"2.6.1.1","Bacteroides vulgatus CAG 6","contribution_pct",NA,-7.69638764852997,NA,1.39966756726212e-14,NA,1.39966756726212e-14,"****","Dunn_E1vsE4","1","4",97,37
+"2.6.1.1","Bacteroides xylanisolvens","contribution_pct",NA,-7.08290044392788,NA,1.41168096283102e-12,NA,1.41168096283102e-12,"****","Dunn_E1vsE4","1","4",93,33
+"2.6.1.1","Barnesiella intestinihominis","contribution_pct",NA,1.15873091900464,NA,0.246565883634409,NA,0.246565883634409,"ns","Dunn_E1vsE4","1","4",8,13
+"2.6.1.1","Bifidobacterium longum","contribution_pct",NA,-0.316227766016838,NA,0.751829634045849,NA,0.751829634045849,"ns","Dunn_E1vsE4","1","4",36,3
+"2.6.1.1","Bifidobacterium longum CAG 69","contribution_pct",NA,-0.368932393686311,NA,0.712178117255223,NA,0.712178117255223,"ns","Dunn_E1vsE4","1","4",36,3
+"2.6.1.1","Blautia obeum","contribution_pct",NA,-1.09157954626844,NA,0.27501795043106,NA,0.27501795043106,"ns","Dunn_E1vsE4","1","4",37,11
+"2.6.1.1","Blautia wexlerae","contribution_pct",NA,-0.702462201871223,NA,0.48239096591286,NA,0.48239096591286,"ns","Dunn_E1vsE4","1","4",82,12
+"2.6.1.1","Butyricimonas virosa","contribution_pct",NA,-0.629152869605896,NA,0.529248980665897,NA,0.529248980665897,"ns","Dunn_E1vsE4","1","4",48,27
+"2.6.1.1","Citrobacter youngae","contribution_pct",NA,0.724206824377902,NA,0.46893876952267,NA,0.46893876952267,"ns","Dunn_E1vsE4","1","4",11,1
+"2.6.1.1","Coprobacter fastidiosus","contribution_pct",NA,-1.70560573084488,NA,0.0880815116621903,NA,0.0880815116621903,"ns","Dunn_E1vsE4","1","4",6,4
+"2.6.1.1","Coprobacter secundus","contribution_pct",NA,-1,NA,0.317310507862914,NA,0.317310507862914,"ns","Dunn_E1vsE4","1","4",1,1
+"2.6.1.1","Desulfovibrionaceae bacterium","contribution_pct",NA,1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"2.6.1.1","Dielma fastidiosa","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",6,1
+"2.6.1.1","Enterobacter cloacae complex","contribution_pct",NA,0.56980288229819,NA,0.568811400413337,NA,0.568811400413337,"ns","Dunn_E1vsE4","1","4",7,3
+"2.6.1.1","Escherichia coli","contribution_pct",NA,-0.414309714673002,NA,0.678647300162082,NA,0.678647300162082,"ns","Dunn_E1vsE4","1","4",71,13
+"2.6.1.1","Eubacterium hallii","contribution_pct",NA,0.436435780471985,NA,0.662520583540058,NA,0.662520583540058,"ns","Dunn_E1vsE4","1","4",21,2
+"2.6.1.1","Eubacterium hallii CAG 12","contribution_pct",NA,0.654653670707977,NA,0.512690760261923,NA,0.512690760261923,"ns","Dunn_E1vsE4","1","4",21,2
+"2.6.1.1","Eubacterium rectale","contribution_pct",NA,-0.817282505241867,NA,0.413767002207389,NA,0.413767002207389,"ns","Dunn_E1vsE4","1","4",36,22
+"2.6.1.1","Faecalibacterium prausnitzii","contribution_pct",NA,1.15470053837925,NA,0.248213078989923,NA,0.248213078989923,"ns","Dunn_E1vsE4","1","4",4,4
+"2.6.1.1","Haemophilus parainfluenzae","contribution_pct",NA,-0.62306560325316,NA,0.533241412098359,NA,0.533241412098359,"ns","Dunn_E1vsE4","1","4",71,18
+"2.6.1.1","Haemophilus sp HMSC71H05","contribution_pct",NA,-1.9583736295016,NA,0.0501861867689753,NA,0.0501861867689753,"ns","Dunn_E1vsE4","1","4",11,4
+"2.6.1.1","Intestinimonas butyriciproducens","contribution_pct",NA,-1.09108945117996,NA,0.275233524074834,NA,0.275233524074834,"ns","Dunn_E1vsE4","1","4",7,1
+"2.6.1.1","Klebsiella pneumoniae","contribution_pct",NA,-0.0560112033611202,NA,0.955332882182086,NA,0.955332882182086,"ns","Dunn_E1vsE4","1","4",34,10
+"2.6.1.1","Klebsiella quasipneumoniae","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",13,4
+"2.6.1.1","Klebsiella variicola","contribution_pct",NA,0.422890031611031,NA,0.672375496100464,NA,0.672375496100464,"ns","Dunn_E1vsE4","1","4",21,5
+"2.6.1.1","Klebsiella variicola CAG 634","contribution_pct",NA,0.895828017529367,NA,0.370344623650324,NA,0.370344623650324,"ns","Dunn_E1vsE4","1","4",22,6
+"2.6.1.1","Parabacteroides distasonis","contribution_pct",NA,-6.11034019592539,NA,9.94189840627386e-10,NA,9.94189840627386e-10,"****","Dunn_E1vsE4","1","4",117,38
+"2.6.1.1","Parabacteroides johnsonii","contribution_pct",NA,1.0690449676497,NA,0.285049407402613,NA,0.285049407402613,"ns","Dunn_E1vsE4","1","4",12,1
+"2.6.1.1","Parabacteroides merdae","contribution_pct",NA,-0.409891147364971,NA,0.68188579962723,NA,0.68188579962723,"ns","Dunn_E1vsE4","1","4",60,32
+"2.6.1.1","Paraprevotella clara","contribution_pct",NA,-1.64957219768465,NA,0.0990304652963042,NA,0.0990304652963042,"ns","Dunn_E1vsE4","1","4",6,14
+"2.6.1.1","Paraprevotella clara CAG 116","contribution_pct",NA,-3.21666578548506,NA,0.00129689579895906,NA,0.00129689579895906,"**","Dunn_E1vsE4","1","4",6,14
+"2.6.1.1","Paraprevotella xylaniphila","contribution_pct",NA,1.48630108292059,NA,0.137199500414963,NA,0.137199500414963,"ns","Dunn_E1vsE4","1","4",5,16
+"2.6.1.1","Prevotella copri","contribution_pct",NA,3.2195317385273,NA,0.00128400146157922,NA,0.00128400146157922,"**","Dunn_E1vsE4","1","4",4,39
+"2.6.1.1","Prevotella copri CAG 164","contribution_pct",NA,2.67597443202269,NA,0.00745123292750902,NA,0.00745123292750902,"**","Dunn_E1vsE4","1","4",4,39
+"2.6.1.1","Ruminococcus torques","contribution_pct",NA,-0.505976458503874,NA,0.612873176101515,NA,0.612873176101515,"ns","Dunn_E1vsE4","1","4",45,27
+"2.6.1.1","Sanguibacteroides justesenii","contribution_pct",NA,1,NA,0.317310507862914,NA,0.317310507862914,"ns","Dunn_E1vsE4","1","4",1,1
+"2.6.1.1","Streptococcus parasanguinis","contribution_pct",NA,1.52127765851133,NA,0.128190174345108,NA,0.128190174345108,"ns","Dunn_E1vsE4","1","4",10,3
+"2.6.1.1","Streptococcus salivarius","contribution_pct",NA,0.476128051226391,NA,0.633983153671507,NA,0.633983153671507,"ns","Dunn_E1vsE4","1","4",29,13
+"2.6.1.1","Streptococcus salivarius CAG 79","contribution_pct",NA,-0.41870981243007,NA,0.675428223565358,NA,0.675428223565358,"ns","Dunn_E1vsE4","1","4",27,13
+"2.6.1.1","Streptococcus thermophilus","contribution_pct",NA,1.41421356237309,NA,0.157299207050285,NA,0.157299207050285,"ns","Dunn_E1vsE4","1","4",4,3
+"2.6.1.1","Streptococcus thermophilus CAG 236","contribution_pct",NA,1.41421356237309,NA,0.157299207050285,NA,0.157299207050285,"ns","Dunn_E1vsE4","1","4",4,3
+"2.7.6.3","Alistipes putredinis","contribution_pct",NA,-1.09949874283386,NA,0.27155058203547,NA,0.27155058203547,"ns","Dunn_E1vsE4","1","4",22,24
+"2.7.6.3","Alistipes putredinis CAG 67","contribution_pct",NA,-1.66080750645551,NA,0.0967521130965382,NA,0.0967521130965382,"ns","Dunn_E1vsE4","1","4",24,21
+"2.7.6.3","Bacteroides cellulosilyticus","contribution_pct",NA,-2.17934723419684,NA,0.0293058827935468,NA,0.0293058827935468,"*","Dunn_E1vsE4","1","4",44,6
+"2.7.6.3","Bacteroides coprocola","contribution_pct",NA,-4.40647826401586,NA,1.05064845937909e-05,NA,1.05064845937909e-05,"****","Dunn_E1vsE4","1","4",16,14
+"2.7.6.3","Bacteroides coprocola CAG 162","contribution_pct",NA,-1.23986083975613,NA,0.215026870424457,NA,0.215026870424457,"ns","Dunn_E1vsE4","1","4",17,12
+"2.7.6.3","Bacteroides coprophilus","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.7.6.3","Bacteroides coprophilus CAG 333","contribution_pct",NA,-1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",1,7
+"2.7.6.3","Bacteroides dorei","contribution_pct",NA,-5.43344104964144,NA,5.52775510333011e-08,NA,5.52775510333011e-08,"****","Dunn_E1vsE4","1","4",48,17
+"2.7.6.3","Bacteroides faecis","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"2.7.6.3","Bacteroides fragilis","contribution_pct",NA,-4.50336005336678,NA,6.68874197666884e-06,NA,6.68874197666884e-06,"****","Dunn_E1vsE4","1","4",82,10
+"2.7.6.3","Bacteroides fragilis CAG 47","contribution_pct",NA,-3.28710887342703,NA,0.00101221691532501,NA,0.00101221691532501,"**","Dunn_E1vsE4","1","4",59,8
+"2.7.6.3","Bacteroides intestinalis","contribution_pct",NA,-1.95991577402445,NA,0.0500056356001502,NA,0.0500056356001502,"ns","Dunn_E1vsE4","1","4",45,14
+"2.7.6.3","Bacteroides ovatus","contribution_pct",NA,-5.03778390432407,NA,4.70952709415123e-07,NA,4.70952709415123e-07,"****","Dunn_E1vsE4","1","4",75,24
+"2.7.6.3","Bacteroides sp OM05 12","contribution_pct",NA,-1.71867569769464,NA,0.0856734395523169,NA,0.0856734395523169,"ns","Dunn_E1vsE4","1","4",10,2
+"2.7.6.3","Bacteroides stercoris","contribution_pct",NA,-3.1195609036626,NA,0.00181120813461235,NA,0.00181120813461235,"**","Dunn_E1vsE4","1","4",37,4
+"2.7.6.3","Bacteroides thetaiotaomicron","contribution_pct",NA,-6.84699706799344,NA,7.54162630703678e-12,NA,7.54162630703678e-12,"****","Dunn_E1vsE4","1","4",111,31
+"2.7.6.3","Bacteroides uniformis","contribution_pct",NA,-7.54526444369945,NA,4.51370659945297e-14,NA,4.51370659945297e-14,"****","Dunn_E1vsE4","1","4",106,36
+"2.7.6.3","Bacteroides uniformis CAG 3","contribution_pct",NA,-7.45787501413384,NA,8.79290173548499e-14,NA,8.79290173548499e-14,"****","Dunn_E1vsE4","1","4",107,35
+"2.7.6.3","Bacteroides vulgatus","contribution_pct",NA,-7.96230630742585,NA,1.68861820988327e-15,NA,1.68861820988327e-15,"****","Dunn_E1vsE4","1","4",96,34
+"2.7.6.3","Bacteroides vulgatus CAG 6","contribution_pct",NA,-7.62855694124632,NA,2.37395985846175e-14,NA,2.37395985846175e-14,"****","Dunn_E1vsE4","1","4",96,34
+"2.7.6.3","Bacteroides xylanisolvens","contribution_pct",NA,-6.1661582167678,NA,6.99690775714363e-10,NA,6.99690775714363e-10,"****","Dunn_E1vsE4","1","4",85,25
+"2.7.6.3","Coprococcus catus","contribution_pct",NA,-0.447213595499958,NA,0.654720846018577,NA,0.654720846018577,"ns","Dunn_E1vsE4","1","4",3,1
+"2.7.6.3","Desulfovibrio piger","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",5,4
+"2.7.6.3","Enterobacter cloacae complex","contribution_pct",NA,1.52752523165195,NA,0.126630457947617,NA,0.126630457947617,"ns","Dunn_E1vsE4","1","4",7,1
+"2.7.6.3","Escherichia coli","contribution_pct",NA,-0.84053744609877,NA,0.400607115170808,NA,0.400607115170808,"ns","Dunn_E1vsE4","1","4",56,10
+"2.7.6.3","Haemophilus parainfluenzae","contribution_pct",NA,-2.05305223367025,NA,0.0400675118805883,NA,0.0400675118805883,"*","Dunn_E1vsE4","1","4",71,18
+"2.7.6.3","Haemophilus sp HMSC71H05","contribution_pct",NA,-1.47914799390689,NA,0.139100765440064,NA,0.139100765440064,"ns","Dunn_E1vsE4","1","4",11,3
+"2.7.6.3","Klebsiella pneumoniae","contribution_pct",NA,-0.318720644339885,NA,0.749938358534929,NA,0.749938358534929,"ns","Dunn_E1vsE4","1","4",23,7
+"2.7.6.3","Klebsiella quasipneumoniae","contribution_pct",NA,-1.15470053837925,NA,0.248213078989924,NA,0.248213078989924,"ns","Dunn_E1vsE4","1","4",3,2
+"2.7.6.3","Klebsiella variicola","contribution_pct",NA,-1.22474487139159,NA,0.220671361919847,NA,0.220671361919847,"ns","Dunn_E1vsE4","1","4",2,1
+"2.7.6.3","Klebsiella variicola CAG 634","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",2,1
+"2.7.6.3","Mitsuokella multacida","contribution_pct",NA,-0.774596669241483,NA,0.438578026081,NA,0.438578026081,"ns","Dunn_E1vsE4","1","4",2,2
+"2.7.6.3","Oxalobacter formigenes","contribution_pct",NA,0.447213595499958,NA,0.654720846018577,NA,0.654720846018577,"ns","Dunn_E1vsE4","1","4",3,1
+"2.7.6.3","Parabacteroides distasonis","contribution_pct",NA,-7.48042066757241,NA,7.40850799002835e-14,NA,7.40850799002835e-14,"****","Dunn_E1vsE4","1","4",115,36
+"2.7.6.3","Phascolarctobacterium succinatutens","contribution_pct",NA,2,NA,0.0455002638963584,NA,0.0455002638963584,"*","Dunn_E1vsE4","1","4",2,6
+"2.7.6.3","Prevotella copri","contribution_pct",NA,1.50467048353893,NA,0.132408815268753,NA,0.132408815268753,"ns","Dunn_E1vsE4","1","4",1,37
+"2.7.6.3","Prevotella copri CAG 164","contribution_pct",NA,0.977375648302502,NA,0.328383214240683,NA,0.328383214240683,"ns","Dunn_E1vsE4","1","4",1,38
+"2.7.6.3","Streptococcus thermophilus","contribution_pct",NA,-0.447213595499958,NA,0.654720846018577,NA,0.654720846018577,"ns","Dunn_E1vsE4","1","4",1,3
+"2.7.6.3","Veillonella dispar","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",2,1
+"2.7.6.3","Veillonella infantium","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"2.7.6.3","Veillonella parvula","contribution_pct",NA,-1.66282198642108,NA,0.0963480741890627,NA,0.0963480741890627,"ns","Dunn_E1vsE4","1","4",28,2
+"3.4.11.5","Coprococcus comes","contribution_pct",NA,-4.86343085402754,NA,1.15368339917866e-06,NA,1.15368339917866e-06,"****","Dunn_E1vsE4","1","4",35,19
+"3.4.11.5","Coprococcus comes CAG 19","contribution_pct",NA,-2.10194714923611,NA,0.035557905699921,NA,0.035557905699921,"*","Dunn_E1vsE4","1","4",27,5
+"3.4.11.5","Coprococcus eutactus","contribution_pct",NA,-1.60356745147455,NA,0.108809430040546,NA,0.108809430040546,"ns","Dunn_E1vsE4","1","4",1,12
+"3.4.11.5","Dorea formicigenerans","contribution_pct",NA,-3.71567625069785,NA,0.000202660938730293,NA,0.000202660938730293,"***","Dunn_E1vsE4","1","4",15,16
+"3.4.11.5","Flavonifractor plautii","contribution_pct",NA,-3.15928208691977,NA,0.00158158326583493,NA,0.00158158326583493,"**","Dunn_E1vsE4","1","4",54,6
+"3.4.11.5","Fusicatenibacter saccharivorans","contribution_pct",NA,-5.73334919817549,NA,9.84666146874346e-09,NA,9.84666146874346e-09,"****","Dunn_E1vsE4","1","4",76,17
+"3.4.11.5","Holdemanella biformis","contribution_pct",NA,-2.32379000772445,NA,0.0201367515503463,NA,0.0201367515503463,"*","Dunn_E1vsE4","1","4",3,6
+"3.4.11.5","Lachnospira pectinoschiza","contribution_pct",NA,-4.07831978977769,NA,4.53623435835082e-05,NA,4.53623435835082e-05,"****","Dunn_E1vsE4","1","4",16,13
+"3.4.11.5","Prevotella copri","contribution_pct",NA,0.0556414884074658,NA,0.955627412711934,NA,0.955627412711934,"ns","Dunn_E1vsE4","1","4",3,34
+"3.4.11.5","Prevotella copri CAG 164","contribution_pct",NA,-0.222565953629863,NA,0.823873336866195,NA,0.823873336866195,"ns","Dunn_E1vsE4","1","4",3,34
+"3.6.1.13","Anaerostipes hadrus","contribution_pct",NA,-4.80807701868477,NA,1.523890584838e-06,NA,1.523890584838e-06,"****","Dunn_E1vsE4","1","4",72,11
+"3.6.1.13","Bacteroides cellulosilyticus","contribution_pct",NA,-2.31933403045521,NA,0.0203769316014971,NA,0.0203769316014971,"*","Dunn_E1vsE4","1","4",26,2
+"3.6.1.13","Bacteroides fragilis","contribution_pct",NA,-4.76212377551017,NA,1.91566118171389e-06,NA,1.91566118171389e-06,"****","Dunn_E1vsE4","1","4",58,9
+"3.6.1.13","Bacteroides fragilis CAG 47","contribution_pct",NA,-4.77506752216865,NA,1.79646967296888e-06,NA,1.79646967296888e-06,"****","Dunn_E1vsE4","1","4",60,9
+"3.6.1.13","Bacteroides uniformis","contribution_pct",NA,-3.06186217847897,NA,0.00219964706111306,NA,0.00219964706111306,"**","Dunn_E1vsE4","1","4",10,5
+"3.6.1.13","Bifidobacterium longum","contribution_pct",NA,-3.22816552109382,NA,0.00124586862283961,NA,0.00124586862283961,"**","Dunn_E1vsE4","1","4",33,4
+"3.6.1.13","Bifidobacterium longum CAG 69","contribution_pct",NA,-3.23443016025056,NA,0.00121885726367215,NA,0.00121885726367215,"**","Dunn_E1vsE4","1","4",34,4
+"3.6.1.13","Clostridium citroniae","contribution_pct",NA,-1.58113883008419,NA,0.113846298006658,NA,0.113846298006658,"ns","Dunn_E1vsE4","1","4",10,1
+"3.6.1.13","Coprococcus comes","contribution_pct",NA,-2.29782505861521,NA,0.0215717479477209,NA,0.0215717479477209,"*","Dunn_E1vsE4","1","4",22,2
+"3.6.1.13","Coprococcus comes CAG 19","contribution_pct",NA,-4.0570259377356,NA,4.97015641579435e-05,NA,4.97015641579435e-05,"****","Dunn_E1vsE4","1","4",29,7
+"3.6.1.13","Coprococcus eutactus","contribution_pct",NA,-1.61245154965971,NA,0.106863714993379,NA,0.106863714993379,"ns","Dunn_E1vsE4","1","4",1,13
+"3.6.1.13","Dorea longicatena","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",8,1
+"3.6.1.13","Enterobacter cloacae complex","contribution_pct",NA,-1.93792558049982,NA,0.0526323025657406,NA,0.0526323025657406,"ns","Dunn_E1vsE4","1","4",5,3
+"3.6.1.13","Escherichia coli","contribution_pct",NA,-5.34299603103501,NA,9.14227659841362e-08,NA,9.14227659841362e-08,"****","Dunn_E1vsE4","1","4",73,15
+"3.6.1.13","Eubacterium hallii","contribution_pct",NA,-3.2855302455934,NA,0.0010179061334712,NA,0.0010179061334712,"**","Dunn_E1vsE4","1","4",21,5
+"3.6.1.13","Eubacterium hallii CAG 12","contribution_pct",NA,-3.89960210171809,NA,9.63509000978022e-05,NA,9.63509000978022e-05,"****","Dunn_E1vsE4","1","4",21,7
+"3.6.1.13","Eubacterium rectale","contribution_pct",NA,-5.88384952601282,NA,4.00832288574016e-09,NA,4.00832288574016e-09,"****","Dunn_E1vsE4","1","4",31,21
+"3.6.1.13","Eubacterium siraeum","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",2,5
+"3.6.1.13","Faecalibacterium prausnitzii","contribution_pct",NA,-7.04824961111943,NA,1.81182414867206e-12,NA,1.81182414867206e-12,"****","Dunn_E1vsE4","1","4",48,31
+"3.6.1.13","Fusicatenibacter saccharivorans","contribution_pct",NA,-5.87224879974142,NA,4.29922863718454e-09,NA,4.29922863718454e-09,"****","Dunn_E1vsE4","1","4",72,14
+"3.6.1.13","Haemophilus parainfluenzae","contribution_pct",NA,-6.58284416073014,NA,4.6153283814899e-11,NA,4.6153283814899e-11,"****","Dunn_E1vsE4","1","4",73,19
+"3.6.1.13","Haemophilus sp HMSC71H05","contribution_pct",NA,-2.17124059336724,NA,0.029912990320776,NA,0.029912990320776,"*","Dunn_E1vsE4","1","4",11,2
+"3.6.1.13","Holdemanella biformis","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"3.6.1.13","Hungatella hathewayi","contribution_pct",NA,0,NA,1,NA,1,"ns","Dunn_E1vsE4","1","4",16,1
+"3.6.1.13","Intestinimonas butyriciproducens","contribution_pct",NA,-1.4638501094228,NA,0.14323490752467,NA,0.14323490752467,"ns","Dunn_E1vsE4","1","4",5,1
+"3.6.1.13","Klebsiella pneumoniae","contribution_pct",NA,-4.07095587107754,NA,4.68206192368043e-05,NA,4.68206192368043e-05,"****","Dunn_E1vsE4","1","4",28,9
+"3.6.1.13","Klebsiella variicola","contribution_pct",NA,-2.49615088301353,NA,0.0125549185969666,NA,0.0125549185969666,"*","Dunn_E1vsE4","1","4",9,3
+"3.6.1.13","Klebsiella variicola CAG 634","contribution_pct",NA,-2.08893187146837,NA,0.0367138563627041,NA,0.0367138563627041,"*","Dunn_E1vsE4","1","4",8,2
+"3.6.1.13","Lachnospira pectinoschiza","contribution_pct",NA,-5.16288906134022,NA,2.43167267624826e-07,NA,2.43167267624826e-07,"****","Dunn_E1vsE4","1","4",31,17
+"3.6.1.13","Prevotella copri","contribution_pct",NA,1.09886915363738,NA,0.271825143050265,NA,0.271825143050265,"ns","Dunn_E1vsE4","1","4",3,39
+"3.6.1.13","Roseburia faecis","contribution_pct",NA,-7.40040499884611,NA,1.35769772736713e-13,NA,1.35769772736713e-13,"****","Dunn_E1vsE4","1","4",63,27
+"3.6.1.13","Roseburia intestinalis","contribution_pct",NA,-3.88593114060106,NA,0.000101938400962814,NA,0.000101938400962814,"***","Dunn_E1vsE4","1","4",31,10
+"3.6.1.13","Roseburia intestinalis CAG 13","contribution_pct",NA,-4.09175256148148,NA,4.28125332976403e-05,NA,4.28125332976403e-05,"****","Dunn_E1vsE4","1","4",30,10
+"3.6.1.13","Roseburia inulinivorans","contribution_pct",NA,-6.25593569449262,NA,3.95139549338977e-10,NA,3.95139549338977e-10,"****","Dunn_E1vsE4","1","4",71,22
+"3.6.1.13","Roseburia inulinivorans CAG 15","contribution_pct",NA,-6.13881132114005,NA,8.314124461628e-10,NA,8.314124461628e-10,"****","Dunn_E1vsE4","1","4",69,21
+"3.6.1.13","Ruminococcus torques","contribution_pct",NA,-6.48567306912155,NA,8.83365312898208e-11,NA,8.83365312898208e-11,"****","Dunn_E1vsE4","1","4",42,28
+"3.6.1.13","Streptococcus salivarius","contribution_pct",NA,-4,NA,6.33424836662398e-05,NA,6.33424836662398e-05,"****","Dunn_E1vsE4","1","4",18,8
+"3.6.1.13","Streptococcus salivarius CAG 79","contribution_pct",NA,-3.80788655293195,NA,0.000140159542629564,NA,0.000140159542629564,"***","Dunn_E1vsE4","1","4",29,6
+"3.6.1.13","Streptococcus thermophilus","contribution_pct",NA,-2.3094010767585,NA,0.020921335337794,NA,0.020921335337794,"*","Dunn_E1vsE4","1","4",4,4
+"3.6.1.13","Streptococcus thermophilus CAG 236","contribution_pct",NA,-2.44948974278318,NA,0.0143058784354296,NA,0.0143058784354296,"*","Dunn_E1vsE4","1","4",5,4
+"3.6.1.13","Turicibacter sanguinis","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"4.1.1.41","Alistipes finegoldii","contribution_pct",NA,-5.84405275175915,NA,5.09458832229427e-09,NA,5.09458832229427e-09,"****","Dunn_E1vsE4","1","4",32,18
+"4.1.1.41","Alistipes onderdonkii","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"4.1.1.41","Alistipes putredinis","contribution_pct",NA,-5.88982456825465,NA,3.86605802955821e-09,NA,3.86605802955821e-09,"****","Dunn_E1vsE4","1","4",26,23
+"4.1.1.41","Alistipes putredinis CAG 67","contribution_pct",NA,-6,NA,1.9731752900754e-09,NA,1.9731752900754e-09,"****","Dunn_E1vsE4","1","4",25,24
+"4.1.1.41","Escherichia coli","contribution_pct",NA,-3.9613144115865,NA,7.45383055199328e-05,NA,7.45383055199328e-05,"****","Dunn_E1vsE4","1","4",40,8
+"4.1.1.41","Eubacterium siraeum","contribution_pct",NA,-1.8516401995451,NA,0.0640775064510595,NA,0.0640775064510595,"ns","Dunn_E1vsE4","1","4",2,4
+"4.1.1.41","Klebsiella pneumoniae","contribution_pct",NA,-2.33353340478779,NA,0.0196201672031257,NA,0.0196201672031257,"*","Dunn_E1vsE4","1","4",6,3
+"4.1.1.41","Mitsuokella multacida","contribution_pct",NA,-1.54919333848297,NA,0.121335250358482,NA,0.121335250358482,"ns","Dunn_E1vsE4","1","4",2,2
+"4.1.1.41","Prevotella copri","contribution_pct",NA,-1.86775392849974,NA,0.0617963779014732,NA,0.0617963779014732,"ns","Dunn_E1vsE4","1","4",5,39
+"4.1.1.41","Prevotella copri CAG 164","contribution_pct",NA,-1.11702888510856,NA,0.263981974964118,NA,0.263981974964118,"ns","Dunn_E1vsE4","1","4",2,38
+"6.3.1.5","Bacteroides xylanisolvens","contribution_pct",NA,-1,NA,0.317310507862914,NA,0.317310507862914,"ns","Dunn_E1vsE4","1","4",1,1
+"6.3.1.5","Bilophila wadsworthia","contribution_pct",NA,-6.97343553153706,NA,3.09293205360735e-12,NA,3.09293205360735e-12,"****","Dunn_E1vsE4","1","4",85,21
+"6.3.1.5","Blautia obeum","contribution_pct",NA,-1.34164078649987,NA,0.179712494879,NA,0.179712494879,"ns","Dunn_E1vsE4","1","4",3,1
+"6.3.1.5","Enterobacter cloacae complex","contribution_pct",NA,-0.925820099772551,NA,0.354539479773501,NA,0.354539479773501,"ns","Dunn_E1vsE4","1","4",4,2
+"6.3.1.5","Escherichia coli","contribution_pct",NA,-4.40090178349126,NA,1.07801915335179e-05,NA,1.07801915335179e-05,"****","Dunn_E1vsE4","1","4",60,9
+"6.3.1.5","Faecalibacterium prausnitzii","contribution_pct",NA,-1,NA,0.317310507862914,NA,0.317310507862914,"ns","Dunn_E1vsE4","1","4",1,1
+"6.3.1.5","Firmicutes bacterium CAG 83","contribution_pct",NA,-2.95145914949049,NA,0.00316276379036911,NA,0.00316276379036911,"**","Dunn_E1vsE4","1","4",12,5
+"6.3.1.5","Firmicutes bacterium CAG 95","contribution_pct",NA,-2.87228132326901,NA,0.0040752000915204,NA,0.0040752000915204,"**","Dunn_E1vsE4","1","4",4,11
+"6.3.1.5","Fusobacterium mortiferum","contribution_pct",NA,-3.77475885448327,NA,0.000160162521285513,NA,0.000160162521285513,"***","Dunn_E1vsE4","1","4",36,6
+"6.3.1.5","Klebsiella pneumoniae","contribution_pct",NA,-2.87881554590919,NA,0.00399171727301205,NA,0.00399171727301205,"**","Dunn_E1vsE4","1","4",19,5
+"6.3.1.5","Prevotella copri","contribution_pct",NA,-2.18217890235992,NA,0.0290963317412522,NA,0.0290963317412522,"*","Dunn_E1vsE4","1","4",2,21
+"6.3.1.5","Prevotella copri CAG 164","contribution_pct",NA,1.53866619373153,NA,0.123885809511937,NA,0.123885809511937,"ns","Dunn_E1vsE4","1","4",3,39
+"6.3.1.5","Streptococcus parasanguinis","contribution_pct",NA,-2.36643191323985,NA,0.0179604775260788,NA,0.0179604775260788,"*","Dunn_E1vsE4","1","4",10,3
+"6.3.1.5","Streptococcus salivarius","contribution_pct",NA,-4.41588043316392,NA,1.0059968254464e-05,NA,1.0059968254464e-05,"****","Dunn_E1vsE4","1","4",26,9
+"6.3.1.5","Streptococcus salivarius CAG 79","contribution_pct",NA,-4.3915503282684,NA,1.12545276538421e-05,NA,1.12545276538421e-05,"****","Dunn_E1vsE4","1","4",25,9
+"6.3.1.5","Streptococcus thermophilus","contribution_pct",NA,-1.4142135623731,NA,0.157299207050285,NA,0.157299207050285,"ns","Dunn_E1vsE4","1","4",4,3
+"6.3.1.5","Streptococcus thermophilus CAG 236","contribution_pct",NA,-1.4142135623731,NA,0.157299207050285,NA,0.157299207050285,"ns","Dunn_E1vsE4","1","4",4,3
+"6.3.1.5","Veillonella dispar","contribution_pct",NA,-1.59325501363138,NA,0.111102994241961,NA,0.111102994241961,"ns","Dunn_E1vsE4","1","4",11,1
+"6.3.1.5","Veillonella parvula","contribution_pct",NA,-2.27414097445984,NA,0.0229575117911993,NA,0.0229575117911993,"*","Dunn_E1vsE4","1","4",33,2

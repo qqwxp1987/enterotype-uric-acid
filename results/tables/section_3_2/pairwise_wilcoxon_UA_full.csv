@@ -1,0 +1,7 @@
+"Group1","Group2","p_holm","significant","signif_label"
+"Type 2","Type 1",0.000332876090040862,"Yes","***"
+"Type 3","Type 1",0.0277028278203727,"Yes","*"
+"Type 4","Type 2",0.129620401929903,"No","ns"
+"Type 3","Type 2",0.549021032173703,"No","ns"
+"Type 4","Type 3",0.549021032173703,"No","ns"
+"Type 4","Type 1",0.681555406572878,"No","ns"

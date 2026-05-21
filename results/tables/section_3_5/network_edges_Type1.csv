@@ -1,0 +1,14 @@
+"from","to","rho","pval","padj"
+"k__Bacteria;p__Firmicutes;c__Erysipelotrichia;o__Erysipelotrichales;f__Erysipelotrichaceae;g__Erysipelatoclostridium;s__Erysipelatoclostridium_ramosum","NEG0147_Indole-3-propionic acid",-0.269313016167764,0.00346240233980171,0.126380718061423
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Bacteroidaceae;g__Bacteroides;s__Bacteroides_fragilis","NEG0082_Taurocholic acid",-0.276372953058272,0.0026723306054842,0.126380718061423
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_bolteae","NEG0015_Deoxycholic acid",0.399606439855994,8.83518557335408e-06,0.00264172048643287
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","NEG0024_p-Cresol",0.256247369203125,0.00549481382875752,0.126380718061423
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Lachnoclostridium;s__Clostridium_symbiosum","NEG0216_p-Cresol sulfate",0.256798435449345,0.00539125751997378,0.126380718061423
+"k__Bacteria;p__Proteobacteria;c__Gammaproteobacteria;o__Pasteurellales;f__Pasteurellaceae;g__Haemophilus;s__Haemophilus_parainfluenzae","NEG0015_Deoxycholic acid",-0.337376446763017,0.000212646290138331,0.027952714067487
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes_putredinis","NEG0046_Indoxyl sulfate",0.262439533513548,0.00442704095655006,0.126380718061423
+"k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Oscillospiraceae;g__Oscillibacter;s__Oscillibacter_sp_57_20","NEG0144_5-Methoxyindoleacetate",0.331299200053137,0.000280462014055054,0.027952714067487
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Odoribacter;s__Odoribacter_splanchnicus","NEG0046_Indoxyl sulfate",0.27788598571447,0.00252581821305041,0.126380718061423
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Butyricimonas;s__Butyricimonas_virosa","NEG0024_p-Cresol",0.265444990741115,0.00397903513811281,0.126380718061423
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Odoribacteraceae;g__Butyricimonas;s__Butyricimonas_virosa","NEG0216_p-Cresol sulfate",0.26468280781636,0.0040886281862282,0.126380718061423
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes_shahii","NEG0024_p-Cresol",0.26712793082545,0.00374631699103215,0.126380718061423
+"k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Rikenellaceae;g__Alistipes;s__Alistipes_shahii","NEG0216_p-Cresol sulfate",0.258784184472481,0.00503236705844635,0.126380718061423

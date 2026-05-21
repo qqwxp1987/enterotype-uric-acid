@@ -1,0 +1,9 @@
+# Normalise line endings: text files stored with LF in the repository
+* text=auto eol=lf
+
+# Binary assets — never line-ending converted, not diffed as text
+*.rds   binary
+*.png   binary
+*.tiff  binary
+*.pdf   binary
+*.xlsx  binary

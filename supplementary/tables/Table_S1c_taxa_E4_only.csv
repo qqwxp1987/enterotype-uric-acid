@@ -1,0 +1,3 @@
+feature,log2FoldChange_E1vE2,log2FoldChange_E1vE3,log2FoldChange_E4vE2,log2FoldChange_E4vE3,padj_E1vE2,padj_E1vE3,padj_E4vE2,padj_E4vE3
+k__Bacteria;p__Bacteroidetes;c__Bacteroidia;o__Bacteroidales;f__Prevotellaceae;g__Prevotella;s__Prevotella_copri,-0.998306166285924,-16.1425316599529,22.123987070468,6.46689187863644,0.22935358694593,7.0244547283002e-34,3.44730497692264e-38,0.00119670419271722
+k__Bacteria;p__Firmicutes;c__Clostridia;o__Clostridiales;f__Lachnospiraceae;g__Roseburia;s__Roseburia_sp_CAG_471,0.442675821612751,NA,3.45461370440332,3.51608079149044,0.444877838636367,NA,0.00172157242988381,0.00423521916793649

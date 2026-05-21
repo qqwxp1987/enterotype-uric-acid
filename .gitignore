@@ -1,0 +1,32 @@
+# =============================================================================
+# .gitignore — HUA_FCTJ2021 public code/data release
+# Only the data and analysis code needed to reproduce the final manuscript
+# are tracked. Everything below is intentionally excluded.
+# =============================================================================
+
+# --- Archived / superseded material (kept locally, not part of the paper) ---
+archive/
+
+# --- Manuscript text & internal working documents (not part of the code release) ---
+manuscript/
+论文文件梳理报告.md
+
+# --- Large data files deposited externally (see "Availability of data and code") ---
+# Raw, unprocessed metagenomic table — deposited at NGDC GSA
+data/raw/
+# Per-species stratified EC table (~137 MB, exceeds GitHub's 100 MB limit) — deposited at Zenodo
+data/clean/ec_stratified.tsv
+
+# --- IDE / session / tooling state ---
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+.opencode/
+.claude/
+factory_config
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+*~
