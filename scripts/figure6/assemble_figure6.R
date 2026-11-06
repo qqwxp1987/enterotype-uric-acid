@@ -1,77 +1,135 @@
 # ==============================================================================
-# Figure 6: Composite Assembly (4 panels)
+# R2 Minor Comment 4 — Rebuild Figure 6 (vector PDF + 300 dpi PNG)
 #
-# Replaces the legacy combined_figure6.R, whose cached ggplot inputs
-# (results/cache/p6a-p6c.rds) are no longer available. This script re-stacks
-# the existing panel PNGs with magick, mirroring the original patchwork layout
-# (p6a / p6b / (p6c | p6d), heights 1.35/0.8/1.15, C:D width 1.1:1).
+# Baseline and success criteria:
+#   * 22 candidates x 2 models = 44 unchanged ACME estimates and intervals.
+#   * Five BH-significant candidates in each main model (Type 1 and Type 4).
+#   * Six priority features x 8 sensitivity settings = 48 unchanged tiles.
+#   * 23 within-Type 4 tests, with exactly four nominal P < 0.05 results.
+#   * 39 Type 4 participants: 12 HUA+ and 27 HUA−.
+#   * A/B explicitly report BH-adjusted significance; C/D explicitly report
+#     nominal, unadjusted significance and exploratory framing.
+#   * A4 portrait vector PDF, no missing expected text or genuine overlap.
 #
-# Layout:
-#   Row 1:      [A]       — Mediation forest (full width)
-#   Row 2:      [B]       — Sensitivity matrix (full width)
-#   Row 3:  [C]  |  [D]   — Type 4 lollipop | Type 4 boxplots  (C slightly wider)
+# No mediation model, bootstrap result, sensitivity result, or Type 4 test is
+# recomputed. Panels read the frozen R1 result tables. Only presentation changes.
 # ==============================================================================
 
-library(here)
-library(magick)
+suppressPackageStartupMessages({
+  library(here)
+  library(ggplot2)
+  library(dplyr)
+  library(patchwork)
+})
 
-panels_dir <- here("results", "figures", "panels")
-out_dir <- here("results", "figures")
+stopifnot(file.exists(here(".here")))
+dir.create(here("results", "cache"), recursive = TRUE, showWarnings = FALSE)
 
-# --- 1. Read panels ---
-cat("Reading Figure 6 panels...\n")
-pA <- image_read(file.path(panels_dir, "Figure6A_mediation_forest_results.png"))
-pB <- image_read(file.path(panels_dir, "Figure6B_sensitivity_matrix_results.png"))
-pC <- image_read(file.path(panels_dir, "Figure6C_type4_lollipop_results.png"))
-pD <- image_read(file.path(panels_dir, "Figure6D_type4_boxplots_results.png"))
+OUT_DIR <- here("results", "figures")
+MINOR4_DIR <- here("results", "verification")
+QA_DIR <- file.path(MINOR4_DIR, "figure6")
+dir.create(QA_DIR, recursive = TRUE, showWarnings = FALSE)
 
-for (nm in c("A", "B", "C", "D")) {
-  img <- get(paste0("p", nm))
-  cat(sprintf("  %s: %d x %d\n", nm, image_info(img)$width, image_info(img)$height))
-}
+source(here("scripts", "figure6", "panel_A_mediation_forest.R"))
+source(here("scripts", "figure6", "panel_B_sensitivity_matrix.R"))
+source(here("scripts", "figure6", "panel_C_type4_lollipop.R"))
+source(here("scripts", "figure6", "panel_D_type4_boxplots.R"))
 
-# --- 2. Dimensions ---
-full_w <- 4800
-# Bottom row: C : D width ratio 1.1 : 1
-wC <- round(full_w * 1.1 / 2.1)
-wD <- full_w - wC
-
-# --- 3. Helpers ---
-add_label <- function(img, label, x = 20, y = 50) {
-  image_annotate(img, label,
-    size = 70, weight = 700, color = "black",
-    location = paste0("+", x, "+", y)
-  )
-}
-
-make_row <- function(left, right, wl, wr) {
-  left <- image_resize(left, paste0(wl, "x"))
-  right <- image_resize(right, paste0(wr, "x"))
-  h <- max(image_info(left)$height, image_info(right)$height)
-  left <- image_extent(left, paste0(wl, "x", h), gravity = "NorthWest", color = "white")
-  right <- image_extent(right, paste0(wr, "x", h), gravity = "NorthWest", color = "white")
-  image_append(c(left, right))
-}
-
-make_full_row <- function(img, w = full_w) {
-  img <- image_resize(img, paste0(w, "x"))
-  image_extent(img, paste0(w, "x", image_info(img)$height),
-    gravity = "NorthWest", color = "white"
-  )
-}
-
-# --- 4. Assemble ---
-row1 <- make_full_row(add_label(pA, "A"))
-row2 <- make_full_row(add_label(pB, "B"))
-row3 <- make_row(add_label(pC, "C"), add_label(pD, "D"), wl = wC, wr = wD)
-
-fig6 <- image_append(c(row1, row2, row3), stack = TRUE)
-
-cat(sprintf("Final: %d x %d px\n", image_info(fig6)$width, image_info(fig6)$height))
-
-# --- 5. Save ---
-image_write(fig6, file.path(out_dir, "Figure6_composite.png"), format = "png")
-image_write(fig6, file.path(out_dir, "Figure6_composite.tiff"),
-  format = "tiff", compression = "lzw"
+# Hard fidelity assertions against the frozen R1 result tables.
+stopifnot(
+  nrow(med_results) == 44,
+  length(unique(med_results$mediator)) == 22,
+  sum(med_results$model == "Type1_vs_Ref" & med_results$ACME_padj < 0.05) == 5,
+  sum(med_results$model == "Type4_vs_Ref" & med_results$ACME_padj < 0.05) == 5,
+  nrow(panel_b) == 48,
+  length(unique(panel_b$analysis)) == 8,
+  length(unique(panel_b$mediator)) == 6,
+  nrow(panel_c) == 23,
+  sum(panel_c$is_sig == "< 0.05") == 4,
+  nrow(t4) == 39,
+  sum(t4$HUA_group == "HUA+") == 12,
+  sum(t4$HUA_group == "HUA-") == 27,
+  nrow(panel_d_ann) == 4
 )
-cat("Figure 6 composite saved.\n")
+
+key_stats <- data.frame(
+  metric = c(
+    "mediation_candidates", "mediation_model_rows",
+    "Type1_BH_significant", "Type4_BH_significant",
+    "sensitivity_features", "sensitivity_settings", "sensitivity_rows",
+    "within_Type4_tests", "within_Type4_nominal_significant",
+    "Type4_HUA_positive", "Type4_HUA_negative"
+  ),
+  value = c(
+    length(unique(med_results$mediator)), nrow(med_results),
+    sum(med_results$model == "Type1_vs_Ref" & med_results$ACME_padj < 0.05),
+    sum(med_results$model == "Type4_vs_Ref" & med_results$ACME_padj < 0.05),
+    length(unique(panel_b$mediator)), length(unique(panel_b$analysis)), nrow(panel_b),
+    nrow(panel_c), sum(panel_c$is_sig == "< 0.05"),
+    sum(t4$HUA_group == "HUA+"), sum(t4$HUA_group == "HUA-")
+  ),
+  stringsAsFactors = FALSE
+)
+write.csv(key_stats, file.path(QA_DIR, "figure6_key_statistics.csv"), row.names = FALSE)
+
+# Panel tags are added only at final assembly; all text remains vector.
+tag_theme <- theme(
+  plot.tag = element_text(size = 14, face = "bold", color = "black"),
+  plot.tag.position = "topleft"
+)
+
+p6a_final <- p6a +
+  labs(tag = "A", title = NULL) + tag_theme +
+  theme(
+    legend.text = element_text(size = 7.5),
+    legend.title = element_text(size = 8, face = "bold"),
+    axis.text.y = element_text(size = 8),
+    plot.margin = margin(4, 4, 2, 4)
+  )
+
+p6b_final <- p6b +
+  labs(tag = "B", title = NULL) + tag_theme +
+  theme(plot.margin = margin(3, 3, 2, 3))
+
+p6c_final <- p6c +
+  labs(tag = "C", title = NULL, caption = NULL) + tag_theme +
+  theme(plot.margin = margin(3, 3, 2, 3))
+
+p6d_final <- p6d +
+  labs(tag = "D", title = NULL) + tag_theme +
+  theme(plot.margin = margin(3, 3, 2, 3))
+
+# A and B each span the full width; C and D share the bottom row. This preserves
+# the A -> B -> C -> D reading order while giving all 23 rows in C enough height.
+p6_bottom <- (p6c_final | p6d_final) +
+  plot_layout(widths = c(1.0, 1.0))
+
+fig6_final <- (p6a_final / p6b_final / p6_bottom) +
+  plot_layout(heights = c(1.12, 0.60, 1.25))
+
+pdf_path <- file.path(OUT_DIR, "Figure6.pdf")
+png_path <- file.path(OUT_DIR, "Figure6.png")
+
+ggsave(
+  pdf_path, fig6_final,
+  width = 210 / 25.4, height = 297 / 25.4, units = "in",
+  device = cairo_pdf, bg = "white"
+)
+ggsave(
+  png_path, fig6_final,
+  width = 210 / 25.4, height = 297 / 25.4, units = "in",
+  dpi = 300, device = png, type = "cairo", bg = "white"
+)
+
+capture.output(sessionInfo(), file = file.path(MINOR4_DIR, "figure6_session_info.txt"))
+writeLines(
+  c(
+    "Figure 6 rebuild completed from frozen R1 result tables.",
+    "Random seed: 42 for Type 4 participant jitter (unchanged).",
+    "Final canvas: 210 x 297 mm (A4 portrait, approximately 595 x 842 pt).",
+    "All hard fidelity assertions passed before final assembly."
+  ),
+  con = file.path(QA_DIR, "build_status.txt")
+)
+
+cat("\nFigure 6 final outputs:\n", pdf_path, "\n", png_path, "\n", sep = "")

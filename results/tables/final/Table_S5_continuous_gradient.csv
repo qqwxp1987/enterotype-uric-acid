@@ -1,0 +1,7 @@
+﻿specification,n_ua_analysis,n_hua_analysis,prevotella_undetected_n,ua_partial_rho_sex_age,ua_partial_p,nonlinearity_spline_df3_p,nonlinearity_spline_df4_p,hua_or_per_doubling,hua_or_ci_low,hua_or_ci_high,hua_p,aic_enterotype_k4,aic_pb_linear,aic_pb_spline_df3,aic_pb_spline_df4
+Pseudocount 1e-6 (primary),305,225,122,-0.152,0.0081,0.865,0.348,0.991,0.950,1.033,0.654,3515.9,3516.1,3519.8,3518.8
+Pseudocount 1e-5,305,225,122,-0.152,0.008,0.782,0.243,0.989,0.942,1.039,0.662,3515.9,3516.2,3519.7,3518.0
+Pseudocount 1e-4,305,225,122,-0.157,0.0061,0.630,0.134,0.987,0.930,1.048,0.676,3515.9,3516.3,3519.4,3516.6
+Pseudocount 1e-3,305,225,122,-0.166,0.0037,0.354,0.222,0.985,0.911,1.064,0.699,3515.9,3516.4,3518.3,3517.9
+Half-minimum positive replacement,305,225,122,-0.152,0.0081,0.846,0.333,0.990,0.948,1.034,0.656,3515.9,3516.2,3519.8,3518.7
+Prevotella-detected participants only,183,131,0,-0.102,0.1705,0.669,0.791,0.983,0.910,1.063,0.670,2109.7,2111.5,2114.7,2116.5

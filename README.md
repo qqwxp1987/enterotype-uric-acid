@@ -1,126 +1,96 @@
-# Gut Microbiome Enterotypes and Serum Uric Acid — Analysis Code & Data
+# Gut Microbiome Enterotypes and Hyperuricemia — Analysis Code and Key Results
 
-This repository contains the data and analysis code required to reproduce the
-figures and tables of the study:
+This repository provides the analysis code, analysis-ready inputs, and key numerical results for:
 
-> **Gut Microbiome Enterotypes Associate with Serum Uric Acid through Distinct
-> Multi-Omics Architectures**
+> **Gut Microbiome Enterotypes Associated with Hyperuricemia Exhibit Distinct Multi-Omics Architectures and Concordant Purine-Related Metagenomic Signatures**
 
-We analysed 305 adults from a health-examination cohort with matched clinical
-phenotyping and shotgun metagenomics (303 with serum untargeted metabolomics).
-Dirichlet multinomial mixture (DMM) modelling identified four genus-level
-enterotypes along a *Bacteroides*–*Prevotella* gradient; the code here covers
-enterotype definition, enterotype–uric-acid association and robustness testing,
-multi-omics core-feature extraction, microbiome–metabolome integration, and
-causal mediation analysis.
+The study includes 305 adults with shotgun metagenomics, of whom 303 have matched serum untargeted metabolomics. The public workflow covers enterotype definition, UA/HUA associations and robustness models, multi-omics core features and taxonomic attribution, purine-module analysis, microbiome–metabolome integration, exploratory mediation, and within-Type 4 heterogeneity.
 
----
+## What is included
 
-## Repository structure
+- **One authoritative version of each required analysis script**, with portable repository-relative paths and fixed random seeds where applicable.
+- **Final main and supplementary figures** as PDFs.
+- **Directly queryable final CSVs** for Tables S1–S19 in `results/tables/final/`.
+- **The final 29-sheet supplementary workbook**, including the Contents sheet and companion sheets S8a–S8i.
+- **Frozen statistical outputs and audit records** needed to query the published results without immediately repeating long bootstrap or clustering runs.
 
+This is a **main-results release**, not an archive of every exploratory analysis. Superseded versions, reviewer-only inspection files, manuscript/response generators, numbering scripts, PDF/image QA utilities, and obsolete preliminary analyses are intentionally excluded. See [ANALYSIS_MAP.md](ANALYSIS_MAP.md) for the inclusion rationale and the figure/table-to-script mapping.
+
+## Repository layout
+
+```text
+data/
+  clean/                  analysis-ready clinical, metagenomic and metabolomic inputs
+  curated/purine/         frozen pathway-composition and inclusion registers
+scripts/
+  figure1/ ... figure6/   statistical analyses and final figure generation
+  utils/                  shared plotting helpers
+  verification/           self-consistency and key-result checks
+results/
+  tables/final/           canonical final-numbered CSVs (S1–S19 and S8a–S8i)
+  tables/                 upstream statistical outputs and small required objects
+  figures/                final Figures 1–6 (PDF)
+  r1_2_r2_1/              enterotype-robustness protocol and audit records
+  r1_5_covariate_sensitivity/
+supplementary/
+  figures/                final Figures S1–S7 (PDF)
+  tables/                 final supplementary workbook
+  build_supplementary_xlsx.py
 ```
-.
-├── data/
-│   ├── README.md            # description of every data file
-│   └── clean/               # analysis-ready inputs (phyloseq objects, metabolome, metadata)
-├── scripts/
-│   ├── figure1/ … figure6/  # analysis & plotting code, grouped by manuscript figure
-│   └── utils/               # shared helpers (colour palettes)
-├── results/
-│   ├── tables/              # intermediate statistical result tables
-│   ├── figures/             # final composite figures + individual panels
-│   └── cache/               # cached intermediate plot objects (.rds)
-├── supplementary/
-│   ├── figures/             # supplementary figures S1–S3
-│   └── tables/              # supplementary tables + builder script
-├── README.md
-├── LICENSE                  # MIT
-└── .gitignore
-```
 
-> **Note on folder names.** The `scripts/figureN/` folders reflect the analysis
-> history; because figures were renumbered during revision, a folder may feed
-> more than one manuscript figure. The **figure → script map** below is the
-> authoritative reference.
+## Quick result lookup
 
----
-
-## Data
-
-Analysis-ready inputs are under `data/clean/` (see `data/README.md` for a full
-description of each file). Two categories of data are hosted **externally**
-because of size or sequence-data deposition requirements:
-
-| Data | Location |
-|---|---|
-| Raw shotgun metagenomic sequencing reads | NGDC Genome Sequence Archive — accession `[GSA: CRAXXXXXX]` |
-| Serum untargeted metabolomics (raw) | NGDC OMIX — accession `[OMIX: OMIXXXXXX]` |
-| `ec_stratified.tsv` — per-species stratified EC abundance table (~137 MB) | Zenodo — DOI `[10.5281/zenodo.XXXXXXX]` |
-
-To run the EC-attribution scripts, download `ec_stratified.tsv` from Zenodo and
-place it in `data/clean/`.
-
----
+- Main figures: `results/figures/Figure1.pdf` through `Figure6.pdf`.
+- Supplementary figures: `supplementary/figures/`.
+- Final tables: `results/tables/final/`.
+- Workbook: `supplementary/tables/Supplementary_Tables.xlsx`.
+- Exact script mapping: [ANALYSIS_MAP.md](ANALYSIS_MAP.md).
+- Validation scope and limitations: [VALIDATION.md](VALIDATION.md).
+- File hashes: `MANIFEST.sha256`.
 
 ## Software requirements
 
-- **R ≥ 4.2** (analyses were run on Windows; `here::here()` makes paths portable).
-- Core R packages:
-  - Microbiome / stats: `phyloseq`, `microbiome`, `DirichletMultinomial`,
-    `vegan`, `MicrobiomeStat`, `limma`, `nlme`, `car`, `emmeans`, `mediation`
-  - Data handling & plotting: `tidyverse` (`dplyr`, `ggplot2`, `readr`,
-    `stringr`, `tidyr`), `here`, `ComplexHeatmap`, `circlize`, `magick`
-- A small number of scripts call the KEGG REST API for enzyme annotation
-  (`scripts/figure3/attribution/fetch_kegg_ecs.py`, Python 3).
+- **R 4.3.1** was used for the manuscript analyses.
+- Core R packages include `here`, `phyloseq`, `microbiome`, `DirichletMultinomial`, `vegan`, `MicrobiomeStat`, `limma`, `nlme`, `logistf`, `emmeans`, `ppcor`, `mediation`, `tidyverse`, `ComplexHeatmap`, `patchwork`, and `magick`.
+- **Python 3** with `pandas`, `numpy`, `openpyxl`, and `pypdf` is required for table builders and release validation.
 
-Installing the exact package versions used for the paper (recommended: record
-your own `sessionInfo()` or use `renv`) is advised for bit-for-bit reproduction.
+Package versions matter for exact numerical reproduction, particularly for LinDA, GLS optimization, Firth models, and bootstrap procedures. See the `session_info.txt` files under the relevant results directories and [VALIDATION.md](VALIDATION.md) before interpreting a rerun.
 
----
+## Running selected analyses
 
-## How to reproduce
+Run commands from the repository root. R scripts resolve paths with `here::here()`; Python scripts resolve the repository root from their own location.
 
-The project uses the [`here`](https://here.r-lib.org/) package: open the
-RStudio project (`HUA_FCTJ2021.Rproj`) or set the working directory to the
-repository root, and all relative paths resolve automatically.
+```bash
+# Nested-model decomposition and Firth stability (Figure 3; Tables S6–S7)
+Rscript scripts/figure3/nested_model_stability.R
+python scripts/figure3/build_nested_model_tables.py
 
-Within each figure folder, run the scripts in this order:
+# Purine-module scores (Figure S6; Tables S3, S9, S10)
+Rscript scripts/figure4/purine_module_analysis.R
+python scripts/figure4/build_purine_module_tables.py
+Rscript scripts/figure4/figureS6_purine_modules.R
 
-1. `section*_step1_*` / `panel_*` data-preparation and per-panel scripts;
-2. `assemble_figure*.R` — stitches the panels into the final composite figure.
+# Continuous-gradient and k=3 sensitivity tables (Tables S5 and S19)
+python scripts/figure1/build_gradient_sensitivity_tables.py
 
-Outputs are written to `results/figures/`, `results/tables/` and
-`supplementary/`.
+# QC and missingness tables (Tables S1–S2)
+python scripts/figure2/build_qc_missingness_tables.py
 
-### Figure / table → script map
+# Rebuild the supplementary workbook from the final CSVs
+python supplementary/build_supplementary_xlsx.py
 
-| Manuscript item | Script(s) |
-|---|---|
-| **Figure 1** (enterotype landscape) | `scripts/figure1/panel_A`–`panel_E` + `assemble_figure1.R` |
-| **Figure 2** (UA / HUA association) | `scripts/figure2/panel_A`–`panel_D` + `assemble_figure2.R` |
-| **Figure 3** (robustness adjustment) | `scripts/figure3/section3_6_step1`–`step4` |
-| **Figure 4** (multi-omics core signatures) | `scripts/figure3/section3_3_differential_analysis.R`, `panel_C_core_pathways_heatmap_rotated.R`, `panel_GH_convergent_ec.R`, `attribution/`; `scripts/figure4/panel_A_core_summary.R` + `assemble_figure4.R` |
-| **Figure 5** (microbiome–metabolome integration) | `scripts/figure5/panel_A_dbRDA.R`, `panel_B_top_adjusted.R`, `panel_CD_function_integration.R` + `assemble_figure5.R` |
-| **Figure 6** (mediation & heterogeneity) | `scripts/figure6/section3_5_step1`–`step3` + `panel_A`–`panel_D` + `assemble_figure6.R` |
-| **Table 1** (cohort demographics) | `scripts/figure2/table1_upgrade.R` |
-| **Figure S1** (per-subject composition) | `scripts/figure1/suppl_S1_individual_bar.R` |
-| **Figure S2** (additional core-feature panels) | `scripts/figure3/panel_B_radial_taxa.R`, `panel_E_Species_Attribution_Bar.R`; `scripts/figure4/panel_D_type1_core_metabolites.R` + `assemble_figureS2.R` |
-| **Figure S3** (full 75-species heatmap) | `scripts/figure5/panel_B_full_adjusted.R` |
-| **Tables S1–S6** | `supplementary/build_supplementary_xlsx.R` |
+# Check release structure and key numerical anchors
+python scripts/verification/validate_release.py
+```
 
----
+Long-running steps—5,000-replicate mediation bootstraps, 100 DMM bootstrap refits, and 100 DMM initialization refits—do not need to be repeated merely to inspect the published results. Their frozen outputs are retained. Figure assembly scripts are mapped separately from statistical scripts in [ANALYSIS_MAP.md](ANALYSIS_MAP.md).
 
-## Citation
+## Data availability
 
-If you use this code or data, please cite the associated paper (full citation
-to be added on publication) and the Zenodo archive of this repository
-(DOI `[10.5281/zenodo.XXXXXXX]`).
+The metagenomic and metabolomic datasets generated and analyzed in the study are deposited in the **China National GeneBank Sequence Archive (CNSA), accession CNP0009610**.
 
-## License
+Analysis-ready inputs are documented in `data/README.md`. The full `ec_stratified.tsv` file is not redistributed here because of its size. The derived EC-stratified subset required for the published attribution analyses is included under `results/tables/section_3_4/attribution/`; only regenerating that subset from scratch requires the original full HUMAnN output.
 
-Code in this repository is released under the MIT License (see `LICENSE`).
+## Citation and license
 
-## Contact
-
-For questions about the analyses, please contact the corresponding author of
-the paper.
+Please cite the associated paper when using the code or data. Code is released under the MIT License; see `LICENSE`.

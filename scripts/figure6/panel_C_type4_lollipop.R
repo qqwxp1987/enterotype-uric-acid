@@ -6,6 +6,8 @@ library(ggplot2)
 library(tidyverse)
 library(here)
 
+source(here("scripts", "figure6", "fig6_style.R"))
+
 cat("--- Building Figure 6C ---\n")
 
 out_dir <- here("results", "figures", "panels")
@@ -63,7 +65,7 @@ panel_c <- het_results %>%
       TRUE ~ "Taxonomy"
     ),
     data_layer = factor(data_layer, levels = c("Serum metabolite", "Microbial pathway", "Convergent EC", "Taxonomy")),
-    is_sig = wilcox_p < 0.05
+    is_sig = ifelse(wilcox_p < 0.05, "< 0.05", "≥ 0.05")
   ) %>%
   arrange(cliffs_delta) %>%
   mutate(display_label = factor(display_label, levels = display_label))
@@ -72,29 +74,33 @@ p6c <- ggplot(panel_c, aes(x = cliffs_delta, y = display_label, color = data_lay
   geom_vline(xintercept = c(-0.474, -0.33, 0.33, 0.474), linetype = "dashed", linewidth = 0.3, color = "grey75") +
   geom_vline(xintercept = 0, linewidth = 0.5, color = "grey40") +
   geom_segment(aes(x = 0, xend = cliffs_delta, yend = display_label), linewidth = 0.65) +
-  geom_point(aes(shape = is_sig), size = 2.7, stroke = 0.8) +
-  scale_shape_manual(values = c("TRUE" = 16, "FALSE" = 1), name = "Wilcoxon P") +
+  geom_point(aes(shape = is_sig), size = 2.3, stroke = 0.7) +
+  scale_shape_manual(values = c("< 0.05" = 16, "≥ 0.05" = 1), name = "Wilcoxon P") +
   scale_color_manual(values = layer_colors, name = "Feature layer") +
+  # Wrap the 4-item feature-layer legend onto 2 rows so it fits the panel width.
+  guides(color = guide_legend(nrow = 2, byrow = TRUE)) +
   labs(
-    x = "Cliff's delta (HUA+ vs HUA-)",
+    x = "Cliff's δ (HUA+ vs HUA−)",
     y = NULL,
-    title = "Type 4 heterogeneity is concentrated in a limited subset of features"
+    title = "Exploratory within-Type 4\nheterogeneity analysis",
+    caption = "Nominal P-values; no multiple-testing adjustment"
   ) +
-  theme_bw(base_size = 10.2) +
+  theme_bw(base_size = FS_AXIS_TEXT) +
+  fig6_text_theme() +
   theme(
     panel.grid.minor = element_blank(),
     panel.grid.major.y = element_blank(),
-    axis.text.y = element_text(size = 7.2, color = "black"),
-    axis.text.x = element_text(size = 8.2, color = "black"),
-    plot.title = element_text(size = 11, face = "bold"),
+    plot.caption = element_text(size = FS_ANNOT, hjust = 0, margin = margin(t = 3)),
     legend.position = "bottom",
-    legend.box = "vertical",
-    legend.title = element_text(size = 9, face = "bold"),
-    legend.text = element_text(size = 8)
+    # Stacked (vertical): the two legends do not fit side-by-side in C's
+    # narrow (6.7 in) cell width.
+    legend.box = "vertical"
   )
 
-ggsave(file.path(out_dir, "Figure6C_type4_lollipop_results.pdf"), p6c, width = 8.8, height = 7.6, dpi = 300)
-ggsave(file.path(out_dir, "Figure6C_type4_lollipop_results.png"), p6c, width = 8.8, height = 7.6, dpi = 300)
+# Rendered at the left column width (6.7 in) so magick performs no rescale.
+# Sits directly below panel B in the left column.
+ggsave(file.path(out_dir, "Figure6C_type4_lollipop_results.pdf"), p6c, width = 6.7, height = 7.6, dpi = 300)
+ggsave(file.path(out_dir, "Figure6C_type4_lollipop_results.png"), p6c, width = 6.7, height = 7.6, dpi = 300)
 
 saveRDS(p6c, here("results", "cache", "p6c.rds"))
 cat("Figure 6C saved.\n")

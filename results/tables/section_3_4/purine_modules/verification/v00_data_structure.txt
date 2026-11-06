@@ -1,0 +1,76 @@
+==== Pathway phyloseq ====
+taxa x samples: 474 x 305
+taxa_names head:
+[1] "1CMET2-PWY: N10-formyl-tetrahydrofolate biosynthesis"
+[2] "3-HYDROXYPHENYLACETATE-DEGRADATION-PWY: 4-hydroxyphenylacetate degradation"
+[3] "7ALPHADEHYDROX-PWY: cholate degradation (bacteria, anaerobic)"
+[4] "AEROBACTINSYN-PWY: aerobactin biosynthesis"
+[5] "ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast"
+sample_data columns:
+ [1] "Gender"              "Group"               "Hyperuricemia"
+ [4] "Age"                 "Shi_score"           "BMI"
+ [7] "Height"              "Weight"              "UA"
+[10] "UHR"                 "SBP"                 "DBP"
+[13] "GLU"                 "LDLC"                "TC"
+[16] "TG"                  "nonHDLC"             "HDLC"
+[19] "CRP"                 "anti_CCP"            "RF"
+[22] "NA_IgA"              "VCA_IgA"             "NEUT."
+[25] "NEUT"                "MONO."               "MONO"
+[28] "BASO."               "BASO"                "EOSIN."
+[31] "EOSIN"               "MCHC"                "MCH"
+[34] "MCV"                 "MPV"                 "LYM."
+[37] "LYM"                 "WBC"                 "RDW"
+[40] "HCT"                 "RBC"                 "PDW"
+[43] "PCT"                 "PLT"                 "Hb"
+[46] "TSH"                 "FT3"                 "FT4"
+[49] "AFP"                 "CEA"                 "ALB_GLB"
+[52] "GGT"                 "TBA"                 "TP"
+[55] "GLB"                 "ALB"                 "ALT"
+[58] "AST"                 "AST_ALT"             "Urea"
+[61] "Cr"                  "eGFR"                "IL27"
+[64] "GMdata"              "BLdata"              "Dirichlettype_Genus"
+
+Dirichlettype_Genus counts:
+
+   1    2    3    4 <NA>
+ 120   98   48   39    0
+
+Gender:
+
+Female   Male   <NA>
+   224     81      0
+Age summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  24.00   30.00   34.00   34.83   38.00   60.00
+UA summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+  140.0   265.0   305.0   324.9   371.0   690.0
+Hyperuricemia:
+
+  No  Yes <NA>
+ 241   64    0
+
+abundance range: 0 32389.81
+per-sample total (colSums) summary:
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max.
+ 381196  709911  806215  831270  913075 2578278
+zero fraction overall: 0.3210486
+any negative: FALSE
+
+==== EC phyloseq ====
+taxa x samples: 2342 x 305
+taxa_names head:
+[1] "1.1.1.1"   "1.1.1.100" "1.1.1.103" "1.1.1.105" "1.1.1.107"
+per-sample total (colSums) summary:
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max.
+ 2818019  4280591  4812113  4882592  5314463 11408802
+zero fraction overall: 0.3701684
+
+same sample order Pathway vs EC: TRUE
+
+frozen purine set: 34  pathways; all present in phyloseq taxa_names: FALSE
+MISSING:
+[1] "PWY-6123: inosine-5'-phosphate biosynthesis I"
+[2] "PWY-6124: inosine-5'-phosphate biosynthesis II"
+[3] "PWY-7234: inosine-5'-phosphate biosynthesis III"
+[4] "PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation"

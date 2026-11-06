@@ -1,0 +1,131 @@
+"pathway_id","feature","final_module","final_sum_role","in_pathway_module_score","comparison","log2FoldChange","pvalue","padj","sig","tested_in_linda"
+"ALLANTOINDEG-PWY","ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast","degradation","core","yes","E1vE2",0.781784385210155,0.0293932350385587,0.119861793971188,"No",TRUE
+"ALLANTOINDEG-PWY","ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast","degradation","core","yes","E4vE2",0.352548513091152,0.449927128706746,0.604918748294689,"No",TRUE
+"ALLANTOINDEG-PWY","ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast","degradation","core","yes","E1vE3",0.551098666250039,0.190344962763495,0.387784142350771,"No",TRUE
+"ALLANTOINDEG-PWY","ALLANTOINDEG-PWY: superpathway of allantoin degradation in yeast","degradation","core","yes","E4vE3",0.0738893197310809,0.86185051789668,0.964793774201006,"No",TRUE
+"DENOVOPURINE2-PWY","DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II","de_novo","core","primary","E1vE2",-0.0805083892293944,0.54689479194299,0.776144754096199,"No",TRUE
+"DENOVOPURINE2-PWY","DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II","de_novo","core","primary","E4vE3",0.260873940679006,0.232716663427529,0.601284357191231,"No",TRUE
+"DENOVOPURINE2-PWY","DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II","de_novo","core","primary","E1vE3",-0.0517591332779483,0.753410068680009,0.923386730516352,"No",TRUE
+"DENOVOPURINE2-PWY","DENOVOPURINE2-PWY: superpathway of purine nucleotides de novo biosynthesis II","de_novo","core","primary","E4vE2",0.377160549075227,0.0528692451184046,0.114265787836552,"No",TRUE
+"P164-PWY","P164-PWY: purine nucleobases degradation I (anaerobic)","degradation","core","yes","E4vE2",-1.48632968160958,7.0435296288357e-05,0.00040449984439885,"Yes",TRUE
+"P164-PWY","P164-PWY: purine nucleobases degradation I (anaerobic)","degradation","core","yes","E1vE2",-0.294343366974094,0.275596742507791,0.55200258149211,"No",TRUE
+"P164-PWY","P164-PWY: purine nucleobases degradation I (anaerobic)","degradation","core","yes","E4vE3",-1.14494575544283,0.0262783959126738,0.137534981205293,"No",TRUE
+"P164-PWY","P164-PWY: purine nucleobases degradation I (anaerobic)","degradation","core","yes","E1vE3",0.0286819662946574,0.939139377944406,0.989319378404687,"No",TRUE
+"P165-PWY","P165-PWY: superpathway of purines degradation in plants","degradation","core","yes",NA,NA,NA,NA,NA,FALSE
+"PWY-5532","PWY-5532: adenosine nucleotides degradation IV","degradation","core","yes",NA,NA,NA,NA,NA,FALSE
+"PWY-5692","PWY-5692: allantoin degradation to glyoxylate II","degradation","core","yes","E1vE2",0.498399888433834,0.051943799347037,0.176961079131431,"No",TRUE
+"PWY-5692","PWY-5692: allantoin degradation to glyoxylate II","degradation","core","yes","E4vE2",0.928298886627172,0.00270558292280849,0.00962517110592047,"Yes",TRUE
+"PWY-5692","PWY-5692: allantoin degradation to glyoxylate II","degradation","core","yes","E4vE3",0.109907837582282,0.748342584965107,0.927009777924865,"No",TRUE
+"PWY-5692","PWY-5692: allantoin degradation to glyoxylate II","degradation","core","yes","E1vE3",-0.347676151875283,0.282308029961719,0.531925504773777,"No",TRUE
+"PWY-5695","PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation","degradation","redundant_in_sum","","E1vE2",0.0525366064910923,0.711547532125262,0.86541090118932,"No",TRUE
+"PWY-5695","PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation","degradation","redundant_in_sum","","E4vE2",1.5426566220757,3.91225945031574e-11,5.07331709363525e-10,"Yes",TRUE
+"PWY-5695","PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation","degradation","redundant_in_sum","","E1vE3",-0.28063234891117,0.11998756577854,0.277212651971109,"No",TRUE
+"PWY-5695","PWY-5695: urate biosynthesis/inosine 5'-phosphate degradation","degradation","redundant_in_sum","","E4vE3",1.05201764822664,7.49947813116308e-05,0.00107938917387812,"Yes",TRUE
+"PWY-5705","PWY-5705: allantoin degradation to glyoxylate III","degradation","core","yes","E1vE3",0.147851270436161,0.721954747380322,0.923386730516352,"No",TRUE
+"PWY-5705","PWY-5705: allantoin degradation to glyoxylate III","degradation","core","yes","E4vE2",0.146773689349157,0.760448210024823,0.835246394617428,"No",TRUE
+"PWY-5705","PWY-5705: allantoin degradation to glyoxylate III","degradation","core","yes","E1vE2",0.671418722322419,0.0635018092117779,0.202601010342339,"No",TRUE
+"PWY-5705","PWY-5705: allantoin degradation to glyoxylate III","degradation","core","yes","E4vE3",-0.400484943265424,0.363582534455428,0.718253732282046,"No",TRUE
+"PWY-6121","PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I","de_novo","redundant_in_sum","","E4vE2",0.500613584724699,0.0155212447718511,0.0410496078834483,"Yes",TRUE
+"PWY-6121","PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I","de_novo","redundant_in_sum","","E4vE3",0.278006194458969,0.230693117745037,0.601284357191231,"No",TRUE
+"PWY-6121","PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I","de_novo","redundant_in_sum","","E1vE2",0.0650525946459608,0.648902452042162,0.82289837766861,"No",TRUE
+"PWY-6121","PWY-6121: 5-aminoimidazole ribonucleotide biosynthesis I","de_novo","redundant_in_sum","","E1vE3",-0.020217258695065,0.908815951153706,0.975559567819687,"No",TRUE
+"PWY-6122","PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.0555852517962676,0.698093256171999,0.855589905430316,"No",TRUE
+"PWY-6122","PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II","de_novo","redundant_in_sum","","E4vE2",1.73645682780205,4.42014990936794e-13,1.2171313547338e-11,"Yes",TRUE
+"PWY-6122","PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II","de_novo","redundant_in_sum","","E4vE3",1.08946160120424,4.24710656938228e-05,0.000815039974981457,"Yes",TRUE
+"PWY-6122","PWY-6122: 5-aminoimidazole ribonucleotide biosynthesis II","de_novo","redundant_in_sum","","E1vE3",-0.40939160576365,0.0238120948476096,0.0870223829885368,"No",TRUE
+"PWY-6123","PWY-6123: inosine-5'-phosphate biosynthesis I","de_novo","redundant_in_sum","","E4vE3",0.0536252935115416,0.827268709834491,0.953740078061338,"No",TRUE
+"PWY-6123","PWY-6123: inosine-5'-phosphate biosynthesis I","de_novo","redundant_in_sum","","E1vE3",0.259940961817434,0.158902437956171,0.338747860280192,"No",TRUE
+"PWY-6123","PWY-6123: inosine-5'-phosphate biosynthesis I","de_novo","redundant_in_sum","","E4vE2",0.0607034707709887,0.77622740709866,0.845646118302605,"No",TRUE
+"PWY-6123","PWY-6123: inosine-5'-phosphate biosynthesis I","de_novo","redundant_in_sum","","E1vE2",0.124940178024124,0.39858880288571,0.677169103177277,"No",TRUE
+"PWY-6124","PWY-6124: inosine-5'-phosphate biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.139991209142097,0.346693889444182,0.627797043047573,"No",TRUE
+"PWY-6124","PWY-6124: inosine-5'-phosphate biosynthesis II","de_novo","redundant_in_sum","","E1vE3",0.358111002561543,0.0538924883360937,0.164127123569012,"No",TRUE
+"PWY-6124","PWY-6124: inosine-5'-phosphate biosynthesis II","de_novo","redundant_in_sum","","E4vE2",-0.112433728410611,0.60399664437262,0.726966021071238,"No",TRUE
+"PWY-6124","PWY-6124: inosine-5'-phosphate biosynthesis II","de_novo","redundant_in_sum","","E4vE3",-0.0348734621752781,0.888896478749458,0.981038205652432,"No",TRUE
+"PWY-6125","PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.392187892668736,0.00779007685380755,0.0441071957074737,"Yes",TRUE
+"PWY-6125","PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE3",0.344214121936818,0.157910723139965,0.501086782877211,"No",TRUE
+"PWY-6125","PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE2",0.518228643035975,0.0121689646700424,0.034209257324175,"Yes",TRUE
+"PWY-6125","PWY-6125: superpathway of guanosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE3",0.373364189008665,0.0468060675989033,0.148157788777631,"No",TRUE
+"PWY-6126","PWY-6126: superpathway of adenosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE2",0.694119499946993,0.000558593585345489,0.00252308563268412,"Yes",TRUE
+"PWY-6126","PWY-6126: superpathway of adenosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.119456592879262,0.382444477350363,0.662683965063991,"No",TRUE
+"PWY-6126","PWY-6126: superpathway of adenosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE3",0.461615743621867,0.0456733441325664,0.214027414946794,"No",TRUE
+"PWY-6126","PWY-6126: superpathway of adenosine nucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE3",0.0180255517653922,0.916429787347607,0.979799932217389,"No",TRUE
+"PWY-6277","PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis","de_novo","redundant_in_sum","","E4vE3",1.08946160120424,4.24710656938228e-05,0.000815039974981457,"Yes",TRUE
+"PWY-6277","PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis","de_novo","redundant_in_sum","","E4vE2",1.73645682780205,4.42014990936794e-13,1.2171313547338e-11,"Yes",TRUE
+"PWY-6277","PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis","de_novo","redundant_in_sum","","E1vE3",-0.40939160576365,0.0238120948476096,0.0870223829885368,"No",TRUE
+"PWY-6277","PWY-6277: superpathway of 5-aminoimidazole ribonucleotide biosynthesis","de_novo","redundant_in_sum","","E1vE2",0.0555852517962676,0.698093256171999,0.855589905430316,"No",TRUE
+"PWY-6353","PWY-6353: purine nucleotides degradation II (aerobic)","degradation","core","yes","E1vE2",-0.159472189093981,0.275402080742884,0.55200258149211,"No",TRUE
+"PWY-6353","PWY-6353: purine nucleotides degradation II (aerobic)","degradation","core","yes","E4vE3",-0.0952719306765928,0.62084645032798,0.887238012348141,"No",TRUE
+"PWY-6353","PWY-6353: purine nucleotides degradation II (aerobic)","degradation","core","yes","E4vE2",-0.100938662069305,0.536147954314755,0.679910024083696,"No",TRUE
+"PWY-6353","PWY-6353: purine nucleotides degradation II (aerobic)","degradation","core","yes","E1vE3",-0.0450608917375998,0.812790511924816,0.950814667914605,"No",TRUE
+"PWY-6595","PWY-6595: superpathway of guanosine nucleotides degradation (plants)","degradation","core","yes","E4vE3",-0.597442152353835,0.308272700228244,0.691856104245903,"No",TRUE
+"PWY-6595","PWY-6595: superpathway of guanosine nucleotides degradation (plants)","degradation","core","yes","E4vE2",-1.93128772683312,2.6553848016404e-05,0.000174994211517941,"Yes",TRUE
+"PWY-6595","PWY-6595: superpathway of guanosine nucleotides degradation (plants)","degradation","core","yes","E1vE2",-2.52870961617247,3.61950549877933e-09,2.07863030072756e-07,"Yes",TRUE
+"PWY-6595","PWY-6595: superpathway of guanosine nucleotides degradation (plants)","degradation","core","yes","E1vE3",-1.1160985045345,0.0461384796289041,0.147203720720789,"No",TRUE
+"PWY-6606","PWY-6606: guanosine nucleotides degradation II","degradation","redundant_in_sum","","E4vE2",-0.160014584667262,0.310374839263166,0.486466329284549,"No",TRUE
+"PWY-6606","PWY-6606: guanosine nucleotides degradation II","degradation","redundant_in_sum","","E1vE2",-0.0890521793641497,0.522981458605597,0.758983921875271,"No",TRUE
+"PWY-6606","PWY-6606: guanosine nucleotides degradation II","degradation","redundant_in_sum","","E4vE3",-0.142446468127327,0.432060495379136,0.761124595372431,"No",TRUE
+"PWY-6606","PWY-6606: guanosine nucleotides degradation II","degradation","redundant_in_sum","","E1vE3",0.0566902460675318,0.75303441415252,0.923386730516352,"No",TRUE
+"PWY-6608","PWY-6608: guanosine nucleotides degradation III","degradation","redundant_in_sum","","E4vE2",-0.068822018900147,0.71067333924645,0.796158554014302,"No",TRUE
+"PWY-6608","PWY-6608: guanosine nucleotides degradation III","degradation","redundant_in_sum","","E1vE3",0.557841660121452,0.00210722921306172,0.0165595589974351,"Yes",TRUE
+"PWY-6608","PWY-6608: guanosine nucleotides degradation III","degradation","redundant_in_sum","","E1vE2",0.514054057714167,0.000488356593186106,0.00426781196653945,"Yes",TRUE
+"PWY-6608","PWY-6608: guanosine nucleotides degradation III","degradation","redundant_in_sum","","E4vE3",-0.0794402906744557,0.679881153784847,0.92320246694369,"No",TRUE
+"PWY-6609","PWY-6609: adenine and adenosine salvage III","salvage","core","yes","E4vE2",1.47982068579083,1.14197497099338e-10,1.35021746570394e-09,"Yes",TRUE
+"PWY-6609","PWY-6609: adenine and adenosine salvage III","salvage","core","yes","E1vE3",-0.392333601432469,0.0307473416680668,0.106555442677266,"No",TRUE
+"PWY-6609","PWY-6609: adenine and adenosine salvage III","salvage","core","yes","E4vE3",0.991471855638334,0.000154358915145402,0.00168126061631343,"Yes",TRUE
+"PWY-6609","PWY-6609: adenine and adenosine salvage III","salvage","core","yes","E1vE2",-0.0777054234992431,0.584576866078718,0.777382614034432,"No",TRUE
+"PWY-7219","PWY-7219: adenosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E4vE2",1.59447216575491,1.242094855464e-11,1.78329332820189e-10,"Yes",TRUE
+"PWY-7219","PWY-7219: adenosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E1vE3",-0.454735852349583,0.0128868735652777,0.0575613685915736,"No",TRUE
+"PWY-7219","PWY-7219: adenosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E1vE2",-0.0439098659347732,0.759006689446166,0.899222641713982,"No",TRUE
+"PWY-7219","PWY-7219: adenosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E4vE3",1.00416691653724,0.000147798173225843,0.00165451843916708,"Yes",TRUE
+"PWY-7220","PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE2",0.121951874473215,0.543259034980242,0.680785134127862,"No",TRUE
+"PWY-7220","PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE3",0.502183095039365,0.00807442687868814,0.0410875899396536,"Yes",TRUE
+"PWY-7220","PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE3",0.0937071292033053,0.695692475915908,0.92320246694369,"No",TRUE
+"PWY-7220","PWY-7220: adenosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.41481479787218,0.00484848467559108,0.0304545443685565,"Yes",TRUE
+"PWY-7221","PWY-7221: guanosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E1vE3",-0.407228888383877,0.0258722247470261,0.0928628066812903,"No",TRUE
+"PWY-7221","PWY-7221: guanosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E4vE2",1.57294253585259,1.97114914025487e-11,2.7324205323533e-10,"Yes",TRUE
+"PWY-7221","PWY-7221: guanosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E4vE3",0.992367724992368,0.000178662335796592,0.00189476108752702,"Yes",TRUE
+"PWY-7221","PWY-7221: guanosine ribonucleotides de novo biosynthesis","de_novo","redundant_in_sum","","E1vE2",-0.00250155652456233,0.986076221929783,0.999210996159509,"No",TRUE
+"PWY-7222","PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE3",0.502183095039365,0.00807442687868814,0.0410875899396536,"Yes",TRUE
+"PWY-7222","PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE2",0.121951874473215,0.543259034980242,0.680785134127862,"No",TRUE
+"PWY-7222","PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E1vE2",0.41481479787218,0.00484848467559108,0.0304545443685565,"Yes",TRUE
+"PWY-7222","PWY-7222: guanosine deoxyribonucleotides de novo biosynthesis II","de_novo","redundant_in_sum","","E4vE3",0.0937071292033053,0.695692475915908,0.92320246694369,"No",TRUE
+"PWY-7228","PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E1vE2",0.378102029251367,0.0104805650725908,0.0561758287890868,"No",TRUE
+"PWY-7228","PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E1vE3",0.334944876274616,0.0739601776610571,0.198213276131633,"No",TRUE
+"PWY-7228","PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E4vE2",0.601839744326121,0.00422208657085323,0.0139121213236311,"Yes",TRUE
+"PWY-7228","PWY-7228: superpathway of guanosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E4vE3",0.394276382467036,0.109601849999392,0.384726712406183,"No",TRUE
+"PWY-7229","PWY-7229: superpathway of adenosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E1vE3",-0.0911499213813184,0.590180118646437,0.831073699822269,"No",TRUE
+"PWY-7229","PWY-7229: superpathway of adenosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E1vE2",0.0550459109260959,0.683489036293276,0.85399059177624,"No",TRUE
+"PWY-7229","PWY-7229: superpathway of adenosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E4vE2",0.852310433000432,2.70233556277977e-05,0.000175215951006043,"Yes",TRUE
+"PWY-7229","PWY-7229: superpathway of adenosine nucleotides de novo biosynthesis I","de_novo","redundant_in_sum","","E4vE3",0.567306790890018,0.0144342142967776,0.0826144231136737,"No",TRUE
+"PWY-7234","PWY-7234: inosine-5'-phosphate biosynthesis III","de_novo","core","no","E1vE2",-1.21177434772613,2.7806479543154e-09,1.86303412939132e-07,"Yes",TRUE
+"PWY-7234","PWY-7234: inosine-5'-phosphate biosynthesis III","de_novo","core","no","E1vE3",-0.996107075178984,9.40326438039883e-05,0.00145388933881551,"Yes",TRUE
+"PWY-7234","PWY-7234: inosine-5'-phosphate biosynthesis III","de_novo","core","no","E4vE3",-0.0586052365899446,0.813432598128482,0.950183585639937,"No",TRUE
+"PWY-7234","PWY-7234: inosine-5'-phosphate biosynthesis III","de_novo","core","no","E4vE2",-0.0926639618197588,0.680778076946669,0.780995183622421,"No",TRUE
+"PWY-841","PWY-841: superpathway of purine nucleotides de novo biosynthesis I","de_novo","core","sensitivity","E4vE3",0.30376240040339,0.173773802897764,0.52654768847969,"No",TRUE
+"PWY-841","PWY-841: superpathway of purine nucleotides de novo biosynthesis I","de_novo","core","sensitivity","E1vE3",-0.0950846608853253,0.570074233544084,0.821397282740939,"No",TRUE
+"PWY-841","PWY-841: superpathway of purine nucleotides de novo biosynthesis I","de_novo","core","sensitivity","E4vE2",0.458412288074809,0.0210649391603122,0.0539369779773598,"No",TRUE
+"PWY-841","PWY-841: superpathway of purine nucleotides de novo biosynthesis I","de_novo","core","sensitivity","E1vE2",-0.0951769966831857,0.482215125436661,0.739855298077452,"No",TRUE
+"PWY0-1296","PWY0-1296: purine ribonucleosides degradation","degradation","core","yes","E4vE3",0.15437596155664,0.495974616323717,0.7993278605081,"No",TRUE
+"PWY0-1296","PWY0-1296: purine ribonucleosides degradation","degradation","core","yes","E4vE2",0.393782334563152,0.0443740085234433,0.103111857956209,"No",TRUE
+"PWY0-1296","PWY0-1296: purine ribonucleosides degradation","degradation","core","yes","E1vE3",-0.562621616583882,0.00185237996417907,0.0158437605446806,"Yes",TRUE
+"PWY0-1296","PWY0-1296: purine ribonucleosides degradation","degradation","core","yes","E1vE2",-0.503993089695208,0.000461800963466405,0.00412542194029988,"Yes",TRUE
+"PWY0-1297","PWY0-1297: superpathway of purine deoxyribonucleosides degradation","degradation","core","yes","E1vE3",0.0348090367896076,0.891164988502108,0.973500884178934,"No",TRUE
+"PWY0-1297","PWY0-1297: superpathway of purine deoxyribonucleosides degradation","degradation","core","yes","E1vE2",0.189690798015291,0.333616754455426,0.618036568161665,"No",TRUE
+"PWY0-1297","PWY0-1297: superpathway of purine deoxyribonucleosides degradation","degradation","core","yes","E4vE2",-0.272217181161397,0.385699225471384,0.56382214050726,"No",TRUE
+"PWY0-1297","PWY0-1297: superpathway of purine deoxyribonucleosides degradation","degradation","core","yes","E4vE3",-0.382609886156341,0.338520795999041,0.711375824599112,"No",TRUE
+"PWY0-41","PWY0-41: allantoin degradation IV (anaerobic)","degradation","core","yes","E1vE2",0.451864023563346,0.134782629419252,0.351835175497007,"No",TRUE
+"PWY0-41","PWY0-41: allantoin degradation IV (anaerobic)","degradation","core","yes","E4vE2",0.723310768612014,0.0502697649205978,0.111035414824617,"No",TRUE
+"PWY0-41","PWY0-41: allantoin degradation IV (anaerobic)","degradation","core","yes","E1vE3",-0.453402277437397,0.227814578681993,0.44673883234225,"No",TRUE
+"PWY0-41","PWY0-41: allantoin degradation IV (anaerobic)","degradation","core","yes","E4vE3",-0.208517801841958,0.587755742404457,0.86350921911813,"No",TRUE
+"PWY66-409","PWY66-409: superpathway of purine nucleotide salvage","salvage","hybrid_excluded","","E4vE2",-0.426464633982611,0.367187963009681,0.548604222615506,"No",TRUE
+"PWY66-409","PWY66-409: superpathway of purine nucleotide salvage","salvage","hybrid_excluded","","E4vE3",-0.575656353584082,0.307507044260679,0.691856104245903,"No",TRUE
+"PWY66-409","PWY66-409: superpathway of purine nucleotide salvage","salvage","hybrid_excluded","","E1vE2",-0.253096699435881,0.397416395653033,0.677169103177277,"No",TRUE
+"PWY66-409","PWY66-409: superpathway of purine nucleotide salvage","salvage","hybrid_excluded","","E1vE3",-0.383969600336285,0.302340744966045,0.554981641444522,"No",TRUE
+"SALVADEHYPOX-PWY","SALVADEHYPOX-PWY: adenosine nucleotides degradation II","degradation","redundant_in_sum","","E4vE3",0.086668928840056,0.713367320716809,0.92584803859348,"No",TRUE
+"SALVADEHYPOX-PWY","SALVADEHYPOX-PWY: adenosine nucleotides degradation II","degradation","redundant_in_sum","","E1vE2",-0.211891456848722,0.181509413048013,0.436926850570667,"No",TRUE
+"SALVADEHYPOX-PWY","SALVADEHYPOX-PWY: adenosine nucleotides degradation II","degradation","redundant_in_sum","","E1vE3",-0.0883602369532223,0.675571477746743,0.90225825267173,"No",TRUE
+"SALVADEHYPOX-PWY","SALVADEHYPOX-PWY: adenosine nucleotides degradation II","degradation","redundant_in_sum","","E4vE2",0.0743245455150132,0.683856479191771,0.780995183622421,"No",TRUE
+"URDEGR-PWY","URDEGR-PWY: superpathway of allantoin degradation in plants","degradation","redundant_in_sum","","E1vE3",-0.347676151875283,0.282308029961719,0.531925504773777,"No",TRUE
+"URDEGR-PWY","URDEGR-PWY: superpathway of allantoin degradation in plants","degradation","redundant_in_sum","","E4vE2",0.928298886627172,0.00270558292280849,0.00962517110592047,"Yes",TRUE
+"URDEGR-PWY","URDEGR-PWY: superpathway of allantoin degradation in plants","degradation","redundant_in_sum","","E4vE3",0.109907837582282,0.748342584965107,0.927009777924865,"No",TRUE
+"URDEGR-PWY","URDEGR-PWY: superpathway of allantoin degradation in plants","degradation","redundant_in_sum","","E1vE2",0.498399888433834,0.051943799347037,0.176961079131431,"No",TRUE

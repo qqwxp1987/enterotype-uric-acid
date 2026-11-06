@@ -1,0 +1,7 @@
+"comparison","statistic","pvalue","method","effect_note"
+"BMI completeness by enterotype",8.49450891040176,0.0368243268095202,"Pearson's Chi-squared test","E1=73.3%; E2=80.6%; E3=75.0%; E4=56.4%"
+"HUA by BMI completeness",NA,0.10848072286051,"Fisher's Exact Test for Count Data","HUA complete=18.8%; missing=27.8%"
+"UA by BMI completeness",10166,0.0490925223295739,"Wilcoxon rank sum test with continuity correction","mean UA complete=318.31; missing=341.58"
+"Sex by BMI completeness",4.57152243854718,0.0325076634482843,"Pearson's Chi-squared test with Yates' continuity correction","Pearson chi-squared test"
+"Age by BMI completeness",10639.5,0.0153882806653362,"Wilcoxon rank sum test with continuity correction","mean age complete=34.03; missing=37.08"
+"Cr by BMI completeness",10244.5,0.0662261430262179,"Wilcoxon rank sum test with continuity correction","mean Cr complete=65.60; missing=68.99"

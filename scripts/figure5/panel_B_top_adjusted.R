@@ -14,6 +14,8 @@ library(dplyr)
 library(tidyr)
 library(here)
 
+source(here("scripts", "figure5", "figure5_style.R"))
+
 # --- 1. Load Data ---
 ps <- readRDS(here("data", "clean", "phyloseq_Taxa_with_enterotype_seed10.rds"))
 metab_raw <- readRDS(here("data", "clean",
@@ -74,7 +76,9 @@ clean_species <- function(x) {
   x <- gsub("_", " ", x)
   x
 }
-selected_species$display_name <- clean_species(selected_species$feature)
+# Genus-initial abbreviation so row labels fit the half-width column.
+selected_species$display_name <-
+  abbrev_species(clean_species(selected_species$feature))
 
 cat(sprintf("Selected species: %d\n", nrow(selected_species)))
 print(table(selected_species$group))
@@ -88,7 +92,7 @@ curated_metab <- tribble(
   "NEG0024_p-Cresol",                     "p-Cresol",               "AAA catabolite",
   "NEG0216_p-Cresol sulfate",             "p-Cresol sulfate",       "AAA catabolite",
   "NEG0046_Indoxyl sulfate",              "Indoxyl sulfate",        "AAA catabolite",
-  "NEG0144_5-Methoxyindoleacetate",       "5-Methoxyindoleacetate", "AAA catabolite",
+  "NEG0144_5-Methoxyindoleacetate",       "5-MeOIA",                "AAA catabolite",
   "NEG0147_Indole-3-propionic acid",      "IPA",                    "AAA catabolite",
   "NEG0145_Phenylacetylglutamine",        "PAGln",                  "AAA catabolite",
   "NEG0015_Deoxycholic acid",             "DCA",                    "Bile acid",
@@ -221,9 +225,10 @@ group_colors <- c(
 ha_row <- rowAnnotation(
   Core = row_groups,
   col = list(Core = group_colors),
-  annotation_name_gp = gpar(fontsize = 8),
-  simple_anno_size = unit(4, "mm"),
-  show_legend = TRUE
+  annotation_name_gp = gpar(fontsize = fs_legend_text),
+  simple_anno_size = unit(3, "mm"),
+  # No legend: the row-split titles already name each group.
+  show_legend = FALSE
 )
 
 col_info <- bind_rows(
@@ -241,9 +246,10 @@ col_labels <- col_info$display_name
 ha_col <- HeatmapAnnotation(
   Class = col_groups,
   col = list(Class = class_colors),
-  annotation_name_gp = gpar(fontsize = 8),
-  simple_anno_size = unit(4, "mm"),
-  show_legend = TRUE
+  annotation_name_gp = gpar(fontsize = fs_legend_text),
+  simple_anno_size = unit(3, "mm"),
+  # No legend: the column-split titles already name each class.
+  show_legend = FALSE
 )
 
 max_rho <- 0.5
@@ -256,9 +262,9 @@ cell_fn <- function(j, i, x, y, width, height, fill) {
   val <- p_adj[i, j]
   if (!is.na(val)) {
     if (val < 0.01) {
-      grid.text("**", x, y, gp = gpar(fontsize = 7, col = "black"))
+      grid.text("**", x, y, gp = gpar(fontsize = fs_star, col = "black"))
     } else if (val < 0.05) {
-      grid.text("*", x, y, gp = gpar(fontsize = 8, col = "black"))
+      grid.text("*", x, y, gp = gpar(fontsize = fs_star, col = "black"))
     }
   }
 }
@@ -270,20 +276,19 @@ ht <- Heatmap(
   col = col_fun,
 
   row_labels = row_labels,
-  row_names_gp = gpar(fontsize = 8, fontface = "italic"),
+  row_names_gp = gpar(fontsize = fs_axis_text, fontface = "italic"),
   row_split = row_groups,
-  row_title_gp = gpar(fontsize = 9, fontface = "bold"),
-  row_gap = unit(2, "mm"),
+  row_title_gp = gpar(fontsize = 7.5, fontface = "bold"),
+  row_gap = unit(c(2, 6, 6), "mm"),
   cluster_row_slices = FALSE,
   cluster_rows = TRUE,
-  row_dend_width = unit(15, "mm"),
+  row_dend_width = unit(8, "mm"),
 
   column_labels = col_labels,
-  column_names_gp = gpar(fontsize = 8.5),
-  column_names_rot = 45,
+  column_names_gp = gpar(fontsize = fs_axis_text),
+  column_names_rot = 90,
   column_split = col_groups,
-  column_title_gp = gpar(fontsize = 7.5, fontface = "bold"),
-  column_title_rot = 30,
+  column_title = NULL,
   column_gap = unit(4, "mm"),
   cluster_column_slices = FALSE,
   cluster_columns = FALSE,
@@ -296,14 +301,16 @@ ht <- Heatmap(
 
   heatmap_legend_param = list(
     title = "Partial \u03c1",
-    title_gp = gpar(fontsize = 9, fontface = "bold"),
-    labels_gp = gpar(fontsize = 8),
-    legend_height = unit(3, "cm"),
-    at = c(-0.5, -0.25, 0, 0.25, 0.5)
+    title_gp = gpar(fontsize = fs_legend_title, fontface = "bold"),
+    labels_gp = gpar(fontsize = fs_legend_text),
+    at = c(-0.5, -0.25, 0, 0.25, 0.5),
+    direction = "horizontal",
+    grid_height = unit(3, "mm"),
+    legend_width = unit(2.4, "cm")
   ),
 
-  width = unit(9, "cm"),
-  height = unit(14, "cm")
+  width = unit(fig5_B_body[["w"]], "mm"),
+  height = unit(fig5_B_body[["h"]], "mm")
 )
 
 # ==============================================================================
@@ -313,18 +320,17 @@ ht <- Heatmap(
 dir.create(here("results", "figures", "panels"), recursive = TRUE, showWarnings = FALSE)
 dir.create(here("results", "tables", "section_3_4"), recursive = TRUE, showWarnings = FALSE)
 
-pdf(here("results", "figures", "panels", "Figure5B_top_adjusted.pdf"),
-    width = 9, height = 10)
-draw(ht, merge_legend = TRUE,
-     heatmap_legend_side = "right",
-     annotation_legend_side = "right")
+# cairo devices render the Greek rho (U+03C1) correctly under a non-Latin
+# locale (matches Panel C).
+cairo_pdf(here("results", "figures", "panels", "Figure5B_top_adjusted.pdf"),
+    width = fig5_B_w_in, height = fig5_B_h_in)
+draw(ht, heatmap_legend_side = "bottom")
 dev.off()
 
 png(here("results", "figures", "panels", "Figure5B_top_adjusted.png"),
-    width = 9, height = 10, units = "in", res = 300)
-draw(ht, merge_legend = TRUE,
-     heatmap_legend_side = "right",
-     annotation_legend_side = "right")
+    width = fig5_B_w_in, height = fig5_B_h_in, units = "in", res = fig5_DPI,
+    type = "cairo")
+draw(ht, heatmap_legend_side = "bottom")
 dev.off()
 
 # Tables

@@ -1,0 +1,1 @@
+Note. PWY-6595 is annotated in MetaCyc as 'superpathway of guanosine nucleotides degradation (plants)'; the '(plants)' suffix denotes the curation source of the pathway definition, not its ecological occurrence - its constituent reactions are generic guanosine nucleotide degradation steps found in gut bacteria.

@@ -2,6 +2,9 @@
 # Figure 1D: Prevotella/Bacteroides Ratio (Violin + Boxplot)
 # With all pairwise Wilcoxon comparisons (FDR-corrected)
 # ==============================================================================
+# NOTE: This script generates the Figure 1D visualization (raincloud plot of P/B ratio by enterotype).
+# For the statistical modeling of P/B ratio vs UA/HUA (partial Spearman, GAM, logistic regression, AIC comparison),
+# see scripts/figure1/stability_analysis.R, Analysis 4 (lines ~278-539).
 
 library(phyloseq)
 library(tidyverse)

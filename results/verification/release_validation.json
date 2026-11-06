@@ -1,0 +1,658 @@
+{
+  "status": "PASS",
+  "timestamp_utc": "2026-11-06T05:20:00.203633+00:00",
+  "checks_passed": 130,
+  "checks": [
+    {
+      "name": "required file README.md",
+      "pass": true,
+      "detail": "README.md"
+    },
+    {
+      "name": "required file ANALYSIS_MAP.md",
+      "pass": true,
+      "detail": "ANALYSIS_MAP.md"
+    },
+    {
+      "name": "required file VALIDATION.md",
+      "pass": true,
+      "detail": "VALIDATION.md"
+    },
+    {
+      "name": "required file data/README.md",
+      "pass": true,
+      "detail": "data/README.md"
+    },
+    {
+      "name": "required file supplementary/build_supplementary_xlsx.py",
+      "pass": true,
+      "detail": "supplementary/build_supplementary_xlsx.py"
+    },
+    {
+      "name": "required file supplementary/tables/Supplementary_Tables.xlsx",
+      "pass": true,
+      "detail": "supplementary/tables/Supplementary_Tables.xlsx"
+    },
+    {
+      "name": "R script count",
+      "pass": true,
+      "detail": "54"
+    },
+    {
+      "name": "portable script scripts\\figure1\\assemble_figure1.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\build_gradient_sensitivity_tables.py",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\figureS2_individual_composition.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\panel_A_dmm_selection.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\panel_B_pcoa.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\panel_C_stacked_bar.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\panel_D_pb_ratio.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\panel_E_alpha_diversity.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\r12_r21_enterotype_robustness.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\assemble_figure2.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\build_qc_missingness_tables.py",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\panel_A_clinical_screening.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\panel_B_ua_violin.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\panel_C_hua_prevalence.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\panel_D_forest_plot.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure2\\table1_upgrade.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\build_nested_model_tables.py",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\figureS4A_radial_taxa.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\figureS4B_species_attribution.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\nested_model_stability.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\section3_3_differential_analysis.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\section3_6_step1_data_preparation.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\section3_6_step2_main_models.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\section3_6_step3_sensitivity_analysis.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\section3_6_step4_visualization_v2.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\assemble_figure4.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\assemble_figureS4.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\build_purine_module_tables.py",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\figureS4C_type1_core_metabolites.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\figureS4D_core_pathways_heatmap.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\figureS5_purine_context.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\figureS6_purine_modules.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure4\\purine_module_analysis.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\assemble_figure5.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\build_extended_covariate_tables.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\extended_covariate_sensitivity.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\figure5_style.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\figureS7_full_species_heatmap.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\panel_A_dbRDA.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\panel_B_top_adjusted.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure5\\panel_CD_function_integration.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\assemble_figure6.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\build_mediator_traceability.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\extended_covariate_feature_attribution.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\fig6_style.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\panel_A_mediation_forest.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\panel_B_sensitivity_matrix.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\panel_C_type4_lollipop.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\panel_D_type4_boxplots.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\section3_5_step1_data_preparation.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\section3_5_step2_mediation_analysis.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\section3_5_step3_type4_heterogeneity.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure6\\type4_detailed_characterization.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\utils\\palettes.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\attribution\\extract_named_features.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\attribution\\step1_prep_subsets.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\attribution\\step2_pathway_contribution.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure3\\attribution\\step3_ec_contribution.R",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "final table file set",
+      "pass": true,
+      "detail": "28 CSVs"
+    },
+    {
+      "name": "clinical cohort n",
+      "pass": true,
+      "detail": "305"
+    },
+    {
+      "name": "enterotype counts",
+      "pass": true,
+      "detail": "Counter({'Type 1': 120, 'Type 2': 98, 'Type 3': 48, 'Type 4': 39})"
+    },
+    {
+      "name": "core counts Taxa",
+      "pass": true,
+      "detail": "(72, 2, 1)"
+    },
+    {
+      "name": "core counts Pathway",
+      "pass": true,
+      "detail": "(43, 52, 0)"
+    },
+    {
+      "name": "core counts EC",
+      "pass": true,
+      "detail": "(296, 371, 36)"
+    },
+    {
+      "name": "core counts Metabolome",
+      "pass": true,
+      "detail": "(24, 0, 0)"
+    },
+    {
+      "name": "S8a row count",
+      "pass": true,
+      "detail": "72"
+    },
+    {
+      "name": "S8b row count",
+      "pass": true,
+      "detail": "1"
+    },
+    {
+      "name": "S8c row count",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "S8d row count",
+      "pass": true,
+      "detail": "43"
+    },
+    {
+      "name": "S8e row count",
+      "pass": true,
+      "detail": "52"
+    },
+    {
+      "name": "S8f row count",
+      "pass": true,
+      "detail": "24"
+    },
+    {
+      "name": "S8g row count",
+      "pass": true,
+      "detail": "296"
+    },
+    {
+      "name": "S8h row count",
+      "pass": true,
+      "detail": "36"
+    },
+    {
+      "name": "S8i row count",
+      "pass": true,
+      "detail": "371"
+    },
+    {
+      "name": "continuous-gradient specifications",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "primary P/B partial rho",
+      "pass": true,
+      "detail": "-0.152"
+    },
+    {
+      "name": "primary P/B HUA OR",
+      "pass": true,
+      "detail": "0.991"
+    },
+    {
+      "name": "nested-model rows",
+      "pass": true,
+      "detail": "8"
+    },
+    {
+      "name": "Firth-model rows",
+      "pass": true,
+      "detail": "6"
+    },
+    {
+      "name": "S2 EPV",
+      "pass": true,
+      "detail": "3.2"
+    },
+    {
+      "name": "S2 Firth overall P",
+      "pass": true,
+      "detail": "0.0147"
+    },
+    {
+      "name": "purine curated pathways",
+      "pass": true,
+      "detail": "34"
+    },
+    {
+      "name": "purine module-statistic rows",
+      "pass": true,
+      "detail": "33"
+    },
+    {
+      "name": "purine module-UA rows",
+      "pass": true,
+      "detail": "3"
+    },
+    {
+      "name": "de novo BH-adjusted P",
+      "pass": true,
+      "detail": "0.0365"
+    },
+    {
+      "name": "module-UA complete n",
+      "pass": true,
+      "detail": "all n=305"
+    },
+    {
+      "name": "main mediation rows",
+      "pass": true,
+      "detail": "44"
+    },
+    {
+      "name": "BH-significant mediators Type1_vs_Ref",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "BH-significant mediators Type4_vs_Ref",
+      "pass": true,
+      "detail": "5"
+    },
+    {
+      "name": "extended mediation rows",
+      "pass": true,
+      "detail": "44"
+    },
+    {
+      "name": "ACME directions retained",
+      "pass": true,
+      "detail": "42/44"
+    },
+    {
+      "name": "matched sex-and-age FDR-significant combinations",
+      "pass": true,
+      "detail": "1 (the original larger-sample 10 are checked in Table S13)"
+    },
+    {
+      "name": "extended FDR-significant combinations",
+      "pass": true,
+      "detail": "2"
+    },
+    {
+      "name": "within-Type 4 tests",
+      "pass": true,
+      "detail": "23"
+    },
+    {
+      "name": "within-Type 4 nominal findings",
+      "pass": true,
+      "detail": "4"
+    },
+    {
+      "name": "medsens rows and complete column",
+      "pass": true,
+      "detail": "10 rows"
+    },
+    {
+      "name": "multi-omics sensitivity rows",
+      "pass": true,
+      "detail": "13"
+    },
+    {
+      "name": "candidate traceability rows",
+      "pass": true,
+      "detail": "22"
+    },
+    {
+      "name": "direct candidate rows",
+      "pass": true,
+      "detail": "22"
+    },
+    {
+      "name": "k3 table rows",
+      "pass": true,
+      "detail": "15"
+    },
+    {
+      "name": "k3 sections",
+      "pass": true,
+      "detail": "Counter({'C_association_tests': 8, 'A_membership_crosswalk': 4, 'B_component_descriptives': 3})"
+    },
+    {
+      "name": "workbook sheet order",
+      "pass": true,
+      "detail": "29 sheets"
+    },
+    {
+      "name": "S8h is shared EC",
+      "pass": true,
+      "detail": "36"
+    },
+    {
+      "name": "S8i is Type 4-exclusive EC",
+      "pass": true,
+      "detail": "371"
+    },
+    {
+      "name": "S16 includes rho_at_sign_change",
+      "pass": true,
+      "detail": "rho_at_sign_change"
+    },
+    {
+      "name": "S17 reader-friendly headers",
+      "pass": true,
+      "detail": "matched"
+    },
+    {
+      "name": "S13 workbook mediation rows",
+      "pass": true,
+      "detail": "44"
+    },
+    {
+      "name": "S10 workbook de novo adjusted P",
+      "pass": true,
+      "detail": "0.0365"
+    },
+    {
+      "name": "workbook has no formulas",
+      "pass": true,
+      "detail": "static result tables"
+    },
+    {
+      "name": "final PDF count",
+      "pass": true,
+      "detail": "13"
+    },
+    {
+      "name": "final PDF Figure1.pdf",
+      "pass": true,
+      "detail": "960120 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF Figure2.pdf",
+      "pass": true,
+      "detail": "360756 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF Figure3.pdf",
+      "pass": true,
+      "detail": "249337 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF Figure4.pdf",
+      "pass": true,
+      "detail": "80275 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF Figure5.pdf",
+      "pass": true,
+      "detail": "1010402 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF Figure6.pdf",
+      "pass": true,
+      "detail": "311774 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS1_enterotype_robustness.pdf",
+      "pass": true,
+      "detail": "513604 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS2_Individual_Bar.pdf",
+      "pass": true,
+      "detail": "33662 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS3_type4_diagnostics.pdf",
+      "pass": true,
+      "detail": "51076 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS4_composite.pdf",
+      "pass": true,
+      "detail": "85791 bytes; 4 page(s)"
+    },
+    {
+      "name": "final PDF FigureS5_Purine_Pathway_Context.pdf",
+      "pass": true,
+      "detail": "91471 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS6_module_scores.pdf",
+      "pass": true,
+      "detail": "59950 bytes; 1 page(s)"
+    },
+    {
+      "name": "final PDF FigureS7_Full_Species_Heatmap.pdf",
+      "pass": true,
+      "detail": "78819 bytes; 1 page(s)"
+    }
+  ],
+  "scope_note": "Structural and numerical checks only; long DMM and mediation resampling were not rerun by this validator."
+}

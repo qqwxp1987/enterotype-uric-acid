@@ -1,0 +1,4 @@
+"model","n","n_metabolome_PCs","conditioned_covariates","raw_R2","adjusted_R2","permutation_F","permutation_P"
+"base_full",303,100,"Gender+Age",0.432770235459518,0.151963421330566,1.14883023059287,0.003
+"base_cc",224,86,"Gender+Age",0.495219243556114,0.178349571627835,1.16709656874699,0.002
+"extended_cc",224,86,"Gender+Age+BMI+Cr",0.483624767023641,0.15947681055673,1.13523379646648,0.01

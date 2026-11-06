@@ -1,0 +1,7 @@
+"model","ua_formula","hua_formula","n_predictors"
+"M1_Demographic","UA ~ Enterotype + Gender + Age","Hyperuricemia ~ Enterotype + Gender + Age",5
+"M2_BMI","UA ~ Enterotype + Gender + Age + BMI","Hyperuricemia ~ Enterotype + Gender + Age + BMI",6
+"M3_Renal_Cr","UA ~ Enterotype + Gender + Age + Cr + Urea","Hyperuricemia ~ Enterotype + Gender + Age + Cr + Urea",7
+"M4_Cardiomet","UA ~ Enterotype + Gender + Age + Cr + Urea + GLU + TG + HDLC +     LDLC","Hyperuricemia ~ Enterotype + Gender + Age + Cr + Urea + GLU +     TG + HDLC + LDLC",10
+"S1_Renal_eGFR","UA ~ Enterotype + Gender + Age + eGFR + Urea","Hyperuricemia ~ Enterotype + Gender + Age + eGFR + Urea",7
+"S2_Full_Clinical","UA ~ Enterotype + Gender + Age + BMI + Cr + Urea + GLU + TG +     HDLC + LDLC + CRP","Hyperuricemia ~ Enterotype + Gender + Age + BMI + Cr + Urea +     GLU + TG + HDLC + LDLC + CRP",13

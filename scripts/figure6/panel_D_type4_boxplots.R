@@ -7,6 +7,8 @@ library(tidyverse)
 library(ggdist)
 library(here)
 
+source(here("scripts", "figure6", "fig6_style.R"))
+
 cat("--- Building Figure 6D ---\n")
 
 out_dir <- here("results", "figures", "panels")
@@ -71,13 +73,13 @@ panel_d_ann <- het_results %>%
   filter(variable %in% box_features) %>%
   mutate(
     feature_label = factor(mediator_display[variable], levels = mediator_display[box_features]),
-    stat_label = sprintf("P = %.3f\ndelta = %+.2f", wilcox_p, cliffs_delta)
+    stat_label = sprintf("P = %.3f", wilcox_p)
   )
 
 panel_d_pos <- panel_d %>%
   group_by(feature_label) %>%
   summarise(y_max = max(value, na.rm = TRUE), y_range = diff(range(value, na.rm = TRUE)), .groups = "drop") %>%
-  mutate(y_annot = y_max + pmax(y_range * 0.16, 0.15))
+  mutate(y_annot = y_max + pmax(y_range * 0.12, 0.12))
 
 panel_d_ann <- panel_d_ann %>% left_join(panel_d_pos, by = "feature_label")
 
@@ -85,22 +87,23 @@ set.seed(42)
 panel_d <- panel_d %>%
   mutate(
     x_num = as.numeric(as.factor(HUA_group)),
-    x_jit = x_num + runif(n(), -0.25, -0.08)
+    x_jit = x_num + runif(n(), -0.25, -0.08),
+    slab_color = ifelse(HUA_group == "HUA+", "#E9A6B2", "#E3E3E3")
   )
 
 # --- Plot (Raincloud style) ---
-p6d <- ggplot(panel_d, aes(x = HUA_group, y = value, fill = HUA_group)) +
-  # Half violin on right
-  stat_halfeye(
-    side = "right", adjust = 1, width = 0.5,
-    .width = 0, point_colour = NA,
-    justification = -0.12, alpha = 0.35, colour = NA,
-    normalize = "groups"
+p6d <- ggplot(panel_d, aes(x = HUA_group, y = value)) +
+  # Native ggplot2 violin: independent opaque identity fills, fully vector.
+  geom_violin(
+    aes(fill = slab_color),
+    adjust = 1, width = 0.5, trim = TRUE, colour = NA
   ) +
+  scale_fill_identity() +
+  ggnewscale::new_scale_fill() +
   # Boxplot
-  geom_boxplot(width = 0.15, linewidth = 0.5, outlier.shape = NA) +
+  geom_boxplot(aes(fill = HUA_group), width = 0.15, linewidth = 0.5, outlier.shape = NA) +
   # Jittered points on left
-  geom_point(aes(x = x_jit), shape = 21, size = 2, color = "white") +
+  geom_point(aes(x = x_jit, fill = HUA_group), shape = 21, size = 2, color = "white") +
   geom_segment(
     data = panel_d_ann,
     aes(x = 1, xend = 2, y = y_annot - y_range * 0.04, yend = y_annot - y_range * 0.04),
@@ -112,32 +115,31 @@ p6d <- ggplot(panel_d, aes(x = HUA_group, y = value, fill = HUA_group)) +
     data = panel_d_ann,
     aes(x = 1.5, y = y_annot, label = stat_label),
     inherit.aes = FALSE,
-    size = 3.5,
+    size = as_mm(FS_ANNOT),
     lineheight = 0.9,
     color = "grey20"
   ) +
+  # 2 x 2 facets (metabolites on top, ECs below) — fills the right column.
   facet_wrap(~ feature_label, scales = "free_y", ncol = 2) +
   scale_y_continuous(expand = expansion(mult = c(0.05, 0.30))) +
   scale_fill_manual(values = hua_colors, name = "Type 4 subgroup") +
   labs(
     x = NULL,
     y = NULL,
-    title = "Four variables distinguish the HUA-prone subset within Type 4"
+    title = "Exploratory within-Type 4 comparison:\nfour nominally associated features"
   ) +
-  theme_classic() +
+  theme_classic(base_size = FS_AXIS_TEXT) +
+  fig6_text_theme() +
   theme(
     legend.position = "bottom",
-    axis.title = element_text(size = 16, color = "black"),
-    axis.text = element_text(size = 13, color = "black"),
-    strip.background = element_rect(fill = "grey95"),
-    strip.text = element_text(face = "bold", size = 12),
-    plot.title = element_text(size = 14, face = "bold"),
-    legend.title = element_text(size = 12, face = "bold"),
-    legend.text = element_text(size = 11)
+    strip.background = element_rect(fill = "grey95")
   )
 
-ggsave(file.path(out_dir, "Figure6D_type4_boxplots_results.pdf"), p6d, width = 8.4, height = 6.8, dpi = 300)
-ggsave(file.path(out_dir, "Figure6D_type4_boxplots_results.png"), p6d, width = 8.4, height = 6.8, dpi = 300)
+# Rendered at the right column width (8.92 in) so magick performs no rescale.
+# Height compressed to 10.3 in so the 2x2 facets are near-square (not stretched
+# to match the taller left column).
+ggsave(file.path(out_dir, "Figure6D_type4_boxplots_results.pdf"), p6d, width = 8.92, height = 10.3, dpi = 300)
+ggsave(file.path(out_dir, "Figure6D_type4_boxplots_results.png"), p6d, width = 8.92, height = 10.3, dpi = 300)
 
 saveRDS(p6d, here("results", "cache", "p6d.rds"))
 cat("Figure 6D saved.\n")

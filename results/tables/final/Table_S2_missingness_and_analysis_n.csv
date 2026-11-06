@@ -1,0 +1,28 @@
+﻿Part,Item,Non-missing n,Missing n,Missing %,Note
+A. Variable-level missingness (N = 305),Serum uric acid (UA),305,0,0.0,
+A. Variable-level missingness (N = 305),Hyperuricemia status (HUA),305,0,0.0,
+A. Variable-level missingness (N = 305),Enterotype assignment,305,0,0.0,
+A. Variable-level missingness (N = 305),Sex,305,0,0.0,
+A. Variable-level missingness (N = 305),Age,305,0,0.0,
+A. Variable-level missingness (N = 305),Body mass index (BMI),225,80,26.2,
+A. Variable-level missingness (N = 305),Serum urea,305,0,0.0,
+A. Variable-level missingness (N = 305),Serum creatinine (Cr),305,0,0.0,
+A. Variable-level missingness (N = 305),Estimated glomerular filtration rate (eGFR),305,0,0.0,
+A. Variable-level missingness (N = 305),Fasting glucose (GLU),305,0,0.0,
+A. Variable-level missingness (N = 305),Triglycerides (TG),305,0,0.0,
+A. Variable-level missingness (N = 305),HDL cholesterol (HDL-C),305,0,0.0,
+A. Variable-level missingness (N = 305),LDL cholesterol (LDL-C),305,0,0.0,
+A. Variable-level missingness (N = 305),C-reactive protein (CRP),302,3,1.0,
+A. Variable-level missingness (N = 305),Systolic blood pressure (SBP),174,131,43.0,excluded from the primary robustness analyses owing to substantial missingness
+A. Variable-level missingness (N = 305),Diastolic blood pressure (DBP),175,130,42.6,excluded from the primary robustness analyses owing to substantial missingness
+A. Variable-level missingness (N = 305),Serum untargeted metabolomics,303,2,0.7,metabolome-dependent analyses use the matched subset
+B. Analysis-specific sample sizes,"M1 Demographic (sex, age)",305,,,
+B. Analysis-specific sample sizes,M2 +BMI,225,,,
+B. Analysis-specific sample sizes,"M3 +Renal (creatinine, urea)",305,,,
+B. Analysis-specific sample sizes,"M4 +Cardiometabolic (+GLU, TG, HDL-C, LDL-C)",305,,,
+B. Analysis-specific sample sizes,S1 +eGFR (replacing creatinine),305,,,
+B. Analysis-specific sample sizes,"S2 Full clinical (+BMI, +CRP)",223,,,
+B. Analysis-specific sample sizes,Nested-model refits (fixed populations),223 / 225,,,full-clinical and BMI complete-case populations
+B. Analysis-specific sample sizes,Subgroup analyses (males / females / non-obese / eGFR >= 90),81 / 224 / 218 / 271,,,
+B. Analysis-specific sample sizes,Mediation models (Type 1 / Type 4 vs pooled Types 2+3),264 / 185,,,restricted to participants with matched metabolomics
+B. Analysis-specific sample sizes,Within-Type 4 HUA+ vs HUA- comparison,39 (12 / 27),,,

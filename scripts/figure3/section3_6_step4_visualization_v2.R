@@ -1,4 +1,4 @@
-# ============================================================================== 
+# ==============================================================================
 # Section 3.6 — Step 4: Visualization v2 (Now exported as Figure 3)
 #
 # Purpose:
@@ -6,11 +6,23 @@
 #     A) Model Evidence Trajectory — shows overall enterotype P across models
 #     B) Cardiometabolic Model Full Coefficients — dual forest plot
 #     C) Subgroup Evidence Matrix — improved heatmap with significance overlay
+#
+# Typography / layout policy (revised):
+#   * One shared font-size hierarchy is applied to ALL three panels, so that text
+#     at the SAME role (panel title / sub-panel label / axis title / axis tick /
+#     legend / in-plot annotation) renders at the SAME size everywhere.
+#   * Panel labels "A", "B", "C" are drawn as dedicated title ROWS rather than via
+#     patchwork::plot_annotation(). plot_annotation() titles are silently dropped
+#     when a sub-patchwork is nested inside the composite — which is why the old
+#     composite only showed "A". A title row is a real ggplot and always renders.
+#   * Sizes are deliberately generous so the figure stays legible after a journal
+#     down-scales it to column / page width.
 # ==============================================================================
 
 library(tidyverse)
 library(here)
 library(patchwork)
+library(grid)
 
 cat("========================================\n")
 cat("Section 3.6 Step 4: Visualization v2 (exporting Figure 3)\n")
@@ -28,13 +40,47 @@ wls_df <- model_results$wls
 logit_df <- model_results$logit
 subgroup_df <- readRDS(file.path(tab_dir, "subgroup_results.rds"))
 
-# Common theme elements
-theme_fig6 <- theme_classic(base_size = 10) +
-  theme(
-    plot.title = element_text(face = "bold", size = 11, hjust = 0),
-    axis.text = element_text(color = "black"),
-    plot.margin = margin(8, 12, 8, 8)
-  )
+# ============================================================================
+# Shared typography system
+# ============================================================================
+# A single hierarchy of point sizes, reused by every panel. "Consistent" here
+# means: the SAME role gets the SAME size across panels, not that everything is
+# one size. Hierarchy (large -> small):
+#     panel title  >  sub-panel label / axis title  >  axis tick  >  legend / note
+fs_panel_title <- 14     # "A / B / C  ..." panel titles
+fs_subtitle    <- 13     # sub-panel labels ("Continuous UA", "Binary HUA", ...)
+fs_axis_title  <- 12     # axis titles
+fs_axis_text   <- 11     # axis tick labels
+fs_legend_text <- 10.5   # legend entries
+fs_legend_ttl  <- 11     # legend titles
+fs_annot       <- 10.5   # in-plot annotations (p-values, n=, P=0.05, footnote)
+fs_star        <- 13     # significance glyphs on the heatmap tiles
+
+# ggplot geom_text()/annotate() take size in mm; convert from points.
+PT_PER_MM <- 2.845276    # == ggplot2's .pt
+as_mm <- function(pt) pt / PT_PER_MM
+
+# Shared text styling, layered on top of either theme_classic or theme_minimal
+# so the two plot families share identical text sizes.
+base_text_theme <- theme(
+  text          = element_text(color = "black"),
+  axis.title    = element_text(size = fs_axis_title, color = "black"),
+  axis.text     = element_text(size = fs_axis_text, color = "black"),
+  plot.subtitle = element_text(size = fs_subtitle, face = "plain",
+                               hjust = 0, margin = margin(b = 5)),
+  legend.text   = element_text(size = fs_legend_text),
+  legend.title  = element_text(size = fs_legend_ttl, face = "bold"),
+  legend.key.size = unit(0.42, "cm")
+)
+
+theme_panel_classic <- theme_classic(base_size = fs_axis_text) +
+  base_text_theme +
+  theme(plot.margin = margin(6, 12, 6, 8))
+
+theme_panel_minimal <- theme_minimal(base_size = fs_axis_text) +
+  base_text_theme +
+  theme(panel.grid  = element_blank(),
+        plot.margin = margin(6, 8, 6, 6))
 
 # Color palette
 col_ua  <- "#2166AC"   # blue for UA
@@ -43,6 +89,45 @@ col_sig <- "#B2182B"   # significant
 col_ns  <- "grey55"    # non-significant
 col_enterotype <- "#D6604D"  # enterotype terms in forest
 col_covariate  <- "grey40"   # clinical covariate terms in forest
+
+# ----------------------------------------------------------------------------
+# Helpers: panel label rows.
+# A title/footnote ROW is a minimal ggplot whose only content is text. Unlike
+# plot_annotation(), it survives arbitrary patchwork nesting, so panel labels
+# B and C are no longer dropped from the composite.
+# ----------------------------------------------------------------------------
+panel_title_row <- function(label, text) {
+  ggplot() +
+    theme_void() +
+    labs(title = paste0(label, "  ", text)) +
+    theme(
+      # "plot" position -> flush to the figure's left edge (not the panel edge),
+      # so the A/B/C labels line up with the figure margin as is conventional.
+      plot.title.position = "plot",
+      plot.title  = element_text(face = "bold", size = fs_panel_title,
+                                 hjust = 0, vjust = 1,
+                                 margin = margin(t = 1, b = 1)),
+      plot.margin = margin(2, 4, 2, 4)
+    )
+}
+
+panel_footnote_row <- function(text) {
+  ggplot() +
+    theme_void() +
+    labs(title = text) +
+    theme(
+      plot.title.position = "plot",
+      plot.title  = element_text(face = "plain", size = fs_annot,
+                                 color = "grey35", hjust = 0,
+                                 margin = margin(t = 1, b = 1)),
+      plot.margin = margin(2, 4, 2, 4)
+    )
+}
+
+# Fixed pixel heights (in points) for the label rows; the plotting area itself
+# is given the remaining space via a "null" unit.
+TITLE_ROW_PT <- fs_panel_title + 9
+FOOT_ROW_PT  <- fs_annot + 9
 
 # ============================================================================
 # Panel A: Model Evidence Trajectory
@@ -98,19 +183,19 @@ panel_A <- ggplot(traj_df, aes(x = model_idx, y = neg_log10_p, color = outcome, 
   # Reference line at P = 0.05
   geom_hline(yintercept = -log10(0.05), linetype = "dashed", color = "grey60", linewidth = 0.5) +
   annotate("text", x = 6.45, y = -log10(0.05), label = "P = 0.05",
-           color = "grey50", size = 2.8, hjust = 0, vjust = -0.4) +
+           color = "grey50", size = as_mm(fs_annot), hjust = 0, vjust = -0.4) +
   # Lines and points
-  geom_line(linewidth = 0.8, alpha = 0.7) +
-  geom_point(aes(shape = sig), size = 3, stroke = 0.8) +
+  geom_line(linewidth = 0.9, alpha = 0.7) +
+  geom_point(aes(shape = sig), size = 3.2, stroke = 0.9) +
   # P-value labels above/below points
   geom_text(aes(label = p_label),
-            size = 2.4, vjust = -1.2, show.legend = FALSE) +
+            size = as_mm(fs_annot), vjust = -1.1, show.legend = FALSE) +
   # Sample size annotation at bottom
   annotate("text",
            x = 1:6,
            y = rep(-0.15, 6),
            label = paste0("n=", model_n[model_order]),
-           size = 2.6, color = "grey40") +
+           size = as_mm(fs_annot), color = "grey40") +
   # Scales
   scale_x_continuous(
     breaks = 1:6,
@@ -118,7 +203,7 @@ panel_A <- ggplot(traj_df, aes(x = model_idx, y = neg_log10_p, color = outcome, 
     expand = expansion(mult = c(0.06, 0.12))
   ) +
   scale_y_continuous(
-    expand = expansion(mult = c(0.12, 0.15)),
+    expand = expansion(mult = c(0.10, 0.20)),
     name = expression(-log[10](P[enterotype]))
   ) +
   scale_color_manual(
@@ -130,16 +215,13 @@ panel_A <- ggplot(traj_df, aes(x = model_idx, y = neg_log10_p, color = outcome, 
     name = "P < 0.05",
     labels = c(`TRUE` = "Yes", `FALSE` = "No")
   ) +
-  labs(title = "A    Overall enterotype significance across adjustment models",
-       x = NULL) +
-  theme_fig6 +
+  labs(x = NULL) +
+  theme_panel_classic +
   theme(
-    legend.position = c(0.92, 0.85),
+    legend.position = c(0.90, 0.80),
     legend.background = element_rect(fill = "white", color = NA),
-    legend.key.size = unit(0.35, "cm"),
-    legend.text = element_text(size = 8),
-    legend.title = element_text(size = 8.5, face = "bold"),
-    axis.text.x = element_text(size = 8, lineheight = 0.9)
+    legend.spacing.y = unit(0.1, "cm"),
+    axis.text.x = element_text(size = fs_axis_text, lineheight = 0.9)
   )
 
 
@@ -186,13 +268,12 @@ pB_ua <- ggplot(forest_ua, aes(x = estimate, y = label)) +
            fill = "#FFF5F0", alpha = 0.6) +
   geom_errorbar(aes(xmin = ci_low, xmax = ci_high, color = sig),
                 width = 0.2, linewidth = 0.6) +
-  geom_point(aes(color = sig, shape = sig), size = 2.5) +
+  geom_point(aes(color = sig, shape = sig), size = 2.8) +
   scale_color_manual(values = c(`TRUE` = col_sig, `FALSE` = col_ns), guide = "none") +
   scale_shape_manual(values = c(`TRUE` = 16, `FALSE` = 1), guide = "none") +
   labs(x = expression(beta ~ "(95% CI)"), y = NULL,
        subtitle = "Continuous UA") +
-  theme_fig6 +
-  theme(axis.text.y = element_text(size = 8.5))
+  theme_panel_classic
 
 # HUA panel (OR scale)
 forest_hua <- m4_hua %>%
@@ -212,7 +293,7 @@ pB_hua <- ggplot(forest_hua, aes(x = estimate, y = label)) +
            fill = "#FFF5F0", alpha = 0.6) +
   geom_errorbar(aes(xmin = ci_low, xmax = ci_high, color = sig),
                 width = 0.2, linewidth = 0.6) +
-  geom_point(aes(color = sig, shape = sig), size = 2.5) +
+  geom_point(aes(color = sig, shape = sig), size = 2.8) +
   scale_color_manual(values = c(`TRUE` = col_sig, `FALSE` = col_ns), guide = "none") +
   scale_shape_manual(values = c(`TRUE` = 16, `FALSE` = 1), guide = "none") +
   scale_x_continuous(trans = "log2",
@@ -220,15 +301,10 @@ pB_hua <- ggplot(forest_hua, aes(x = estimate, y = label)) +
                      labels = c("0.06", "0.13", "0.25", "0.5", "1", "2", "4")) +
   labs(x = "Odds ratio (95% CI)", y = NULL,
        subtitle = "Binary HUA") +
-  theme_fig6 +
+  theme_panel_classic +
   theme(axis.text.y = element_blank(), axis.ticks.y = element_blank())
 
-panel_B <- pB_ua + pB_hua +
-  plot_layout(widths = c(1.3, 1)) +
-  plot_annotation(
-    title = "B    Cardiometabolic model coefficients (M4, n = 305)",
-    theme = theme(plot.title = element_text(face = "bold", size = 11))
-  )
+panel_B_inner <- pB_ua + pB_hua + plot_layout(widths = c(1.3, 1))
 
 
 # ============================================================================
@@ -243,20 +319,15 @@ subset_labels <- c(
   Male = "Male (n=81)",
   Female = "Female (n=224)",
   Non_obese = "Non-obese (n=218)",
-  eGFR_normal = "eGFR \u2265 90 (n=271)"
+  eGFR_normal = "eGFR ≥ 90 (n=271)"
 )
 
-theme_heatmap <- theme_minimal(base_size = 10) +
+theme_heatmap <- theme_panel_minimal +
   theme(
-    strip.text = element_text(face = "bold", size = 10),
-    axis.text.x = element_text(angle = 25, hjust = 1, size = 8.5),
-    axis.text.y = element_text(size = 9, color = "black"),
-    panel.grid = element_blank(),
-    legend.key.height = unit(0.5, "cm"),
-    legend.key.width = unit(0.3, "cm"),
-    legend.text = element_text(size = 7.5),
-    legend.title = element_text(size = 8),
-    plot.margin = margin(4, 6, 4, 4)
+    axis.text.x = element_text(angle = 25, hjust = 1, size = fs_axis_text),
+    axis.text.y = element_text(size = fs_axis_text, color = "black"),
+    legend.key.height = unit(0.55, "cm"),
+    legend.key.width  = unit(0.32, "cm")
   )
 
 # Separate HUA and UA subgroup data for independent color scales
@@ -269,7 +340,7 @@ sub_hua <- subgroup_df %>%
     sig_level = case_when(
       p < 0.01  ~ "**",
       p < 0.05  ~ "*",
-      p < 0.10  ~ "\u2020",
+      p < 0.10  ~ "†",
       TRUE      ~ ""
     )
   )
@@ -283,14 +354,14 @@ sub_ua <- subgroup_df %>%
     sig_level = case_when(
       p < 0.01  ~ "**",
       p < 0.05  ~ "*",
-      p < 0.10  ~ "\u2020",
+      p < 0.10  ~ "†",
       TRUE      ~ ""
     )
   )
 
 pC_hua <- ggplot(sub_hua, aes(x = label_f, y = subset_f)) +
   geom_tile(aes(fill = effect_std), color = "white", linewidth = 0.8) +
-  geom_text(aes(label = sig_level), size = 4, fontface = "bold", vjust = 0.35) +
+  geom_text(aes(label = sig_level), size = as_mm(fs_star), fontface = "bold", vjust = 0.35) +
   scale_fill_gradient2(
     low = "#2166AC", mid = "white", high = "#B2182B", midpoint = 0,
     name = "log(OR)"
@@ -300,7 +371,7 @@ pC_hua <- ggplot(sub_hua, aes(x = label_f, y = subset_f)) +
 
 pC_ua <- ggplot(sub_ua, aes(x = label_f, y = subset_f)) +
   geom_tile(aes(fill = effect_std), color = "white", linewidth = 0.8) +
-  geom_text(aes(label = sig_level), size = 4, fontface = "bold", vjust = 0.35) +
+  geom_text(aes(label = sig_level), size = as_mm(fs_star), fontface = "bold", vjust = 0.35) +
   scale_fill_gradient2(
     low = "#2166AC", mid = "white", high = "#B2182B", midpoint = 0,
     name = expression(beta)
@@ -309,54 +380,71 @@ pC_ua <- ggplot(sub_ua, aes(x = label_f, y = subset_f)) +
   theme_heatmap +
   theme(axis.text.y = element_blank())
 
-panel_C <- pC_hua + pC_ua +
-  plot_layout(widths = c(1.15, 1)) +
-  plot_annotation(
-    title = "C    Subgroup consistency of enterotype contrasts",
-    caption = "* P < 0.05    ** P < 0.01    \u2020 P < 0.10",
-    theme = theme(
-      plot.title = element_text(face = "bold", size = 11),
-      plot.caption = element_text(size = 7.5, color = "grey40", hjust = 0)
-    )
-  )
+panel_C_inner <- pC_hua + pC_ua + plot_layout(widths = c(1.15, 1))
 
 
 # ============================================================================
-# Assemble Composite Figure 3
+# Assemble each panel with its own (nesting-proof) label row
 # ============================================================================
 
 cat("Assembling composite Figure 3...\n")
 
-# Panel A: top (full width)
-# Panel B: middle (full width)
-# Panel C: bottom (full width)
+# NOTE: wrap_plots() is used (instead of the `/` operator) on purpose. The `/`
+# operator FLATTENS a sub-patchwork operand into the parent, which would make
+# the parent expect more panels than the heights vector provides. wrap_plots()
+# treats each argument as exactly one cell, nesting sub-patchworks cleanly.
+panel_A_titled <- wrap_plots(
+  panel_title_row("A", "Overall enterotype significance across adjustment models"),
+  panel_A,
+  ncol = 1,
+  heights = unit(c(TITLE_ROW_PT, 1), c("pt", "null"))
+)
 
-fig3_composite <- panel_A / panel_B / panel_C +
-  plot_layout(heights = c(1, 1.2, 0.9))
+panel_B_titled <- wrap_plots(
+  panel_title_row("B", "Cardiometabolic model coefficients (M4, n = 305)"),
+  panel_B_inner,
+  ncol = 1,
+  heights = unit(c(TITLE_ROW_PT, 1), c("pt", "null"))
+)
+
+panel_C_titled <- wrap_plots(
+  panel_title_row("C", "Subgroup consistency of enterotype contrasts"),
+  panel_C_inner,
+  panel_footnote_row("*  P < 0.05      **  P < 0.01      †  P < 0.10"),
+  ncol = 1,
+  heights = unit(c(TITLE_ROW_PT, 1, FOOT_ROW_PT), c("pt", "null", "pt"))
+)
+
+# Panel A : Panel B : Panel C  stacked full-width
+fig3_composite <- wrap_plots(
+  panel_A_titled, panel_B_titled, panel_C_titled,
+  ncol = 1,
+  heights = c(1, 1.32, 1.06)
+)
 
 # Save individual panels (panels/, no _v2_ suffix to match existing files)
 ggsave(file.path(fig_dir, "Figure3A_Evidence_Trajectory.png"),
-       panel_A, width = 8, height = 4, dpi = 300)
+       panel_A_titled, width = 9, height = 4.6, dpi = 300)
 ggsave(file.path(fig_dir, "Figure3A_Evidence_Trajectory.pdf"),
-       panel_A, width = 8, height = 4)
+       panel_A_titled, width = 9, height = 4.6)
 
 ggsave(file.path(fig_dir, "Figure3B_Cardiomet_Forest.png"),
-       panel_B, width = 9, height = 5, dpi = 300)
+       panel_B_titled, width = 10, height = 6.2, dpi = 300)
 ggsave(file.path(fig_dir, "Figure3B_Cardiomet_Forest.pdf"),
-       panel_B, width = 9, height = 5)
+       panel_B_titled, width = 10, height = 6.2)
 
 ggsave(file.path(fig_dir, "Figure3C_Subgroup_Matrix.png"),
-       panel_C, width = 8.5, height = 4.5, dpi = 300)
+       panel_C_titled, width = 9, height = 5.6, dpi = 300)
 ggsave(file.path(fig_dir, "Figure3C_Subgroup_Matrix.pdf"),
-       panel_C, width = 8.5, height = 4.5)
+       panel_C_titled, width = 9, height = 5.6)
 
 # Save composite to results/figures/ (consistent with Figure 1/2/4/5)
 ggsave(file.path(out_dir, "Figure3_composite.png"),
-      fig3_composite, width = 10, height = 13, dpi = 300)
+      fig3_composite, width = 10, height = 14, dpi = 300)
 ggsave(file.path(out_dir, "Figure3_composite.tiff"),
-      fig3_composite, width = 10, height = 13, dpi = 300, compression = "lzw")
+      fig3_composite, width = 10, height = 14, dpi = 300, compression = "lzw")
 ggsave(file.path(out_dir, "Figure3_composite.pdf"),
-      fig3_composite, width = 10, height = 13)
+      fig3_composite, width = 10, height = 14)
 
 cat("\nAll Figure 3 panels saved successfully.\n")
 cat("Panels directory:", fig_dir, "\n")

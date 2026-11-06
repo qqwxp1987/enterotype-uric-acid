@@ -6,6 +6,8 @@ library(ggplot2)
 library(tidyverse)
 library(here)
 
+source(here("scripts", "figure6", "fig6_style.R"))
+
 cat("--- Building Figure 6A ---\n")
 
 out_dir <- here("results", "figures", "panels")
@@ -66,41 +68,42 @@ panel_a <- med_results %>%
     feature_label = factor(mediator_display[mediator], levels = mediator_display[all22_order]),
     model_label = case_when(
       model == "Type1_vs_Ref" ~ "Type 1 vs Types 2+3",
-      model == "Type4_vs_Ref" ~ "Type 4 vs Types 2+3",
+      model == "Type4_vs_Ref" ~ "Type 4 vs Types 2+3 (exploratory)",
       TRUE ~ model
     ),
-    sig_state = ifelse(ACME_padj < 0.05, "BH-significant", "Not BH-significant")
+    sig_state = ifelse(ACME_padj < 0.05, "BH-adjusted P < 0.05", "BH-adjusted P ≥ 0.05")
   )
 
 p6a <- ggplot(panel_a, aes(x = ACME_estimate, y = feature_label, color = data_layer)) +
   geom_vline(xintercept = 0, linetype = "dashed", linewidth = 0.4, color = "grey45") +
-  geom_errorbar(aes(xmin = ACME_CI_lo, xmax = ACME_CI_hi), width = 0.2, linewidth = 0.5, orientation = "y") +
-  geom_point(aes(shape = sig_state), size = 2.8, stroke = 0.8) +
+  geom_errorbar(aes(xmin = ACME_CI_lo, xmax = ACME_CI_hi), width = 0.2, linewidth = 0.45, orientation = "y") +
+  geom_point(aes(shape = sig_state), size = 2.3, stroke = 0.7) +
   facet_wrap(~ model_label, scales = "free_x") +
-  scale_color_manual(values = layer_colors[c("Serum metabolite", "Microbial pathway", "Convergent EC")], name = "Feature layer") +
-  scale_shape_manual(values = c("BH-significant" = 16, "Not BH-significant" = 1), name = "ACME status") +
+  scale_color_manual(values = layer_colors[c("Serum metabolite", "Microbial pathway", "Convergent EC")], name = "Layer") +
+  scale_shape_manual(values = c("BH-adjusted P < 0.05" = 16, "BH-adjusted P ≥ 0.05" = 1), name = "ACME") +
+  guides(color = guide_legend(nrow = 1), shape = guide_legend(nrow = 1)) +
   labs(
-    x = "ACME (delta UA, umol/L)",
+    x = "Indirect effect (ACME; ΔUA, μmol/L)",
     y = NULL,
-    title = "Main mediation screen across 22 pre-specified candidates"
+    title = "Mediation-based prioritization of 22 pre-specified candidates"
   ) +
-  theme_bw(base_size = 10.5) +
+  theme_bw(base_size = FS_AXIS_TEXT) +
+  fig6_text_theme() +
   theme(
     panel.grid.minor = element_blank(),
     panel.grid.major.y = element_blank(),
-    axis.text.y = element_text(size = 7.5, color = "black"),
-    axis.text.x = element_text(size = 8.5, color = "black"),
     strip.background = element_rect(fill = "grey95"),
-    strip.text = element_text(face = "bold"),
-    plot.title = element_text(size = 11, face = "bold"),
     legend.position = "bottom",
-    legend.box = "vertical",
-    legend.title = element_text(size = 9, face = "bold"),
-    legend.text = element_text(size = 8)
+    legend.box = "horizontal",
+    legend.key.size = unit(0.25, "cm"),
+    legend.margin = margin(0, 0, 0, 0),
+    legend.box.spacing = unit(0, "pt")
   )
 
-ggsave(file.path(out_dir, "Figure6A_mediation_forest_results.pdf"), p6a, width = 12, height = 8.2, dpi = 300)
-ggsave(file.path(out_dir, "Figure6A_mediation_forest_results.png"), p6a, width = 12, height = 8.2, dpi = 300)
+# Rendered at full composite width (16 in) so magick performs no rescale.
+# Height kept compact so A does not dominate the composite's vertical budget.
+ggsave(file.path(out_dir, "Figure6A_mediation_forest_results.pdf"), p6a, width = 16, height = 6.5, dpi = 300)
+ggsave(file.path(out_dir, "Figure6A_mediation_forest_results.png"), p6a, width = 16, height = 6.5, dpi = 300)
 
 saveRDS(p6a, here("results", "cache", "p6a.rds"))
 cat("Figure 6A saved.\n")

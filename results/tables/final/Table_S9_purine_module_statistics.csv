@@ -1,0 +1,34 @@
+﻿Module,Statistic,Value
+De novo biosynthesis,"Median share (%), Type 1",3.512
+De novo biosynthesis,"Median share (%), Type 2",3.732
+De novo biosynthesis,"Median share (%), Type 3",3.855
+De novo biosynthesis,"Median share (%), Type 4",3.865
+De novo biosynthesis,"Overall enterotype effect, P (GLS, marginal ANOVA)",1.1e-21
+De novo biosynthesis,Pairwise contrast Type 1 - Type 2 (log10 scale),"estimate=-0.0180, SE=0.0027, Holm P=1.24e-09"
+De novo biosynthesis,Pairwise contrast Type 1 - Type 3 (log10 scale),"estimate=-0.0313, SE=0.0035, Holm P=6.96e-14"
+De novo biosynthesis,Pairwise contrast Type 1 - Type 4 (log10 scale),"estimate=-0.0299, SE=0.0032, Holm P=2.85e-15"
+De novo biosynthesis,Pairwise contrast Type 2 - Type 3 (log10 scale),"estimate=-0.0133, SE=0.0031, Holm P=0.000193"
+De novo biosynthesis,Pairwise contrast Type 2 - Type 4 (log10 scale),"estimate=-0.0119, SE=0.0028, Holm P=0.000193"
+De novo biosynthesis,Pairwise contrast Type 3 - Type 4 (log10 scale),"estimate=0.0014, SE=0.0036, Holm P=0.698"
+Degradation,"Median share (%), Type 1",1.474
+Degradation,"Median share (%), Type 2",1.531
+Degradation,"Median share (%), Type 3",1.545
+Degradation,"Median share (%), Type 4",1.55
+Degradation,"Overall enterotype effect, P (GLS, marginal ANOVA)",3.75e-05
+Degradation,Pairwise contrast Type 1 - Type 2 (log10 scale),"estimate=-0.0081, SE=0.0026, Holm P=0.0078"
+Degradation,Pairwise contrast Type 1 - Type 3 (log10 scale),"estimate=-0.0121, SE=0.0028, Holm P=0.000238"
+Degradation,Pairwise contrast Type 1 - Type 4 (log10 scale),"estimate=-0.0121, SE=0.0032, Holm P=0.00116"
+Degradation,Pairwise contrast Type 2 - Type 3 (log10 scale),"estimate=-0.0040, SE=0.0027, Holm P=0.433"
+Degradation,Pairwise contrast Type 2 - Type 4 (log10 scale),"estimate=-0.0040, SE=0.0031, Holm P=0.433"
+Degradation,Pairwise contrast Type 3 - Type 4 (log10 scale),"estimate=0.0000, SE=0.0033, Holm P=0.993"
+Salvage,"Median share (%), Type 1",0.374
+Salvage,"Median share (%), Type 2",0.437
+Salvage,"Median share (%), Type 3",0.506
+Salvage,"Median share (%), Type 4",0.541
+Salvage,"Overall enterotype effect, P (GLS, marginal ANOVA)",1.1499999999999999e-55
+Salvage,Pairwise contrast Type 1 - Type 2 (log10 scale),"estimate=-0.0429, SE=0.0049, Holm P=2.75e-15"
+Salvage,Pairwise contrast Type 1 - Type 3 (log10 scale),"estimate=-0.0782, SE=0.0064, Holm P=6.49e-20"
+Salvage,Pairwise contrast Type 1 - Type 4 (log10 scale),"estimate=-0.1085, SE=0.0057, Holm P=6.93e-33"
+Salvage,Pairwise contrast Type 2 - Type 3 (log10 scale),"estimate=-0.0353, SE=0.0063, Holm P=5.74e-07"
+Salvage,Pairwise contrast Type 2 - Type 4 (log10 scale),"estimate=-0.0657, SE=0.0058, Holm P=1.24e-18"
+Salvage,Pairwise contrast Type 3 - Type 4 (log10 scale),"estimate=-0.0304, SE=0.0070, Holm P=3.95e-05"

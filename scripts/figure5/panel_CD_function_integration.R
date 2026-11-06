@@ -21,6 +21,8 @@ library(dplyr)
 library(tidyr)
 library(here)
 
+source(here("scripts", "figure5", "figure5_style.R"))
+
 cat("========================================\n")
 cat("Section 3.4: Functional Integration\n")
 cat("========================================\n\n")
@@ -152,16 +154,11 @@ convergent_selection <- convergent_ecs %>%
     group = "Convergent EC",
     # Strip trailing semicolons from the EC annotation Name field
     Name = gsub(";\\s*$", "", Name),
-    display_name = paste0(feature, " ", Name)
+    # EC number only: the full enzyme names are far too long for a
+    # half-width column (and are given in Figure 4 / the supplementary tables).
+    display_name = paste0("EC ", feature)
   ) %>%
   select(feature, group, display_name, E1_mean_lfc, E4_mean_lfc)
-
-# Trim display names if too long
-convergent_selection$display_name <- ifelse(
-  nchar(convergent_selection$display_name) > 45,
-  paste0(substr(convergent_selection$display_name, 1, 42), "..."),
-  convergent_selection$display_name
-)
 
 cat(sprintf("  Convergent shared ECs: %d\n", nrow(convergent_selection)))
 cat("  Top 3 (from 3.3): EC 2.7.6.3, EC 2.6.1.1, EC 2.1.1.13\n")
@@ -265,8 +262,8 @@ species_selection <- bind_rows(
   e1_lower  %>% mutate(group = "Type 1 \u2014 lower"),
   e4_all_taxa %>% mutate(group = ifelse(feature %in% shared_taxa_features, "Shared", "Type 4"))
 ) %>% select(feature, group)
-species_selection$display_name <- sub(".*s__", "", species_selection$feature) %>%
-  gsub("_", " ", .)
+species_selection$display_name <-
+  abbrev_species(gsub("_", " ", sub(".*s__", "", species_selection$feature)))
 
 avail_sp <- species_selection$feature[species_selection$feature %in% rownames(taxa_otu)]
 species_selection <- species_selection %>% filter(feature %in% avail_sp)
@@ -412,9 +409,10 @@ group_colors_c <- c(
 ha_row_c <- rowAnnotation(
   Layer = row_groups_c,
   col = list(Layer = group_colors_c),
-  annotation_name_gp = gpar(fontsize = 8),
-  simple_anno_size = unit(4, "mm"),
-  show_legend = TRUE
+  annotation_name_gp = gpar(fontsize = fs_legend_text),
+  simple_anno_size = unit(3, "mm"),
+  # No legend: the row-split titles already name each layer.
+  show_legend = FALSE
 )
 
 # Column info (same as Panel B, with UA separated by gap)
@@ -433,9 +431,10 @@ col_labels_c <- col_info_c$display_name
 ha_col_c <- HeatmapAnnotation(
   Class = col_groups_c,
   col = list(Class = class_colors),
-  annotation_name_gp = gpar(fontsize = 8),
-  simple_anno_size = unit(4, "mm"),
-  show_legend = TRUE
+  annotation_name_gp = gpar(fontsize = fs_legend_text),
+  simple_anno_size = unit(3, "mm"),
+  # No legend: the column-split titles already name each class.
+  show_legend = FALSE
 )
 
 max_rho <- 0.5
@@ -448,9 +447,9 @@ cell_fn_c <- function(j, i, x, y, width, height, fill) {
   val <- padj_c[i, j]
   if (!is.na(val)) {
     if (val < 0.01) {
-      grid.text("**", x, y, gp = gpar(fontsize = 7, col = "black"))
+      grid.text("**", x, y, gp = gpar(fontsize = fs_star, col = "black"))
     } else if (val < 0.05) {
-      grid.text("*", x, y, gp = gpar(fontsize = 8, col = "black"))
+      grid.text("*", x, y, gp = gpar(fontsize = fs_star, col = "black"))
     }
   }
 }
@@ -462,20 +461,19 @@ ht_c <- Heatmap(
   col = col_fun,
 
   row_labels = row_labels_c,
-  row_names_gp = gpar(fontsize = 7.5),
+  row_names_gp = gpar(fontsize = fs_axis_text),
   row_split = row_groups_c,
-  row_title_gp = gpar(fontsize = 9, fontface = "bold"),
+  row_title_gp = gpar(fontsize = 7.5, fontface = "bold"),
   row_gap = unit(3, "mm"),
   cluster_row_slices = FALSE,
   cluster_rows = TRUE,
-  row_dend_width = unit(12, "mm"),
+  row_dend_width = unit(8, "mm"),
 
   column_labels = col_labels_c,
-  column_names_gp = gpar(fontsize = 8.5),
-  column_names_rot = 45,
+  column_names_gp = gpar(fontsize = fs_axis_text),
+  column_names_rot = 90,
   column_split = col_groups_c,
-  column_title_gp = gpar(fontsize = 7.5, fontface = "bold"),
-  column_title_rot = 30,
+  column_title = NULL,
   column_gap = unit(4, "mm"),
   cluster_column_slices = FALSE,
   cluster_columns = FALSE,
@@ -488,30 +486,29 @@ ht_c <- Heatmap(
 
   heatmap_legend_param = list(
     title = "Partial \u03c1",
-    title_gp = gpar(fontsize = 9, fontface = "bold"),
-    labels_gp = gpar(fontsize = 8),
-    legend_height = unit(3, "cm"),
-    at = c(-0.5, -0.25, 0, 0.25, 0.5)
+    title_gp = gpar(fontsize = fs_legend_title, fontface = "bold"),
+    labels_gp = gpar(fontsize = fs_legend_text),
+    at = c(-0.5, -0.25, 0, 0.25, 0.5),
+    direction = "horizontal",
+    grid_height = unit(3, "mm"),
+    legend_width = unit(2.4, "cm")
   ),
 
-  width = unit(9, "cm"),
-  height = unit(16, "cm")
+  width = unit(fig5_C_body[["w"]], "mm"),
+  height = unit(fig5_C_body[["h"]], "mm")
 )
 
 # Save Panel C
 # cairo devices render the Greek rho (U+03C1) correctly under a non-Latin locale
 cairo_pdf(here("results", "figures", "panels", "Figure5C_function_heatmap.pdf"),
-    width = 9, height = 12)
-draw(ht_c, merge_legend = TRUE,
-     heatmap_legend_side = "right",
-     annotation_legend_side = "right")
+    width = fig5_C_w_in, height = fig5_C_h_in)
+draw(ht_c, heatmap_legend_side = "bottom")
 dev.off()
 
 png(here("results", "figures", "panels", "Figure5C_function_heatmap.png"),
-    width = 9, height = 12, units = "in", res = 300, type = "cairo")
-draw(ht_c, merge_legend = TRUE,
-     heatmap_legend_side = "right",
-     annotation_legend_side = "right")
+    width = fig5_C_w_in, height = fig5_C_h_in, units = "in", res = fig5_DPI,
+    type = "cairo")
+draw(ht_c, heatmap_legend_side = "bottom")
 dev.off()
 
 cat("  Panel C saved.\n")
@@ -585,12 +582,12 @@ combine_for_plot <- function(sp_df, path_df, ec_df, model_label) {
   df
 }
 
-plot_base <- combine_for_plot(ua_sp_base, ua_path_base, ua_ec_base, "Base (Sex + Age)")
-plot_adj  <- combine_for_plot(ua_sp_adj, ua_path_adj, ua_ec_adj, "ET-adjusted")
+plot_base <- combine_for_plot(ua_sp_base, ua_path_base, ua_ec_base, "Base")
+plot_adj  <- combine_for_plot(ua_sp_adj, ua_path_adj, ua_ec_adj, "ET-adj.")
 
 plot_all <- bind_rows(plot_base, plot_adj)
 plot_all$model <- factor(plot_all$model,
-                         levels = c("Base (Sex + Age)", "ET-adjusted"))
+                         levels = c("Base", "ET-adj."))
 plot_all$layer <- factor(plot_all$layer,
                          levels = c("Species", "Pathway", "Convergent EC"))
 
@@ -624,20 +621,27 @@ p4d <- ggplot(plot_all, aes(x = rho, y = reorder(display_name, order_idx))) +
   facet_grid(layer ~ model, scales = "free_y", space = "free_y") +
   labs(x = "Partial Spearman \u03c1 with serum UA",
        y = NULL) +
-  theme_bw(base_size = 10) +
+  theme_fig5 +
   theme(
-    strip.text = element_text(face = "bold", size = 9),
-    axis.text.y = element_text(size = 7),
-    axis.text.x = element_text(size = 8),
-    legend.position = "bottom",
+    # tilt x tick labels so the two side-by-side model facets pack tighter
+    axis.text.x = element_text(angle = 30, hjust = 1,
+                               size = fs_axis_text, color = "black"),
+    legend.position    = "bottom",
+    legend.box         = "vertical",
+    legend.key.size    = unit(0.32, "cm"),
+    legend.margin      = margin(1, 1, 1, 1),
+    legend.spacing.y   = unit(1, "pt"),
+    legend.box.spacing = unit(2, "pt"),
     panel.grid.major.y = element_blank(),
-    panel.grid.minor = element_blank()
+    panel.grid.minor   = element_blank()
   )
 
 ggsave(here("results", "figures", "panels", "Figure5D_UA_forest_plot.pdf"),
-       p4d, width = 10, height = 14, dpi = 300, device = cairo_pdf)
+       p4d, width = fig5_D_w_in, height = fig5_D_h_in, units = "in",
+       device = cairo_pdf)
 ggsave(here("results", "figures", "panels", "Figure5D_UA_forest_plot.png"),
-       p4d, width = 10, height = 14, dpi = 300, device = png, type = "cairo")
+       p4d, width = fig5_D_w_in, height = fig5_D_h_in, units = "in",
+       dpi = fig5_DPI, device = png, type = "cairo")
 
 cat("  Panel D saved.\n")
 
@@ -672,6 +676,11 @@ write.csv(
   here("results", "tables", "section_3_4", "function_metabolite_partial_rho_ETadj.csv"),
   row.names = FALSE
 )
+
+# Frozen plot objects allow layout-only rebuilds without repeating db-RDA/envfit.
+saveRDS(ht_c, here("results", "cache", "p4c_function_heatmap.rds"))
+saveRDS(plot_all, here("results", "cache", "p4d_plot_all.rds"))
+saveRDS(layer_colors, here("results", "cache", "figure5_layer_colors.rds"))
 
 cat("\n========================================\n")
 cat("Section 3.4 functional integration complete.\n")

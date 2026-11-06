@@ -6,6 +6,8 @@ library(ggplot2)
 library(tidyverse)
 library(here)
 
+source(here("scripts", "figure6", "fig6_style.R"))
+
 cat("--- Building Figure 6B ---\n")
 
 out_dir <- here("results", "figures", "panels")
@@ -72,28 +74,40 @@ p6b <- ggplot(panel_b, aes(x = analysis, y = feature_label, fill = effect_scaled
     data = panel_b %>% filter(significant),
     shape = 21, fill = NA, color = "black", stroke = 0.8, size = 3
   ) +
-  scale_fill_gradient2(
-    low = "#3B6FB6", mid = "#F7F7F7", high = "#D94841",
-    midpoint = 0, limits = c(-1, 1),
-    name = "Signed standardized\nACME"
+  # Every ACME estimate in this panel is positive (all mediators act in the
+  # same direction), so a sequential white -> red scale is used: a diverging
+  # blue-white-red scale would advertise a negative half that never appears.
+  # low/high match the mid/high of the former gradient2, so tile colours are
+  # unchanged -- only the legend loses its unused blue arm.
+  scale_fill_gradient(
+    low = "#F7F7F7", high = "#D94841",
+    limits = c(0, 1),
+    name = "Standardized\nACME"
   ) +
+  # Vector color steps avoid the raster image used by a continuous colorbar.
+  guides(fill = guide_colorsteps(
+    title = "Standardized\nACME", show.limits = TRUE,
+    barwidth = unit(3, "cm"), barheight = unit(0.3, "cm")
+  )) +
   labs(
     x = NULL, y = NULL,
-    title = "Sensitivity analyses show that the strongest signals are directionally stable"
+    title = "Sensitivity analyses: directional stability",
+    caption = "BH-adjusted P < 0.05"
   ) +
-  theme_minimal(base_size = 10.5) +
+  theme_minimal(base_size = FS_AXIS_TEXT) +
+  fig6_text_theme() +
   theme(
     panel.grid = element_blank(),
-    axis.text.x = element_text(size = 8, color = "black", lineheight = 0.9),
-    axis.text.y = element_text(size = 8.2, color = "black"),
-    plot.title = element_text(size = 11, face = "bold"),
-    legend.position = "bottom",
-    legend.title = element_text(size = 9, face = "bold"),
-    legend.text = element_text(size = 8)
+    # Steeper angle so the 8 column labels fit the narrower panel.
+    axis.text.x = element_text(angle = 40, hjust = 1, lineheight = 0.9),
+    plot.caption = element_text(size = FS_ANNOT, hjust = 0, margin = margin(t = 3)),
+    legend.position = "bottom"
   )
 
-ggsave(file.path(out_dir, "Figure6B_sensitivity_matrix_results.pdf"), p6b, width = 11, height = 4.8, dpi = 300)
-ggsave(file.path(out_dir, "Figure6B_sensitivity_matrix_results.png"), p6b, width = 11, height = 4.8, dpi = 300)
+# Rendered at the left column width (6.7 in) so magick performs no rescale.
+# Height kept compact (4.0 in) so the 6 tile rows are dense, not sparse.
+ggsave(file.path(out_dir, "Figure6B_sensitivity_matrix_results.pdf"), p6b, width = 6.7, height = 4.0, dpi = 300)
+ggsave(file.path(out_dir, "Figure6B_sensitivity_matrix_results.png"), p6b, width = 6.7, height = 4.0, dpi = 300)
 
 saveRDS(p6b, here("results", "cache", "p6b.rds"))
 cat("Figure 6B saved.\n")

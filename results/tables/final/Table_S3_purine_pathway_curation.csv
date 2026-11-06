@@ -1,0 +1,35 @@
+﻿Pathway ID,Pathway name,Module,Curation role,Number of reactions
+PWY-6121,5-aminoimidazole ribonucleotide biosynthesis I,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),5
+PWY-6122,5-aminoimidazole ribonucleotide biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),5
+PWY-6123,inosine-5'-phosphate biosynthesis I,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),6
+PWY-6124,inosine-5'-phosphate biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),5
+PWY-7219,adenosine ribonucleotides de novo biosynthesis,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),4
+PWY-7220,adenosine deoxyribonucleotides de novo biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),4
+PWY-7221,guanosine ribonucleotides de novo biosynthesis,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),4
+PWY-7222,guanosine deoxyribonucleotides de novo biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),4
+PWY-7234,inosine-5'-phosphate biosynthesis III,De novo biosynthesis,module-defining member,6
+P164-PWY,purine nucleobases degradation I (anaerobic),Degradation,module-defining member,17
+PWY-5532,adenosine nucleotides degradation IV,Degradation,module-defining member,4
+PWY-5692,allantoin degradation to glyoxylate II,Degradation,module-defining member,4
+PWY-5695,urate biosynthesis/inosine 5'-phosphate degradation,Degradation,descriptive annotation (reactions fully contained in another member),4
+PWY-5705,allantoin degradation to glyoxylate III,Degradation,module-defining member,4
+PWY-6353,purine nucleotides degradation II (aerobic),Degradation,module-defining member,11
+PWY-6606,guanosine nucleotides degradation II,Degradation,descriptive annotation (reactions fully contained in another member),4
+PWY-6608,guanosine nucleotides degradation III,Degradation,descriptive annotation (reactions fully contained in another member),4
+PWY0-1296,purine ribonucleosides degradation,Degradation,module-defining member,7
+PWY0-41,allantoin degradation IV (anaerobic),Degradation,module-defining member,7
+SALVADEHYPOX-PWY,adenosine nucleotides degradation II,Degradation,descriptive annotation (reactions fully contained in another member),5
+PWY-6609,adenine and adenosine salvage III,Salvage,module-defining member,4
+DENOVOPURINE2-PWY,superpathway of purine nucleotides de novo biosynthesis II,De novo biosynthesis,module-defining member,27
+PWY-6125,superpathway of guanosine nucleotides de novo biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),8
+PWY-6126,superpathway of adenosine nucleotides de novo biosynthesis II,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),8
+PWY-6277,superpathway of 5-aminoimidazole ribonucleotide biosynthesis,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),5
+PWY-7228,superpathway of guanosine nucleotides de novo biosynthesis I,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),6
+PWY-7229,superpathway of adenosine nucleotides de novo biosynthesis I,De novo biosynthesis,descriptive annotation (reactions fully contained in another member),8
+PWY-841,superpathway of purine nucleotides de novo biosynthesis I,De novo biosynthesis,module-defining member,22
+ALLANTOINDEG-PWY,superpathway of allantoin degradation in yeast,Degradation,module-defining member,5
+PWY-6595,superpathway of guanosine nucleotides degradation (plants),Degradation,module-defining member,6
+PWY0-1297,superpathway of purine deoxyribonucleosides degradation,Degradation,module-defining member,7
+URDEGR-PWY,superpathway of allantoin degradation in plants,Degradation,descriptive annotation (reactions fully contained in another member),4
+PWY66-409,superpathway of purine nucleotide salvage,Salvage,descriptive annotation (spans modules; excluded from module membership),18
+P165-PWY,superpathway of purines degradation in plants,Degradation,module-defining member,7

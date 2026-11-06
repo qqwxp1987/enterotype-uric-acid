@@ -1,0 +1,4 @@
+"scenario","n_t4","n_ref","mean_UA_t4","mean_UA_ref","mean_diff","median_diff","wilcox_W","wilcox_p","lm_coef_t4","lm_se_t4","lm_p_t4","HUA_OR","HUA_OR_CI_lo","HUA_OR_CI_hi","HUA_OR_p","outlier_SampleIDs_p95","outlier_SampleIDs_p99"
+"Full (no removal)",39,146,347.5,298.8,48.73,9.5,3452.5,0.04169,20.3,13.527,0.13517,2.594,0.995,6.766,0.05124,"FCTJ_SQ6794; FCTJ_XZJ7380","FCTJ_XZJ7380"
+"Remove P95 outliers (UA > 599.5)",37,146,331.1,298.8,32.29,8.5,3160.5,0.11073,10.99,12.838,0.3931,2.303,0.861,6.164,0.09667,"FCTJ_SQ6794; FCTJ_XZJ7380","FCTJ_XZJ7380"
+"Remove P99 outliers (UA > 660.7)",38,146,338.5,298.8,39.71,9,3306.5,0.06889,15.511,13.05,0.23617,2.468,0.936,6.507,0.0677,"FCTJ_SQ6794; FCTJ_XZJ7380","FCTJ_XZJ7380"

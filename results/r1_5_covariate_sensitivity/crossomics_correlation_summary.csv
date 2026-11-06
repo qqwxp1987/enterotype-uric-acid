@@ -1,0 +1,5 @@
+"family","target_scope","pairs_n","n_original","n_matched","rho_spearman_base_cc_vs_extended","direction_concordance_base_cc_vs_extended","direction_concordance_original_vs_extended","base_cc_FDR_n","extended_FDR_n","FDR_retained_n","FDR_lost_n","FDR_gained_n"
+"Species","crossomics_only",276,303,224,0.999018849616872,0.989130434782609,0.952898550724638,126,123,122,4,1
+"Species","including_UA",299,303,224,0.997807905546452,0.989966555183946,0.953177257525084,129,126,125,4,1
+"Function","crossomics_only",360,303,224,0.99849741638953,0.994444444444444,0.941666666666667,146,145,141,5,4
+"Function","including_UA",390,303,224,0.997223063723172,0.987179487179487,0.938461538461538,151,149,145,6,4

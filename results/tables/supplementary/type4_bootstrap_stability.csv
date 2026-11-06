@@ -1,0 +1,7 @@
+"metric","estimate","bootstrap_CI_lo","bootstrap_CI_hi","n_valid_boot"
+"Mean UA difference (T4 − Ref)",48.73,10.31,91.21,5000
+"LM Type 4 coefficient",20.3,-8.694,51.22,5000
+"Wilcoxon P < 0.05 proportion",0.53,NA,NA,5000
+"LM P < 0.05 proportion",0.326,NA,NA,5000
+"HUA OR",2.594,0.984,7.084,5000
+"HUA OR P < 0.05 proportion",0.484,NA,NA,5000

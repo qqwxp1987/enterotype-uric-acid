@@ -1,0 +1,20 @@
+﻿Dataset,Item,Value
+A. Shotgun metagenomics,Samples sequenced and analysed,305
+A. Shotgun metagenomics,Platform,"Illumina NovaSeq 6000, paired-end 150 bp"
+A. Shotgun metagenomics,"Raw reads per sample, mean (range)",4.63 x 10^7 (3.93 x 10^7-1.18 x 10^8)
+A. Shotgun metagenomics,"High-quality non-host reads per sample after quality filtering and host-DNA removal, mean (range)",4.25 x 10^7 (2.20 x 10^7-1.05 x 10^8)
+A. Shotgun metagenomics,"Reads retained after filtering, mean % (range)",91.8% (50.5%-95.0%)
+A. Shotgun metagenomics,Quality / host filtering pipeline,KneadData v0.10.0 (bioBakery3 workflow)
+A. Shotgun metagenomics,Taxonomic / functional profiling,"MetaPhlAn3; HUMAnN3 (MetaCyc pathways, KEGG Orthologs, EC numbers)"
+A. Shotgun metagenomics,Features quantified before prevalence filtering,509 species-level clades; 474 MetaCyc pathways
+A. Shotgun metagenomics,Prevalence filter before differential-abundance testing,features present in <10% of samples removed
+B. Serum untargeted metabolomics,Samples profiled,303 of 305
+B. Serum untargeted metabolomics,Platform,Vanquish UHPLC coupled to Orbitrap Exploris 120; HILIC (BEH Amide); positive and negative ion modes
+B. Serum untargeted metabolomics,QC design,Pooled QC sample (equal aliquots of all samples) injected every 10 study samples
+B. Serum untargeted metabolomics,QC reproducibility filter,Features with RSD > 30% in QC samples removed
+B. Serum untargeted metabolomics,Missing-value handling,Overall missing rate < 5%; features missing in > 20% of samples excluded; remaining missing values imputed at half the per-feature minimum
+B. Serum untargeted metabolomics,Normalisation,Isotopically labelled internal standards
+B. Serum untargeted metabolomics,Batch-effect assessment,PCA of QC samples showed no detectable batch effects or instrumental drift
+B. Serum untargeted metabolomics,Feature filtering,Unannotated features removed before downstream analysis
+B. Serum untargeted metabolomics,Metabolite-identification confidence,"MSI confidence level 2 (in-house MS2 database, BiotreeDB)"
+B. Serum untargeted metabolomics,Metabolites retained after QC,829

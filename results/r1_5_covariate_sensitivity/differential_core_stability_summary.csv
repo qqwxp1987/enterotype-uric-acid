@@ -1,0 +1,9 @@
+"layer","enterotype","original_core_n","direction_retained_both_n","direction_retained_both_rate","base_cc_core_n","extended_core_retained_n","extended_core_retained_rate","extended_new_core_n"
+"Taxa","E1",73,67,0.917808219178082,50,35,0.479452054794521,5
+"Taxa","E4",3,3,1,0,0,0,0
+"Pathway","E1",43,41,0.953488372093023,37,36,0.837209302325581,5
+"Pathway","E4",52,43,0.826923076923077,37,37,0.711538461538462,5
+"EC","E1",332,332,1,209,211,0.635542168674699,5
+"EC","E4",407,394,0.968058968058968,329,323,0.793611793611794,23
+"Metabolome","E1",24,24,1,22,23,0.958333333333333,0
+"Metabolome","E4",0,0,NA,0,0,NA,0

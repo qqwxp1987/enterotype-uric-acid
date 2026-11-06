@@ -2,9 +2,9 @@
 "NEG0216_p-Cresol sulfate","p-Cresol sulfate","AAA catabolite",0.143319570530539,0.001
 "NEG0024_p-Cresol","p-Cresol","AAA catabolite",0.149706376664171,0.001
 "NEG0046_Indoxyl sulfate","Indoxyl sulfate","AAA catabolite",0.131968618116234,0.001
-"NEG0144_5-Methoxyindoleacetate","5-Methoxyindoleacetate","AAA catabolite",0.145912691909972,0.001
+"NEG0144_5-Methoxyindoleacetate","5-MeOIA","AAA catabolite",0.145912691909972,0.001
 "NEG0147_Indole-3-propionic acid","Indole-3-propionic acid","AAA catabolite",0.0584603314764965,0.001
-"NEG0145_Phenylacetylglutamine","Phenylacetylglutamine","AAA catabolite",0.0875813708726853,0.001
+"NEG0145_Phenylacetylglutamine","PAGln","AAA catabolite",0.0875813708726853,0.001
 "NEG0015_Deoxycholic acid","Deoxycholic acid","Bile acid",0.0977283012063697,0.001
 "NEG0082_Taurocholic acid","Taurocholic acid","Bile acid",0.0303471209939614,0.008
 "POS0156_Trimethylamine N-oxide","TMAO","TMAO pathway",0.0546585789355202,0.001

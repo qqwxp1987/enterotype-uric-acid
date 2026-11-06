@@ -18,6 +18,8 @@ library(tidyr)
 library(ggrepel)
 library(here)
 
+source(here("scripts", "figure5", "figure5_style.R"))
+
 # --- 1. Load Data ---
 ps <- readRDS(here("data", "clean", "phyloseq_Taxa_with_enterotype_seed10.rds"))
 metab_raw <- readRDS(here("data", "clean",
@@ -240,13 +242,16 @@ p4a <- ggplot() +
   # Metabolite labels
   geom_text_repel(
     data = arrow_df,
-    aes(x = x, y = y, label = display_name, color = class),
-    size = 2.5, fontface = "bold",
+    aes(x = x, y = y, label = display_name, color = class,
+        nudge_y = ifelse(display_name == "Indoxyl sulfate", 0.35, 0)),
+    size = as_mm(fs_annot), fontface = "bold",
     max.overlaps = Inf,
-    force = 4, force_pull = 0.5,
-    segment.size = 0.2, segment.color = "grey60",
-    box.padding = 0.7, point.padding = 0.3,
+    force = 4, force_pull = 0.25,
+    max.time = 5, max.iter = 100000,
+    segment.size = 0.25, segment.color = "grey55",
+    box.padding = 0.85, point.padding = 0.45,
     min.segment.length = 0,
+    bg.color = "white", bg.r = 0.08,
     seed = 42,
     show.legend = FALSE
   ) +
@@ -259,6 +264,7 @@ p4a <- ggplot() +
     labels = c(names(enterotype_colors), names(class_colors)),
     name = NULL,
     guide = guide_legend(
+      ncol = 1,
       override.aes = list(
         shape = c(16, 16, 16, 16, NA, NA, NA, NA),
         linetype = c(0, 0, 0, 0, 1, 1, 1, 1),
@@ -273,24 +279,25 @@ p4a <- ggplot() +
     x = -Inf, y = -Inf,
     hjust = -0.05, vjust = -0.2,
     label = annot_text,
-    size = 3.0, fontface = "italic", color = "grey30",
-    fill = "white", label.size = 0, alpha = 0.85
+    size = as_mm(fs_annot), fontface = "italic", color = "grey30",
+    fill = "white", linewidth = 0, alpha = 0.85
   ) +
   labs(
     x = sprintf("CAP1 (%.1f%%)", pct_cap1),
     y = sprintf("CAP2 (%.1f%%)", pct_cap2)
   ) +
-  coord_fixed(ratio = 1) +
-  theme_bw(base_size = 11) +
+  theme_fig5 +
   theme(
-    panel.grid = element_blank(),
-    axis.title = element_text(size = 10),
-    axis.text = element_text(size = 9, color = "black"),
-    legend.text = element_text(size = 8),
-    legend.key.size = unit(0.4, "cm"),
-    legend.position = "right",
-    legend.spacing.y = unit(0.15, "cm"),
-    plot.margin = margin(5, 5, 5, 5)
+    panel.grid         = element_blank(),
+    # Fill the wide R1 panel; no second rescaling is applied at assembly.
+    aspect.ratio       = NULL,
+    legend.position    = "right",
+    legend.box         = "vertical",
+    legend.key.size    = unit(0.28, "cm"),
+    legend.spacing     = unit(0.05, "cm"),
+    legend.margin      = margin(1, 1, 1, 1),
+    legend.box.spacing = unit(2, "pt"),
+    plot.margin        = margin(4, 4, 4, 4)
   )
 
 # ==============================================================================
@@ -301,9 +308,10 @@ dir.create(here("results", "figures", "panels"), recursive = TRUE, showWarnings 
 dir.create(here("results", "tables", "section_3_4"), recursive = TRUE, showWarnings = FALSE)
 
 ggsave(here("results", "figures", "panels", "Figure5A_dbRDA_triplot.pdf"),
-       p4a, width = 7.5, height = 5.5, dpi = 300)
+       p4a, width = fig5_A_w_in, height = fig5_A_h_in, units = "in")
 ggsave(here("results", "figures", "panels", "Figure5A_dbRDA_triplot.png"),
-       p4a, width = 7.5, height = 5.5, dpi = 300)
+       p4a, width = fig5_A_w_in, height = fig5_A_h_in, units = "in",
+       dpi = fig5_DPI)
 
 write.csv(ef_sig,
           here("results", "tables", "section_3_4", "envfit_significant_metabolites.csv"),

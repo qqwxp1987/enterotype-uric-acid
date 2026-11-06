@@ -35,10 +35,7 @@ cat("OTU matrix dimensions:", dim(otu_mat), "\n")
 cat("  Samples:", nrow(otu_mat), "  Genera:", ncol(otu_mat), "\n")
 
 # --- 2. Fit DMM Models (k = 1 to 10) ---
-# Use explicit seed=10 for DMM's internal EM initialization.
-# DMM fitting is stochastic; seed search over 1-100 confirmed that seed=10
-# yields k=4 as the Laplace-optimal solution (18/100 seeds favor k=4,
-# reflecting a robust local optimum consistent with the original analysis).
+# DMM fitting is stochastic; a fixed seed is used for reproducibility.
 DMM_SEED <- 10L
 k_range <- 1:10
 

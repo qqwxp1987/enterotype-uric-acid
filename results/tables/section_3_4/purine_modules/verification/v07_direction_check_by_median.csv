@@ -1,0 +1,15 @@
+score,overall_P,T1,T2,T3,T4,highest,lowest
+P_de_novo_primary_share,6.30e-30,0.644,0.715,0.62,0.454,Type 2,Type 4
+P_de_novo_primary_abs,6.17e-34,5635.124,6048.641,4614.696,2581.957,Type 2,Type 4
+P_de_novo_sensitivity_share,4.20e-23,0.714,0.765,0.704,0.521,Type 2,Type 4
+P_de_novo_sensitivity_abs,1.90e-31,6105.842,6509.434,5082.947,3092.986,Type 2,Type 4
+P_degradation_share,8.33e-09,0.523,0.667,0.618,0.354,Type 2,Type 4
+P_degradation_abs,1.06e-13,4426.122,5578.524,4650.287,1886.134,Type 2,Type 4
+P_salvage_share,1.84e-30,1.116,1.212,1.446,1.785,Type 4,Type 1
+P_salvage_abs,3.50e-01,9719.199,10166.432,10363.124,10417.687,Type 4,Type 1
+E_de_novo_share,1.10e-21,3.512,3.732,3.855,3.865,Type 4,Type 1
+E_de_novo_abs,2.91e-10,182445.85,176251.814,165033.326,152933.832,Type 1,Type 4
+E_degradation_share,3.75e-05,1.474,1.531,1.545,1.55,Type 4,Type 1
+E_degradation_abs,1.45e-14,76881.06,73056.193,68331.786,60406.133,Type 1,Type 4
+E_salvage_share,1.15e-55,0.374,0.437,0.506,0.541,Type 4,Type 1
+E_salvage_abs,2.01e-01,19850.856,20509.628,21304.423,21594.037,Type 4,Type 1

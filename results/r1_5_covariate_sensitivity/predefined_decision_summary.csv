@@ -1,0 +1,4 @@
+"hypothesis","status","evidence"
+"H1_differential","supportive","Minimum layer-enterotype direction-retention rate: 0.827"
+"H2_crossomics","supportive","Species/function rho concordance: 0.999/0.998; db-RDA P=0.0100"
+"H3_direct_HUA","supportive","Key directions retained: 3/3; extended HUA FDR signals: 1"
