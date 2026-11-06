@@ -1,28 +1,7 @@
-# ==============================================================================
-# Extended Covariate Sensitivity Analysis & Direct Feature-UA Association
+# Extended-covariate mediation and feature-attribution analyses
 #
-# Purpose:
-#   Respond to reviewer comments R1.5 (inconsistent covariate adjustment) and
-#   R1.3 (feature attribution hierarchy).
-#
-#   Analysis 1 (R1.5): Re-run mediation with extended covariates
-#     (Gender + Age + BMI + Cr) and compare to base (Gender + Age).
-#   Analysis 2 (R1.3, Layer 2): Direct feature-UA association across enterotypes
-#     (enterotype as covariate).
-#   Analysis 3 (R1.3, Layer 3): Within-enterotype feature-UA association.
-#   Analysis 4: Feature attribution hierarchy summary.
-#
-# Input:
-#   - results/tables/section_3_5/mediation_analysis_data.rds
-#   - data/clean/phyloseq_Taxa_with_enterotype_seed10.rds (for BMI, Cr, eGFR)
-#   - results/tables/section_3_5/mediation_main_results.csv (original base results)
-#
-# Output (results/tables/supplementary/):
-#   - mediation_extended_covariate_sensitivity.csv  (Analysis 1)
-#   - direct_feature_UA_association.csv             (Analysis 2)
-#   - within_enterotype_feature_UA.csv              (Analysis 3)
-#   - feature_attribution_hierarchy.csv             (Analysis 4)
-# ==============================================================================
+# Evaluates extended-covariate mediation, direct feature-UA associations,
+# within-enterotype associations and the candidate attribution hierarchy.
 
 library(mediation)
 library(tidyverse)
@@ -73,10 +52,10 @@ mediator_layer <- c(
 )
 names(mediator_layer) <- mediator_cols
 
-SIMS <- 5000  # R1.5 sensitivity: match the primary mediation analysis
+SIMS <- 5000  # Match the primary mediation analysis
 
 # Skip Analysis 1 when output already exists unless an explicit verified rerun is requested.
-FORCE_MEDIATION <- identical(Sys.getenv("R15_FORCE_MEDIATION", unset = "0"), "1")
+FORCE_MEDIATION <- identical(Sys.getenv("FORCE_EXTENDED_MEDIATION", unset = "0"), "1")
 SKIP_MEDIATION <- file.exists(
   here("results", "tables", "supplementary",
        "mediation_extended_covariate_sensitivity.csv")
@@ -125,7 +104,7 @@ df$Gender <- as.character(df$Gender)
 cat("\n")
 
 # ==============================================================================
-# ANALYSIS 1: Extended Covariate Mediation Sensitivity (R1.5)
+# ANALYSIS 1: Extended Covariate Mediation Sensitivity
 # ==============================================================================
 
 cat("================================================================\n")
@@ -318,7 +297,7 @@ saveRDS(mediation_sensitivity_full,
 cat("\n")
 
 # ==============================================================================
-# ANALYSIS 2: Direct Feature-UA Association (Layer 2 — R1.3)
+# ANALYSIS 2: Direct Feature-UA Association (Layer 2)
 # ==============================================================================
 
 cat("================================================================\n")
@@ -503,7 +482,7 @@ if (nrow(direct_hua) > 0 && "HUA_padj" %in% colnames(direct_hua)) {
 cat("\n")
 
 # ==============================================================================
-# ANALYSIS 3: Within-Enterotype Feature-UA Association (Layer 3 — R1.3)
+# ANALYSIS 3: Within-Enterotype Feature-UA Association (Layer 3)
 # ==============================================================================
 
 cat("================================================================\n")
@@ -699,8 +678,8 @@ print(hierarchy %>%
                et_sig, et_p, hua_sig, hua_padj),
       n = Inf)
 
-# Key metrics for reviewer response
-cat("\n--- Key Metrics for Reviewer Response ---\n")
+# Key metrics for sensitivity summary
+cat("\n--- Key Sensitivity Metrics ---\n")
 n_ua_candidate <- sum(hierarchy$attribution == "UA-associated candidate")
 n_ua_both <- sum(hierarchy$attribution == "Both UA-associated & enterotype marker")
 n_ua_l2only <- sum(hierarchy$attribution == "UA-associated (Layer 2 only)")

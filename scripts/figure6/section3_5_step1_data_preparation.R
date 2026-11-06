@@ -51,7 +51,7 @@
 #   ECs: convergent shared ECs meeting EITHER (A) significant UA partial
 #     correlation in Section 3.4 (padj < 0.05), OR (B) functionally
 #     annotated convergent enzyme feeding de novo purine biosynthesis
-#     in Section 3.3 (R1.4: functional-annotation criterion, not a
+#     in Section 3.3 (functional-annotation criterion, not a
 #     fold-change ranking)
 # ==============================================================================
 

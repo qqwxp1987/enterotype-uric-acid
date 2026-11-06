@@ -1,22 +1,12 @@
 {
   "status": "PASS",
-  "timestamp_utc": "2026-11-06T05:20:00.203633+00:00",
+  "timestamp_utc": "2026-11-06T09:16:19.729595+00:00",
   "checks_passed": 130,
   "checks": [
     {
       "name": "required file README.md",
       "pass": true,
       "detail": "README.md"
-    },
-    {
-      "name": "required file ANALYSIS_MAP.md",
-      "pass": true,
-      "detail": "ANALYSIS_MAP.md"
-    },
-    {
-      "name": "required file VALIDATION.md",
-      "pass": true,
-      "detail": "VALIDATION.md"
     },
     {
       "name": "required file data/README.md",
@@ -34,6 +24,16 @@
       "detail": "supplementary/tables/Supplementary_Tables.xlsx"
     },
     {
+      "name": "enterotype-robustness results directory",
+      "pass": true,
+      "detail": "results/enterotype_robustness"
+    },
+    {
+      "name": "covariate-sensitivity results directory",
+      "pass": true,
+      "detail": "results/covariate_sensitivity"
+    },
+    {
       "name": "R script count",
       "pass": true,
       "detail": "54"
@@ -45,6 +45,11 @@
     },
     {
       "name": "portable script scripts\\figure1\\build_gradient_sensitivity_tables.py",
+      "pass": true,
+      "detail": "no local path or placeholder"
+    },
+    {
+      "name": "portable script scripts\\figure1\\enterotype_robustness.R",
       "pass": true,
       "detail": "no local path or placeholder"
     },
@@ -75,11 +80,6 @@
     },
     {
       "name": "portable script scripts\\figure1\\panel_E_alpha_diversity.R",
-      "pass": true,
-      "detail": "no local path or placeholder"
-    },
-    {
-      "name": "portable script scripts\\figure1\\r12_r21_enterotype_robustness.R",
       "pass": true,
       "detail": "no local path or placeholder"
     },

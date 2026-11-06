@@ -1,19 +1,7 @@
-# ==============================================================================
-# R2 Minor Comment 4 — Rebuild Figure 6 (vector PDF + 300 dpi PNG)
+# Assemble Figure 6 from the mediation and heterogeneity result tables
 #
-# Baseline and success criteria:
-#   * 22 candidates x 2 models = 44 unchanged ACME estimates and intervals.
-#   * Five BH-significant candidates in each main model (Type 1 and Type 4).
-#   * Six priority features x 8 sensitivity settings = 48 unchanged tiles.
-#   * 23 within-Type 4 tests, with exactly four nominal P < 0.05 results.
-#   * 39 Type 4 participants: 12 HUA+ and 27 HUA−.
-#   * A/B explicitly report BH-adjusted significance; C/D explicitly report
-#     nominal, unadjusted significance and exploratory framing.
-#   * A4 portrait vector PDF, no missing expected text or genuine overlap.
-#
-# No mediation model, bootstrap result, sensitivity result, or Type 4 test is
-# recomputed. Panels read the frozen R1 result tables. Only presentation changes.
-# ==============================================================================
+# Checks all candidates, sensitivity settings and Type 4 tests before producing
+# the final vector PDF and PNG outputs. Statistical models are not refitted here.
 
 suppressPackageStartupMessages({
   library(here)
@@ -26,8 +14,8 @@ stopifnot(file.exists(here(".here")))
 dir.create(here("results", "cache"), recursive = TRUE, showWarnings = FALSE)
 
 OUT_DIR <- here("results", "figures")
-MINOR4_DIR <- here("results", "verification")
-QA_DIR <- file.path(MINOR4_DIR, "figure6")
+VERIFICATION_DIR <- here("results", "verification")
+QA_DIR <- file.path(VERIFICATION_DIR, "figure6")
 dir.create(QA_DIR, recursive = TRUE, showWarnings = FALSE)
 
 source(here("scripts", "figure6", "panel_A_mediation_forest.R"))
@@ -35,7 +23,7 @@ source(here("scripts", "figure6", "panel_B_sensitivity_matrix.R"))
 source(here("scripts", "figure6", "panel_C_type4_lollipop.R"))
 source(here("scripts", "figure6", "panel_D_type4_boxplots.R"))
 
-# Hard fidelity assertions against the frozen R1 result tables.
+# Hard fidelity assertions against the published result tables.
 stopifnot(
   nrow(med_results) == 44,
   length(unique(med_results$mediator)) == 22,
@@ -121,10 +109,10 @@ ggsave(
   dpi = 300, device = png, type = "cairo", bg = "white"
 )
 
-capture.output(sessionInfo(), file = file.path(MINOR4_DIR, "figure6_session_info.txt"))
+capture.output(sessionInfo(), file = file.path(VERIFICATION_DIR, "figure6_session_info.txt"))
 writeLines(
   c(
-    "Figure 6 rebuild completed from frozen R1 result tables.",
+    "Figure 6 rebuild completed from published result tables.",
     "Random seed: 42 for Type 4 participant jitter (unchanged).",
     "Final canvas: 210 x 297 mm (A4 portrait, approximately 595 x 842 pt).",
     "All hard fidelity assertions passed before final assembly."

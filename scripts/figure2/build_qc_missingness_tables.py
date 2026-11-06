@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Build Table S18 (QC summary) and Table S19 (missingness & per-analysis n)
-for Minor Comments 1 and 2 (second-round revision).
+"""Build Table S1 (QC summary) and Table S2 (missingness and analysis n).
 
-Sources:
-- data/clean/kneaddata_read_count_table.tsv (per-sample read counts, 325 rows)
-- results/tables/section_3_3/section3_6_analysis_data.csv (305 analysis-sample IDs)
-- results/tables/section_3_3/missingness_summary.csv
-- results/tables/section_3_3/model_complete_case_counts.csv
-- round-1 BMI missingness CSVs (per-enterotype BMI completeness)
-
-QC assertions verify computed stats against Methods 2.2 text numbers
-(mean raw 4.6e7, range 3.9e7-1.2e8; mean post-filter 4.2e7, range 2.2e7-1.1e8).
-"""
+Calculates sequencing-depth summaries for the 305 analysis samples and combines
+variable-level missingness with analysis-specific sample sizes."""
 import csv
 import os
 import statistics

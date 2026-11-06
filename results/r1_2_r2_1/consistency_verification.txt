@@ -1,7 +1,0 @@
-R1.2/R2.1 CONSISTENCY VERIFICATION: PASS
-bootstrap: 100 valid; unique agreement 92.5% +/- 5.4%; median ARI 0.885
-median Jaccard Type1-4: 0.957, 0.920, 0.794, 0.877
-multi-start minima k3/k4: 148829.5 / 148845.1
-P/B: rho -0.152, P 0.008; spline df3 P 0.865; detected-only P 0.170
-response, manuscript, figures, and numeric source files are aligned
-retired overclaims and local file links are absent

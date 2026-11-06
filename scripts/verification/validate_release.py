@@ -37,19 +37,21 @@ def close(a, b, tolerance=1e-8):
 
 # Structure and portability.
 required = [
-    "README.md", "ANALYSIS_MAP.md", "VALIDATION.md", "data/README.md",
+    "README.md", "data/README.md",
     "supplementary/build_supplementary_xlsx.py",
     "supplementary/tables/Supplementary_Tables.xlsx",
 ]
 for relative in required:
     check(f"required file {relative}", (ROOT / relative).is_file(), relative)
+check("enterotype-robustness results directory", (ROOT / "results/enterotype_robustness").is_dir(), "results/enterotype_robustness")
+check("covariate-sensitivity results directory", (ROOT / "results/covariate_sensitivity").is_dir(), "results/covariate_sensitivity")
 script_files = [p for p in (ROOT / "scripts").rglob("*") if p.suffix.lower() in {".r", ".py"}]
 check("R script count", len(list((ROOT / "scripts").rglob("*.R"))) == 54, len(list((ROOT / "scripts").rglob("*.R"))))
 for path in script_files:
     if path.resolve() == Path(__file__).resolve():
         continue  # The validator itself contains the forbidden strings as test patterns.
     text = path.read_text(encoding="utf-8")
-    forbidden = ["C:/Users/", "C:\\Users\\", "Journal_TranslationalMedicine", "Minor4/work", "Table_SX", "Figure_SX"]
+    forbidden = ["C:/Users/", "C:\\Users\\", "Journal_TranslationalMedicine", "Table_SX", "Figure_SX"]
     check(f"portable script {path.relative_to(ROOT)}", not any(item in text for item in forbidden), "no local path or placeholder")
 
 expected_tables = {

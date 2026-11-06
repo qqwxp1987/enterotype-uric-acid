@@ -1,22 +1,7 @@
-# ==============================================================================
-# R2 Minor Comment 4 — Rebuild Figure 4 (publishable, vector PDF)
+# Assemble Figure 4 from authoritative statistical results
 #
-# Confirmed layout:
-#   * Original R1 landscape canvas: 11 x 8.5 in (792 x 612 pt).
-#   * Old KEGG schematic (panel D) moves to Additional file 8: Figure S7.
-#   * Left two-thirds: A and B in the upper row; C across the lower row.
-#   * Right one-third: old E becomes new D, with three single-column facets.
-#   * Panel B retains the per-theme pathway counts cited in the figure legend.
-#   * Panel C retains the full, wrapped names of EC 2.7.6.3 and EC 2.3.1.129.
-#
-# Data and statistical definitions are unchanged from the R1 scripts; only
-# presentation, typography, and panel geometry are revised.
-#
-# Outputs:
-#   投稿/.../第二轮返修和处理/Figure4.pdf  (vector, cairo)
-#   投稿/.../第二轮返修和处理/Figure4.png  (300 dpi preview)
-#   投稿/.../第二轮返修和处理/Minor/figure4_rebuild/panels/Figure4[A-D].pdf
-# ==============================================================================
+# Produces vector PDF and high-resolution PNG outputs. Statistical definitions
+# and numerical inputs are unchanged by the figure assembly.
 
 suppressPackageStartupMessages({
   library(dplyr)

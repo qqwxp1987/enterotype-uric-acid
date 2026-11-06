@@ -1,17 +1,8 @@
 # -*- coding: utf-8 -*-
-"""
-Build Additional file 6 candidate Tables S16/S17 for Reviewer 1 Major Comment 2
-(DMM robustness / continuous gradient), from the frozen round-1 robustness outputs.
+"""Build Tables S5 and S19 from the frozen enterotype-robustness outputs.
 
-Sources (all VERIFIED frozen outputs of scripts/figure1/r12_r21_enterotype_robustness.R):
-  results/tables/supplementary/pb_ratio_sensitivity.csv        -> Table S16
-  results/tables/supplementary/k3_outcome_sensitivity.csv      -> Table S17 (section C)
-  results/tables/supplementary/k4_k3_membership_crosswalk.csv  -> Table S17 (section A)
-  results/tables/supplementary/k3_outcome_descriptives.csv     -> Table S17 (section B)
-
-QC protocol: hard assertions on the key frozen numbers quoted in the response
-letter. Any drift aborts the build.
-"""
+The continuous-gradient and k=3 sensitivity statistics are read from the
+authoritative result CSVs. Hard assertions prevent silent numerical drift."""
 import csv
 import math
 from pathlib import Path

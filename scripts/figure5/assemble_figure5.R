@@ -1,24 +1,7 @@
-# ==============================================================================
-# R2 Minor Comment 4 — Rebuild Figure 5 (vector PDF + 300 dpi PNG)
+# Assemble Figure 5 from the cross-omics analyses
 #
-# Baseline (must reproduce before layout changes are accepted):
-#   * Panel A: n = 303; adjusted R2 = 0.152; permutation P = 0.003;
-#              12/12 curated metabolite arrows retained.
-#   * Panel B: 23 x 13 partial-correlation matrix; 138 BH-significant pairs.
-#   * Panel C: 30 x 13 partial-correlation matrix; 173 BH-significant pairs.
-#   * Panel D: 53 features x 2 models; estimates and BH calls unchanged.
-#
-# Success criteria:
-#   * All baseline statistics pass independent CSV checks.
-#   * Final canvas is the correct R1 A4 portrait layout (595 x 842 pt).
-#   * Panels B/C explicitly define BH-adjusted asterisks on the figure.
-#   * Panel D explicitly defines filled/open symbols by BH-adjusted P.
-#   * No expected text is missing and no text-box overlap is detected.
-#   * PDF remains vector; PNG is 300 dpi.
-#
-# Only typography, label placement, legends, and panel geometry are changed.
-# Raw data and statistical definitions are immutable.
-# ==============================================================================
+# Checks the expected sample counts, correlation matrices, model statistics and
+# significance counts before producing the final vector PDF and PNG outputs.
 
 suppressPackageStartupMessages({
   library(here)
@@ -36,8 +19,8 @@ dir.create(here("results", "figures", "panels"), recursive = TRUE, showWarnings 
 dir.create(here("results", "tables", "section_3_4"), recursive = TRUE, showWarnings = FALSE)
 
 OUT_DIR <- here("results", "figures")
-MINOR4_DIR <- here("results", "verification")
-QA_DIR <- file.path(MINOR4_DIR, "figure5")
+VERIFICATION_DIR <- here("results", "verification")
+QA_DIR <- file.path(VERIFICATION_DIR, "figure5")
 dir.create(QA_DIR, recursive = TRUE, showWarnings = FALSE)
 source(here("scripts", "figure5", "figure5_style.R"))
 class_colors <- c(
@@ -226,7 +209,7 @@ pD_final <- (pD_species | pD_function) +
   )
 
 # ==============================================================================
-# Final A4 portrait assembly — dimensions match the correct R1 submission
+# Final A4 portrait assembly
 # ==============================================================================
 
 fig5_final <- (pA_final / pBC_final / pBH_note / pD_final) +
@@ -247,7 +230,7 @@ ggsave(
 )
 
 # Reproducibility log and immutable-build summary.
-capture.output(sessionInfo(), file = file.path(MINOR4_DIR, "figure5_session_info.txt"))
+capture.output(sessionInfo(), file = file.path(VERIFICATION_DIR, "figure5_session_info.txt"))
 writeLines(
   c(
     "Figure 5 rebuild completed from frozen inputs.",

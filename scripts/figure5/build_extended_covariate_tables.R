@@ -24,7 +24,7 @@ direct <- read_csv(
   show_col_types = FALSE
 )
 hua <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "direct_feature_HUA_sensitivity.csv"),
+  here("results", "covariate_sensitivity", "direct_feature_HUA_sensitivity.csv"),
   show_col_types = FALSE
 )
 
@@ -85,23 +85,23 @@ write_csv(
 # -----------------------------------------------------------------------------
 
 da <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "differential_core_stability_summary.csv"),
+  here("results", "covariate_sensitivity", "differential_core_stability_summary.csv"),
   show_col_types = FALSE
 )
 cross <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "crossomics_correlation_summary.csv"),
+  here("results", "covariate_sensitivity", "crossomics_correlation_summary.csv"),
   show_col_types = FALSE
 ) %>% filter(target_scope == "crossomics_only")
 dbrda <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "crossomics_dbrda_summary.csv"),
+  here("results", "covariate_sensitivity", "crossomics_dbrda_summary.csv"),
   show_col_types = FALSE
 )
 bmi_et <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "bmi_missingness_by_enterotype.csv"),
+  here("results", "covariate_sensitivity", "bmi_missingness_by_enterotype.csv"),
   show_col_types = FALSE
 )
 bmi_tests <- read_csv(
-  here("results", "r1_5_covariate_sensitivity", "bmi_complete_case_selection_tests.csv"),
+  here("results", "covariate_sensitivity", "bmi_complete_case_selection_tests.csv"),
   show_col_types = FALSE
 )
 

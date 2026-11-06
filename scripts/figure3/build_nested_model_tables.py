@@ -1,12 +1,7 @@
 # -*- coding: utf-8 -*-
-"""
-Build the two supplementary-table CSVs for Major Comment 3 from the VERIFIED
-pipeline outputs in results/ (no re-fitting; repackaging only).
+"""Build Tables S6 and S7 from the verified nested-model and Firth outputs.
 
-Outputs (results/tables/final/):
-  Table_S6_nested_models.csv
-  Table_S7_model_stability.csv
-"""
+This script repackages statistical results and does not refit models."""
 import csv
 import os
 

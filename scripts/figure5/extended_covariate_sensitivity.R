@@ -1,16 +1,8 @@
-# ==============================================================================
-# R1.5 extended-covariate sensitivity analysis
+# Extended-covariate sensitivity analysis
 #
-# Locked scope (see results/r1_5_covariate_sensitivity/analysis_contract.md):
-#   1. Differential abundance: original four contrasts, four data layers.
-#   2. Cross-omics: exact pre-existing Figure 5 feature sets + partial db-RDA.
-#   3. Direct HUA: exact pre-existing 22-candidate set.
-#
-# The original sex+age analyses remain primary. The extended model adds BMI+Cr
-# only. All baseline and extended results, including unfavorable results, are
-# written to a dedicated R1.5 directory; no manuscript or response file is
-# modified by this script.
-# ==============================================================================
+# Repeats differential-abundance, cross-omics and direct-HUA analyses with BMI
+# and creatinine added to sex and age. Matched complete-case samples are used so
+# covariate effects are distinguished from changes in analysis population.
 
 suppressPackageStartupMessages({
   library(phyloseq)
@@ -23,9 +15,9 @@ suppressPackageStartupMessages({
 
 set.seed(2024)
 
-out_dir <- here("results", "r1_5_covariate_sensitivity")
+out_dir <- here("results", "covariate_sensitivity")
 dir.create(out_dir, recursive = TRUE, showWarnings = FALSE)
-log_file <- file.path(out_dir, "r15_sensitivity_run.log")
+log_file <- file.path(out_dir, "covariate_sensitivity_run.log")
 log_con <- file(log_file, open = "wt", encoding = "UTF-8")
 sink(log_con, type = "output", split = TRUE)
 sink(log_con, type = "message")
@@ -35,7 +27,7 @@ on.exit({
   close(log_con)
 }, add = TRUE)
 
-cat("R1.5 extended-covariate sensitivity analysis\n")
+cat("Extended-covariate sensitivity analysis\n")
 cat("Started: ", format(Sys.time(), "%Y-%m-%d %H:%M:%S %z"), "\n", sep = "")
 cat("Seed: 2024\n")
 cat("Baseline: Gender + Age\n")
@@ -154,8 +146,7 @@ read_saved_matrix <- function(path, row_col, drop_cols = character()) {
 # ------------------------------------------------------------------------------
 
 input_paths <- c(
-  analysis_script = here("scripts", "figure5", "r15_extended_covariate_sensitivity.R"),
-  analysis_contract = here("results", "r1_5_covariate_sensitivity", "analysis_contract.md"),
+  analysis_script = here("scripts", "figure5", "extended_covariate_sensitivity.R"),
   ps_taxa = here("data", "clean", "phyloseq_Taxa_with_enterotype_seed10.rds"),
   ps_pathway = here("data", "clean", "phyloseq_Pathway_with_enterotype_20250210.rds"),
   ps_ec = here("data", "clean", "phyloseq_EC_with_enterotype_20250210.rds"),
@@ -233,7 +224,7 @@ missingness <- meta_master %>%
 write.csv(missingness, file.path(out_dir, "covariate_missingness.csv"), row.names = FALSE)
 print(missingness)
 
-# R1.5 alternative-explanation check: quantify whether the BMI-complete subset
+# Complete-case selection check: quantify whether the BMI-complete subset
 # differs systematically from excluded participants. This diagnostic does not
 # alter the locked analysis set.
 missingness_by_enterotype <- meta_master %>%
@@ -1087,7 +1078,7 @@ write_session_info()
 
 output_paths <- list.files(out_dir, full.names = TRUE)
 output_paths <- output_paths[!basename(output_paths) %in%
-  c("output_manifest.csv", "r15_sensitivity_run.log")]
+  c("output_manifest.csv", "covariate_sensitivity_run.log")]
 output_manifest <- tibble(
   file = basename(output_paths),
   bytes = as.numeric(file.info(output_paths)$size),

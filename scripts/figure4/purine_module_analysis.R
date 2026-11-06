@@ -1,26 +1,8 @@
-# ============================================================================
-# M5 v3 module-level purine analysis — MAIN script (produces DRAFT results)
-# ============================================================================
-# Q1: pathway-level enterotype differences for the frozen 34-pathway purine set
-#     (curated extraction from the existing Section 3.4 LinDA table, dual
-#      reference design E1/E4 vs E2/E3; untested pathways recorded explicitly)
-# Q2: module scores by enterotype, TWO scales:
-#       P = pathway scale (HUMAnN pathway abundances; de_novo = representative
-#           superpathway DENOVOPURINE2-PWY per user adjudication, PWY-841 as
-#           sensitivity variant; degradation = sum of 11 cores; salvage =
-#           single-pathway PWY-6609 readout)
-#       E = EC-union scale (sum of abundances of the union of ECs across each
-#           module's core members; double-count-free by construction)
-#     Each scale reported as share (% of sample total, primary) and absolute
-#     abundance (sensitivity). GLS: log10(score+pseudo) ~ Enterotype + Gender +
-#     Age, varIdent(~1|Enterotype); overall P + 6 pairwise contrasts.
-# Q3: partial Spearman (ppcor) of each module score vs UA, adjusting Gender+Age.
+# Purine-module analysis
 #
-# QC: R2-QC Protocol v1.0. P1 register assertions, P2 dual-implementation +
-# structural assertions (fail -> stop(), nothing written), P4 MD5 manifest.
-# Status gate: writes v05_STATUS_DRAFT.txt; the independent verification script
-# (99_independent_verification.R) flips to VERIFIED.
-# ============================================================================
+# Uses the frozen pathway register and exact pathway composition to calculate
+# EC-union module scores, enterotype contrasts and module-UA partial correlations.
+
 suppressPackageStartupMessages({
   library(phyloseq); library(nlme); library(emmeans); library(ppcor); library(here)
 })
@@ -32,7 +14,7 @@ dir.create(VER, showWarnings = FALSE, recursive = TRUE)
 
 runlog <- file.path(VER, "run_log.txt")
 con <- file(runlog, open = "wt"); sink(con, split = TRUE)
-cat("M5 v3 main analysis run:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n\n")
+cat("Purine module analysis run:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n\n")
 
 # ---- QC assertion harness -------------------------------------------------
 qc <- data.frame(id = character(), pass = logical(), detail = character(),
@@ -264,7 +246,7 @@ cat("\nAll", nrow(qc), "QC assertions passed.\n")
 sink(); close(con)
 
 # status gate: DRAFT until the independent verification script flips it
-writeLines(c("M5 v3 module analysis", paste("main run:", Sys.time()),
+writeLines(c("Purine module analysis", paste("main run:", Sys.time()),
              sprintf("QC assertions passed: %d/%d", nrow(qc), nrow(qc)),
              "STATUS: DRAFT (awaiting 99_independent_verification.R)"),
            file.path(VER, "v05_STATUS_DRAFT.txt"))

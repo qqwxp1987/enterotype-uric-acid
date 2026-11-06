@@ -1,18 +1,8 @@
-# ==============================================================================
-# R1.2 / R2.1 canonical enterotype robustness analysis
+# Enterotype robustness and continuous-gradient analyses
 #
-# Reviewer repair, 2026-08-28.
-#
-# This script deliberately separates:
-#   1) assignment confidence conditional on k = 4;
-#   2) component-wise recovery under bootstrap perturbation;
-#   3) uncertainty in the number of DMM components;
-#   4) UA/HUA sensitivity to a k = 3 representation; and
-#   5) P/B-ratio sensitivity to zero replacement.
-#
-# The outcome analyses are NOT used to select k. All seeds and unfavorable
-# results are retained. See results/r1_2_r2_1/analysis_protocol.md.
-# ==============================================================================
+# Evaluates assignment confidence, bootstrap component recovery, component-count
+# sensitivity, k=3 outcome sensitivity, and P/B-ratio zero-handling sensitivity.
+# Outcome analyses are not used to select the number of DMM components.
 
 suppressPackageStartupMessages({
   library(here)
@@ -31,7 +21,7 @@ suppressPackageStartupMessages({
 analysis_seed <- 20260828L
 set.seed(analysis_seed)
 
-out_audit <- here("results", "r1_2_r2_1")
+out_audit <- here("results", "enterotype_robustness")
 out_tables <- here("results", "tables", "supplementary")
 out_figures <- here("results", "figures", "panels")
 out_cache <- here("results", "cache")
@@ -46,7 +36,7 @@ on.exit({
   while (sink.number() > 0) sink()
 }, add = TRUE)
 
-cat("R1.2 / R2.1 canonical robustness analysis\n")
+cat("Enterotype robustness analysis\n")
 cat("Started:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n")
 cat("Analysis seed:", analysis_seed, "\n\n")
 
@@ -497,7 +487,7 @@ if (n_boot == 100) {
   }
 }
 
-# R1.2 bootstrap recovery: give each cited metric a matching visual. Panel (a)
+# Bootstrap recovery: give each cited metric a matching visual. Panel (a)
 # shows unique-participant agreement across the 100 refits, panel (b) the ARI,
 # and panel (c) the component-specific Jaccard similarity.
 boot_agree_lab <- sprintf("mean = %.1f%%\nSD = %.1f%%",
@@ -797,10 +787,10 @@ p_s4 <- ggarrange(p_s4_top, p_boot, ncol = 1,
 save_plot_pair(p_s4, "FigureS1_enterotype_robustness", 9.0, 6.0)
 
 # =============================================================================
-# 6. Consolidated reviewer-facing sensitivity table and environment
+# 6. Consolidated sensitivity table and environment
 # =============================================================================
 cat("\n[6] Consolidating evidence\n")
-reviewer_table <- bind_rows(
+sensitivity_table <- bind_rows(
   posterior_summary %>%
     transmute(domain = "posterior_k4", metric, group = "overall", value,
               secondary = NA_real_, note = "conditional_on_k4"),
@@ -826,7 +816,7 @@ reviewer_table <- bind_rows(
                             "; AIC ET/linear/ns3=", fmt(aic_enterotype), "/",
                             fmt(aic_pb_linear), "/", fmt(aic_pb_spline3)))
 )
-write.csv(reviewer_table,
+write.csv(sensitivity_table,
           file.path(out_tables, "enterotype_robustness_sensitivity.csv"),
           row.names = FALSE)
 

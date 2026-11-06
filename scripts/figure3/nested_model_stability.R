@@ -1,23 +1,9 @@
-# ============================================================================
-# M3 main analysis — Reviewer 1 Major Comment 3 (Type 4 cautious interpretation)
-# ============================================================================
-# Approved design (2026-10-29, see Major3_回应计划.md):
-#   DP1 = 方案 B (both fixed populations), DP2 = EPV + Firth.
-# Part A (P3 fidelity): refit the six published models on their original
-#         complete-case n; match against published CSVs (fail-fast).
-# Part B (nested models): Panel BMI225 (M1, M2 within n=225 BMI-complete);
-#         Panel FULL223 (M1, M2, M3, M4, S2 within n=223 full-clinical
-#         complete-case). Separates missingness from covariate adjustment.
-#         UA: GLS varIdent REML, marginal Wald P; HUA: binomial GLM + LRT.
-# Part C (stability): EPV per HUA model; Firth penalized refits (logistf)
-#         with overall enterotype penalized LRT (manual 2 x delta penalized
-#         loglik; logistftest/anova in logistf 1.26.1 hit a LAPACK dpotrf
-#         failure on factor terms; manual form uses the documented
-#         $loglik["full"] elements, identical definition).
+# Nested-model comparison and Firth stability analysis
 #
-# QC: R2-QC Protocol v1.0. Fail-fast assertions; writes v05_STATUS_DRAFT.txt;
-# 99_independent_verification.R flips status to VERIFIED.
-# ============================================================================
+# Refits the prespecified clinical models in fixed complete-case populations to
+# separate sample-missingness and covariate-adjustment contributions. Reports
+# events per variable and Firth-penalized HUA models with QC assertions.
+
 suppressPackageStartupMessages({
   library(nlme)
   library(logistf)
@@ -31,7 +17,7 @@ dir.create(VER, showWarnings = FALSE, recursive = TRUE)
 
 runlog <- file.path(VER, "run_log.txt")
 con <- file(runlog, open = "wt"); sink(con, split = TRUE)
-cat("M3 main analysis run:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n\n")
+cat("Nested-model and Firth stability analysis run:", format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z"), "\n\n")
 
 # ---- QC assertion harness --------------------------------------------------
 qc <- data.frame(id = character(), pass = logical(), detail = character(),

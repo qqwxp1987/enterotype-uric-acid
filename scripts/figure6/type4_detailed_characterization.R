@@ -1,35 +1,7 @@
-# ==============================================================================
-# Type 4 Enterotype HUA+ Subgroup Detailed Characterization
+# Type 4 influence diagnostics and stability analyses
 #
-# Purpose:
-#   Respond to reviewer comments:
-#     R1.1 — Differentiate Type 1 vs Type 4 evidence (Type 4 signal may be
-#            driven by a few high-UA individuals)
-#     R2.2 — Caution about Type 4 small sample (n = 39)
-#
-#   Provides five complementary analyses:
-#     1. Type 4 HUA+ / HUA- subgroup descriptive statistics
-#     2. Influence diagnostics (Cook's distance, leverage, DFBETAS)
-#     3. Outlier removal sensitivity (P95 / P99 thresholds)
-#     4. Leave-one-out (LOO) stability of the Type 4–UA association
-#     5. Bootstrap stability of the Type 4–UA association
-#
-# Inputs:
-#   - data/clean/phyloseq_Taxa_with_enterotype_seed10.rds  (phyloseq + metadata)
-#   - results/tables/section_3_5/mediation_analysis_data.rds (unified df)
-#
-# Outputs:
-#   Tables (results/tables/supplementary/):
-#     - type4_subgroup_characterization.csv
-#     - type4_influence_diagnostics.csv
-#     - type4_sensitivity_loo.csv          (LOO + outlier removal combined)
-#     - type4_bootstrap_stability.csv
-#   Figures (results/figures/panels/):
-#     - FigureS3_type4_diagnostics.png/pdf  (combined: A=Cook's, B=LOO)
-#     - FigureS_type4_cooks_distance.png/pdf (standalone)
-#     - FigureS_type4_leverage_diagnostic.png/pdf (standalone)
-#     - FigureS_type4_loo_stability.png/pdf (standalone)
-# ==============================================================================
+# Provides subgroup descriptives, Cook's distance and leverage diagnostics,
+# upper-tail sensitivity, leave-one-out analysis and bootstrap stability.
 
 library(phyloseq)
 library(tidyverse)
@@ -45,8 +17,7 @@ set.seed(20250904)
 
 cat("================================================================\n")
 cat("Type 4 Detailed Characterization\n")
-cat("  Reviewer responses: R1.1 (Type 1/4 differentiation),\n")
-cat("                       R2.2 (Type 4 small-sample caution)\n")
+cat("  Influence and stability diagnostics\n")
 cat("================================================================\n\n")
 
 # --- Output directories ---
@@ -258,13 +229,13 @@ dfb_type4 <- dfb[, "Is_Type4"]
 
 # --- Thresholds ---
 cook_threshold_4n  <- 4 / n_obs    # standard rule
-cook_threshold_0.5 <- 0.5          # R1.1/R2.2 higher-influence reference
+cook_threshold_0.5 <- 0.5          # Higher-influence reference
 hat_threshold      <- 2 * (ncol(model.matrix(fit_ua)) / n_obs)  # 2p/n
 dfb_threshold      <- 2 / sqrt(n_obs)
 
 # --- Flag high-influence individuals ---
 infl_df <- data.frame(
-  SampleID   = t4_ref_complete$SampleID,  # R1.1/R2.2 preserve IDs for anonymous labels
+  SampleID   = t4_ref_complete$SampleID,  # Preserve IDs for anonymous labels
   Enterotype = t4_ref_complete$Enterotype,
   Is_Type4   = t4_ref_complete$Is_Type4,
   UA         = t4_ref_complete$UA,
@@ -389,7 +360,7 @@ cat(sprintf("Saved figure: %s (.png + .pdf)\n",
 resid_std <- rstandard(fit_ua)
 
 infl_plot2 <- data.frame(
-  SampleID   = t4_ref_complete$SampleID,  # R1.1/R2.2 preserve IDs for anonymous labels
+  SampleID   = t4_ref_complete$SampleID,  # Preserve IDs for anonymous labels
   leverage   = as.numeric(hats),
   resid_std  = as.numeric(resid_std),
   cooks_d    = as.numeric(cooks),
@@ -743,7 +714,7 @@ boot_results <- data.frame(
 )
 
 for (b in 1:n_boot) {
-  boot_results$boot_iter[b] <- b  # R1.1/R2.2 retain auditable iteration IDs
+  boot_results$boot_iter[b] <- b  # Retain auditable iteration IDs
   # Stratified resampling: both groups independently resampled with replacement
   boot_idx_t4  <- sample(seq_len(nrow(t4_data)), replace = TRUE)
   t4_boot      <- t4_data[boot_idx_t4, ]
@@ -951,7 +922,7 @@ cat(sprintf("   Cook's > 4/n (%.4f): %d flagged (%d in Type 4)\n",
 cat(sprintf("   Cook's > 0.5: %d flagged\n", sum(infl_df$cooks_flag_0.5)))
 cat(sprintf("   Leverage > 2p/n: %d flagged\n", sum(infl_df$leverage_flag)))
 
-cat("\n3. UPPER-TAIL SENSITIVITY (R1.1/R2.2):\n")
+cat("\n3. UPPER-TAIL SENSITIVITY:\n")
 cat(sprintf("   P95 threshold = %.1f, %d observations above threshold\n", p95_threshold,
             length(t4_outliers_p95)))
 cat(sprintf("   Full:       mean_diff = %.1f, wilcox_p = %.4f, OR = %.2f\n",

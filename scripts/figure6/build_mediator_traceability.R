@@ -1,23 +1,7 @@
-# ==============================================================================
-# R1.4 — Build the candidate-mediator selection traceability table
+# Build Table S4: candidate-mediator selection traceability
 #
-# Purpose:
-#   Reconstruct the actual layer-specific selection evidence for the 22
-#   upstream candidates used in the exploratory mediation screen. A compact
-#   reviewer-facing table reports the source, selection basis, statistical
-#   support, effect-size role, bounded rationale, and reference/database.
-#   Full statistics are retained separately as internal inspection data.
-#
-# Important interpretation:
-#   The candidates were NOT selected using a single cross-omics P-value,
-#   log2-fold-change, or effect-size threshold. Selection was layer-specific
-#   and hypothesis-guided. Table S4 reports statistical support transparently; it does
-#   not retroactively turn them into selection cutoffs.
-#
-# Output:
-#   results/tables/supplementary/mediator_traceability_table.csv
-#   results/tables/supplementary/mediator_traceability_table_detailed.csv
-# ==============================================================================
+# Reconstructs the layer-specific selection evidence for the 22 candidates used
+# in the exploratory mediation screen.
 
 set.seed(2024)
 
@@ -373,7 +357,7 @@ if (!file.copy(temp_path, output_path, overwrite = TRUE)) {
 }
 unlink(temp_path)
 
-cat("R1.4 Table S7 build PASS\n")
+cat("Table S4 build PASS\n")
 cat("Output:", output_path, "\n")
 cat("Dimensions:", nrow(compact), "rows x", ncol(compact), "columns\n")
 cat("Detailed inspection output:", detailed_output_path, "\n")
